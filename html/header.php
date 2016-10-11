@@ -69,7 +69,7 @@
 							        <ul class="dropdown-menu">
 							            <li><a href="recargas-pines.php">Recargas y Pines</a></li>
 							            <li><a href="pago-cuentas.php">Pago de cuentas</a></li>
-							            <li><a href="corresp-bancario.php">Corresponsal Bancario</a></li>
+							            <li><a href="giros-depositos.php">Giros y Depósitos</a></li>
 							            <li><a href="ventas-tarjeta.php">Ventas con tarjeta</a></li>
 							            <li><a href="tarj-alimentacion.php">Tarjetas de alimentación</a></li>
 							            <li><a href="juegos-azar.php">Juegos de azar</a></li>

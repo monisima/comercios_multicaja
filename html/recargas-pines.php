@@ -81,7 +81,7 @@ $(function() {
             <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
               <li class="acto"><a href="#sec1" class="tablinks"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
               <li><a href="pago-cuentas.php" ><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
-              <li><a href="Giros-depositos.php"><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
+              <li><a href="giros-depositos.php"><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
               <li><a href="ventas-tarjeta.php"><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
               <li><a href="tarj-alimentacion.php"><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
               <li><a href="juegos-azar.php"><div class="ico-bot-6"></div>Juegos de azar</a></li>
@@ -193,20 +193,20 @@ $(function() {
 						      		<div class="row bs-wizard" style="border-bottom:0;">
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <a class="bs-wizard-dot"><img src="images/celular-step.svg" class="step-img-cir1"></a>
+				                 <img src="images/vende-recargas.jpg" class="img-tres-cir">
 				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 				                  <div class="bs-wizard-info text-center"><span>Vende recargas</span> telefónicas y pines de larga distancia.</div>
 				                </div>
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <a class="bs-wizard-dot"><img src="images/click-step.svg" class="step-img-cir2"></a>
+				                <img src="images/montos-flex.jpg" class="img-tres-cir">
 				                  <div class="bs-wizard-info text-center"><span>Montos de recarga flexibles</span> según compañía móvil.
 
 				</div>
 				                </div>
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
-				                  <a class="bs-wizard-dot"><img src="images/caja-step.svg" class="step-img-cir3"></a>
+				                <img src="images/prepago.jpg" class="img-tres-cir">
 				                  <div class="bs-wizard-info text-center"><span>Prepago:</span> debes cargar el saldo de tu terminal para operar.</div>
 				                </div>
 				                
@@ -369,8 +369,8 @@ $(function() {
 
 				      	  <div class="gris-claro seccion-comision">
 				      	  	<div class="container">
-				      	  	  <div class="row">
-				      	  		<div class="col-md-7 col-md-offset-1 col-sm-7 txt-pos-free">
+				      	  	  <div class="row">				      	  	  
+				      	  		<div class="col-md-7 col-md-offset-1 col-sm-7 txt-pos-free txt-rig">
 				      	  			<h2>¡Si vendes más de 500.000 en recargas,<span> tu pos es gratis!</span></h2>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">

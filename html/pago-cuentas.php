@@ -79,9 +79,9 @@ $(function() {
 		    
 		      <div class="collapse navbar-collapse menu-xs-retiro menu-servicios" id="superMenu" style="height: 1px;" aria-expanded="false">
             <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
-              <li class="acto"><a href="recargas-pines.php"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
-              <li><a href="#sec1" class="tablinks"><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
-              <li><a href="Giros-depositos.php" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
+              <li><a href="recargas-pines.php"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
+              <li class="acto"><a href="#sec1" class="tablinks"><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
+              <li><a href="giros-depositos.php" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
               <li><a href="ventas-tarjeta.php" ><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
               <li><a href="tarj-alimentacion.php" ><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
               <li><a href="juegos-azar.php" ><div class="ico-bot-6"></div>Juegos de azar</a></li>
@@ -141,39 +141,62 @@ $(function() {
 								       <p>RETAIL Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
 								    </div>
 								  </div>
-
+		<span id="como-funciona"></span>	
+								<div id="consultar-convenio">
 								  <div class="consulta-convenio col-md-12"><p>Consulta el convenio que necesitas</p></div>	
-								  
-								  			<button class="btn-consultar">consulta aquí</button>
+								  		<button class="btn-consultar">consulta aquí</button>
+								</div>
+								<div id="consultar-convenio">
+								  <div class="consulta-convenio col-md-12"><p>¿No encuentras el convenio que necesitas?</p></div>	
+								  		<div class="col-md-6 col-md-offset-3">
+								  			<div class="row">
+										  		<p class="bus-con">Busca un convenio específico</p>
+										  		<p class="nombre-buscar">Ingresa el nombre de la empresa que deseas buscar</p>
+										  		<div class="input-group ">										  
+												  <input type="text" class="form-control buscador-" placeholder="Nombre de usuario">
+												  <span class="input-group-addon"><img src="images/lupa-buscar.svg" class="lupita"></span>
+												</div>
+												<p class="check-pago"><img src="images/check.jpg">Ofrecemos el pago de las cuentas de la empresa buscada.</p>
+											
+												<button class="btn-quierosercomercio-lineal">quiero ser comercio multicaja</button>
+											</div>
+
+										</div>
+
+								</div>
+								<div id="consultar-convenio-error">	
+										<div class="col-md-12 consultar-error">				  
+										  		<p class="check-pago"><img src="images/atencion.jpg">Lamentablemente no tenemos convenio con la empresa que buscas.<br>
+		Verifica que esté bien escrita, si no aparece contáctanos y dinos el convenio que necesitas para ver si lo podemos conseguir.
+		</p>
+										</div>			
+								</div>
+
+
 								  
 							</div>	
-<span id="como-funciona"></span>	
+	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-funciona" >
+				      	  <div class="gris-claro seccion-bene" >
 				
 				      		<div class="container" >
-						      		<div class="row bs-wizard" style="border-bottom:0;">
-				                
-				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <a class="bs-wizard-dot"><img src="images/celular-step.svg" class="step-img-cir1"></a>
-				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
-				                  <div class="bs-wizard-info text-center"><span>Vende recargas</span> telefónicas y pines de larga distancia.</div>
-				                </div>
-				                
-				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <a class="bs-wizard-dot"><img src="images/click-step.svg" class="step-img-cir2"></a>
-				                  <div class="bs-wizard-info text-center"><span>Montos de recarga flexibles</span> según compañía móvil.
-
-				</div>
-				                </div>
-				                
-				                <div class="col-sm-4 bs-wizard-step active">
-				                  <a class="bs-wizard-dot"><img src="images/caja-step.svg" class="step-img-cir3"></a>
-				                  <div class="bs-wizard-info text-center"><span>Prepago:</span> debes cargar el saldo de tu terminal para operar.</div>
-				                </div>
-				                
-				            </div>
+						      		<div class="col-md-5 col-md-offset-1 ico-text-bene">
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/200convenios.jpg"><div class="txt-bene"><strong>Contamos con más de 200 convenios</strong> de pagos de cuentas.</div>
+						      			</div>
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/nuevos-clientes.jpg"><div class="txt-bene">Con nuevos servicios <strong>atraerás nuevos clientes a tu negocio.</strong></div>
+						      			</div>
+						      		</div>
+						      		<div class="col-md-5 col-md-offset-1 ico-text-bene">
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/cupon-pago.jpg"><div class="txt-bene"><strong>Cupón de pago Multicaja:</strong> los clientes podrán pagar <a href="" class="rojo">compras web en tu negocio. </a></div>
+						      			</div>
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/aumenta-ingresos.jpg"><div class="txt-bene"><strong>Aumenta tus ingresos</strong> a través de comisiones por vender este servicio.</div>
+						      			</div>
+						      		</div>
 							</div>
 				      	  </div>
 
@@ -194,84 +217,30 @@ $(function() {
 				      	  <div class="container">
 				      	  <div class="row">
 				      	  <div class="col-md-8 col-md-offset-2 row">
-				            	<table class="tabl-comisi row" width="100%">
+				            	<table class="tabl-comisi tabla-comi-pago row" width="100%">
 									  <tr>
-									    <th colspan="2" class="rojito">Venta Mensual de Recarga por Terminal</th>
-									    <th colspan="2" class="rojito">% Comisión</th>
+									    <th class="rojito" width="50%">Tipo de Transacción</th>
+									    <th class="rojito" width="50%">Comisión Monto por transacción</th>
+									  </tr>									  
+									  <tr>
+									    <td class="gris-tabl">Pago de Cuentas Santander (excepto servicios de Luz y Agua)</td>
+									    <td>$66(*)</td>
 									  </tr>
 									  <tr>
-									    <td class="gris-tabl">Desde</td>
-									    <td class="gris-tabl">Hasta</td>
-									    <td class="gris-tabl">POS</td>
-									    <td class="gris-tabl">Web / Celular</td>
+									    <td class="gris-tabl">Pago de Cuentas Sencillito (excepto servicios de Luz, Agua, Telefonía, TV e Internet)</td>
+									    <td>$66(*)</td>
 									  </tr>
 									  <tr>
-									    <td>0</td>
-									    <td>$199.999</td>
-									    <td>0,00%</td>
-									    <td>0,00%</td>
+									    <td class="gris-tabl">Pago de Cuentas Luz, Agua y cuentas Sencillito de Telefonía, TV e Internet</td>
+									    <td>$34(**)</td>
 									  </tr>
 									  <tr>
-									    <td>$200.000</td>
-									    <td>$299.999</td>
-									    <td>0,00%</td>
-									    <td>4,00%</td>
+									    <td class="gris-tabl">Cupón de Pago</td>
+									    <td>$100</td>
 									  </tr>
-									  <tr>
-									    <td>$300.000</td>
-									    <td>$499.999</td>
-									    <td>3,00%</td>
-									    <td>4,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$500.000</td>
-									    <td>$999.999</td>
-									    <td>4,20%</td>
-									    <td>4,62%</td>
-									  </tr>
-									  <tr>
-									    <td>$1.000.000</td>
-									    <td>$2.499.999</td>
-									    <td>4,62%</td>
-									    <td>4,80%</td>
-									  </tr>
-									  <tr>
-									    <td>$2.500.000</td>
-									    <td>$3.999.999</td>
-									    <td>4,80%</td>
-									    <td>5,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$4.000.000</td>
-									    <td>$5.999.999</td>
-									    <td>5,00%</td>
-									    <td>5,20%</td>
-									  </tr>
-									  <tr>
-									    <td>$6.000.000</td>
-									    <td>$7.999.999</td>
-									    <td>5,20%</td>
-									    <td>5,40%</td>
-									  </tr>
-									  <tr>
-									    <td>$8.000.000</td>
-									    <td>$11.999.999</td>
-									    <td>5,40%</td>
-									    <td>5,60%</td>
-									  </tr>
-									  <tr>
-									    <td>$12.000.000</td>
-									    <td>$16.999.999</td>
-									    <td>5,80%</td>
-									    <td>5,80%</td>
-									  </tr>
-									  <tr>
-									    <td>$17.000.000</td>
-									    <td>Más</td>
-									    <td>6,00%</td>
-									    <td>6,20%</td>
-									  </tr>
-									</table>
+								</table>
+								<p class="letra-chica">(<span>*</span>) Comisión 0,00255 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
+								<p class="letra-chica">(<span>**</span>) Comisión 0,00132 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
 							</div>
 							</div>
 							</div>
@@ -283,68 +252,73 @@ $(function() {
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-						      	<div class="col-md-3 col-sm-6">
-						      		<div class="polaroid">
-						      		<img src="images/pos1.jpg" class="pos-img" >
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-						      				<p><span>0,65 UF</span> + IVA / Mes</p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-						      	</div>
-						      	<div class="col-md-3 col-sm-6">
-						      		<div class="polaroid">
-						      		<img src="images/pos2.jpg" class="pos-img">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-						      				<p><span>0,5 UF</span> + IVA / Mes</p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-						      	</div>
-						      	<div class="col-md-3 col-sm-6">
-						      		<div class="polaroid">
-						      		<img src="images/pos3.jpg" class="pos-img">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Web</h3>
-						      				<p><span>Sin costo</span></p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Necesitas un computador con conexión a internet.</div>
-						      	</div>
-						      	<div class="col-md-3 col-sm-6">
-						      		<div class="polaroid">
-						      		<img src="images/pos4.jpg" class="pos-img">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Celular</h3>
-						      				<p><span>Sin costo</span></p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Necesitas un teléfono móvil con Sim Movistar</div>
-						      	</div>
-
-						      
+							      <div class="col-md-10 col-md-offset-1">
+							      	<div class="col-md-4 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos1.jpg" class="pos-img" >
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
+							      				<p><span>0,65 UF</span> + IVA / Mes</p>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	</div>
+							      	<div class="col-md-4 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos2.jpg" class="pos-img">
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
+							      				<p><span>0,5 UF</span> + IVA / Mes</p>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	</div>
+							      	<div class="col-md-4 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos3.jpg" class="pos-img">
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Web</h3>
+							      				<p><span>Sin costo</span></p>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica"><span>*</span>Necesitas un computador con conexión a internet.</div>
+							      	</div>
+								</div>
 							</div>
 				      	  </div>
 
 				      	  </div>
 
-				      	  <div class="gris-claro seccion-comision">
+				      	  <div class="gris-claro">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  		<div class="col-md-7 col-md-offset-1 col-sm-7 txt-pos-free">
-				      	  			<h2>¡Si vendes más de 500.000 en recargas,<span> tu pos es gratis!</span></h2>
+				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left">
+				      	  			<h2><span> tu pos es gratis!</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
+				      	  			<p>(*) Se considera el monto de la venta de recarga y azar más el 10% del monto de otros servicios (pago de cuentas, corresponsalía bancaria, pago proveedores y SOAP)</p>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">
 				      	  			<img src="images/pos-free.jpg" class="pos-free">
 				      	  		</div>
 				      	  	  </div>
 				      	  	</div>
-				      	  	<div class="flecha_descubre">
-						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
-						    </div>
 				      	  </div>
+
+
+				      	  <div class="seccion-nuevos-clientes">
+				      	  	<div class="container">
+				      	  	  <div class="row">
+				      	  	  <div class="col-md-3 col-sm-3">
+				      	  			<img src="images/cupon-de-pago-cel.png">
+				      	  		</div>
+				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-center">
+				      	  			<h2><img src="images/star.svg" class="st1"><img src="images/star.svg"  class="st2"><span>atrae nuevos</span><span class="tx-negro"> clientes</span><img src="images/star.svg"  class="st2"><img src="images/star.svg"  class="st1"> <br>con el cupón de pago de multicaja</h2>
+				      	  			
+				      	  		</div>				      	  		
+				      	  	  </div>
+				      	  	</div>
+				      	  </div>
+
+
 
 				      	  </div>
 

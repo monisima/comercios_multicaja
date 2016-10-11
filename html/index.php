@@ -168,7 +168,7 @@
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
 				  <a href="recargas-pines.php" class="servc" target="_blank">
 					<div class="borde-serv servicios">
-						<img src="images/pago-cuentas.svg" class="serv1">
+						<img src="images/pago-cuentas.png" class="serv1">
 						<p>Ofrece Pago de Cuentas, Recargas, Pines y Juegos de Azar</p>
 					</div>
 				   </a>
@@ -177,7 +177,7 @@
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
 				  <a href="ventas-tarjeta.php" target="_blank" class="servc">
 					<div class="borde-serv servicios">
-						<img src="images/giros-depos.svg" class="serv2">
+						<img src="images/giros-depos.png" class="serv2">
 						<p>Ofrece Transacciones Bancarias: Giros y depósitos</p>
 					</div>
 				  </a>
@@ -186,7 +186,7 @@
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
 				  <a href="ventas-tarjeta.php" target="_blank" class="servc">
 					<div class="borde-serv servicios">
-						<img src="images/pagos-tarjetas.svg" class="serv1">
+						<img src="images/pagos-tarjetas.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas bancarias y de casas comerciales</p>
 					</div>
 				  </a>
@@ -195,7 +195,7 @@
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
 				  <a href="#" class="servc">
 					<div class="borde-serv servicios">
-						<img src="images/alimentacion.svg" class="serv1">
+						<img src="images/alimentacion.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas de alimentación</p>
 					</div>
 				  </a>
@@ -204,7 +204,7 @@
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
 				  <a href="#" class="servc">
 					<div class="borde-serv servicios">
-						<img src="images/e-commerce.svg" class="serv1">
+						<img src="images/e-commerce.png" class="serv1">
 						<p>E-Commerce: Recibe Pagos en tu Sitio Web</p>
 					</div>
 				  </a>
@@ -279,16 +279,16 @@
 	      	<div class="marg-top-40 banner-ayuda"></div>
 	      	<div class="marg-top-10 tabla-ayuda">
 	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
-	      			<p><img src="images/ayudapf1.svg" class="img-ayuda">Operación Multicaja</p>
+	      			<p><img src="images/ayudapf1.png" class="img-ayuda">Operación Multicaja</p>
 	      		</div></a>
 	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
-	      			<p><img src="images/ayudapf2.svg" class="img-ayuda">Alimentación</p>
+	      			<p><img src="images/ayudapf2.png" class="img-ayuda">Alimentación</p>
 	      		</div></a>
 	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
-	      			<p><img src="images/ayudapf3.svg" class="img-ayuda">Tarjetas</p>
+	      			<p><img src="images/ayudapf3.png" class="img-ayuda">Tarjetas</p>
 	      		</div></a>
 	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
-	      			<p><img src="images/ayudapf4.svg" class="img-ayuda">MPOS</p>
+	      			<p><img src="images/ayudapf4.png" class="img-ayuda">MPOS</p>
 	      		</div></a>
 	      	</div>
       	</div>

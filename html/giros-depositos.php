@@ -81,9 +81,9 @@ $(function() {
             <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
               <li><a href="recargas-pines.php"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
               <li><a href="pago-cuentas.php" ><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
-              <li><a href="giros-depositos.php" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
+              <li class="acto"><a href="#sec1" class="tablinks" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
               <li><a href="ventas-tarjeta.php" ><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
-              <li class="acto"><a href="#sec1" class="tablinks"><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
+              <li><a href="tarj-alimentacion.php" ><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
               <li><a href="juegos-azar.php" ><div class="ico-bot-6"></div>Juegos de azar</a></li>
             </ul>
           </div> 
@@ -101,45 +101,83 @@ $(function() {
       			<div class="row">
 				      	  	<div class="container seccion-local-banc">
 				      			<div class="titulo-serv">
-				      				<h2>¡Acepta tarjetas de alimentación y haz crecer tu negocio!</h2>
+				      				<h2>¡Convierte tu local en una sucursal bancaria!</h2>
 				      			</div>
-				      			<div class="col-md-8 col-md-offset-2">
-				      				<div class="row">
-				      					<div class="col-md-4 banc"><img src="images/sodexo.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/edenred.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/amipass.jpg"></div>
-				      				</div>
-				      			</div>
-
-				      		
+				      		<div class="col-md-2 banc"><img src="images/bci.jpg"></div>
+				      		<div class="col-md-2 banc"><img src="images/bci-nova.jpg"></div>	
+				      		<div class="col-md-2 banc"><img src="images/tbanc.jpg"></div>	
+				      		<div class="col-md-2 banc"><img src="images/banefe.jpg"></div>	
+				      		<div class="col-md-2 banc"><img src="images/hites-pago.jpg"></div>	
+				      		<div class="col-md-2 banc"><img src="images/santander.jpg"></div>	
 	<span id="como-funciona"></span>	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-bene">
+				      	  <div class="gris-claro seccion-bene" >
 				
 				      		<div class="container" >
-						      		<div class="row bs-wizard" style="border-bottom:0;">
-				                
-				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <img src="images/alimentacion-empresa.jpg" class="img-tres-cir">
-				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
-				                  <div class="bs-wizard-info text-center">Podrás recibir pagos con tarjetas de  <span>alimentación de Junaeb y Empresa.</span></div>
-				                </div>
-				                
-				                <div class="col-sm-4 bs-wizard-step complete">
-				                  <img src="images/contacta-alimen.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center">Contacta a <span>Sodexo, Edenred o Amipass</span> y solicita el servicio.</div>
-				                </div>
-				                
-				                <div class="col-sm-4 bs-wizard-step active">
-				                  <img src="images/llamanos-mc.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailComercios@multicaja.cl" class="rojo">mailComercios@multicaja.cl</a>
-</div>
-				                </div>
-				                
-				            </div>
+						      		<div class="col-md-5 col-md-offset-1 ico-text-bene">
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/podras-ofrecer.jpg"><div class="txt-bene"><strong>Podrás ofrecer:</strong> Giros, depósitos, pagos de créditos y avances en efectivo.</div>
+						      			</div>
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/serv-sin-costo.jpg"><div class="txt-bene"><strong>Servicio sin costo</strong> para tus clientes o tu negocio.</div>
+						      			</div>
+						      		</div>
+						      		<div class="col-md-5 col-md-offset-1 ico-text-bene">
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/prepago.jpg"><div class="txt-bene"><strong>Prepago:</strong> debes cargar el saldo de tu terminal para operar.</div>
+						      			</div>
+						      			<div class="row caja-bene">						      				
+						      				<img src="images/tabla-rest.jpg"><div class="txt-bene"><strong>Tabla con restricciones</strong> para giros y depósitos </div>
+						      			</div>
+						      		</div>
+						      		<div class="extras-txt col-md-6 col-md-offset-3">
+						      				  <p><img src="images/down.png" class="caret-como-fun"><span>Giros:</span> Máximo <strong>$100.000 o 2 veces al día</strong> por cuenta bancaria</p>
+						      				  <p><img src="images/down.png" class="caret-como-fun"><span>Depósitos:</span> Máximo <strong>Bci $150.000, Santander $400.000 o 5 veces al día</strong> por cuenta</p>
+						      		</div>
 							</div>
 				      	  </div>
+
+				      	  <div class="gris-oscuro seccion-comision" >
+				      	  		<div class="mas-clientes mas-vendas">
+				      	  		<h2>suma este servicio<img src="images/sticker-like.jpg" class="sticker-like">y aumenta tu comisión</h2>
+				      	  		</div>
+				      	  		<p>Revisa las comisiones vigentes</p>
+				      	  		<a href="#comision-ancla"><button data-toggle="collapse" data-target="#comisiones" class="btn-lineal btn-comision">
+				      	  			comisiones
+				      	  		</button></a>
+				      	  		<div class="flecha_descubre">
+				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				            	</div>
+				            	
+				      	  </div>
+				      	  <div id="comisiones" class="collapse comisiones-escondido container-fluid">
+				      	  <div class="container">
+				      	  <div class="row">
+				      	  <div class="col-md-8 col-md-offset-2 row">
+				            	<table class="tabl-comisi tabla-comi-pago row" width="100%">
+									  <tr>
+									    <th class="rojito" width="50%">Servicio</th>
+									    <th class="rojito" width="50%">Comisión</th>
+									  </tr>									  
+									  <tr>
+									    <td class="gris-tabl">Giros <span>(Bci, Bci Nova y Tbanc)</span> y Avances Hites</td>
+									    <td>$66(*)</td>
+									  </tr>
+									  <tr>
+									    <td class="gris-tabl">Giro Santander y Santander Banefe</td>
+									    <td>$100</td>
+									  </tr>
+									  <tr>
+									    <td class="gris-tabl">Depósitos Bci Nova, Tbanc, Santander Banefe</td>
+									    <td>$66(*)</td>
+									  </tr>									  
+								</table>
+								<p class="letra-chica">(<span>*</span>) Comisión 0,00255 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
+							</div>
+							</div>
+							</div>
+				          </div>
 
 				      	  <div class="seccion-funciona" id="equipos">
 				      	  	<div class="titulo">
@@ -147,43 +185,46 @@ $(function() {
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-							      <div class="col-md-10 col-md-offset-1">
-							      	<div class="col-md-4 col-sm-6">
+							      <div class="col-md-8 col-md-offset-2">
+							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos1.jpg" class="pos-img" >
 							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico con conexión celular</h3>
-							      				<p><span>7.8 UF</span> + IVA / Anual</p>
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
+							      				<p><span>0,65 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
 							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>
-							      	<div class="col-md-4 col-sm-6">
+							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos2.jpg" class="pos-img">
 							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo con conexión celular</h3>
-							      				<p><span>6 UF</span> + IVA / Anual</p>
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
+							      				<p><span>0,5 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
 							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-							      	</div>
-							      	<div class="col-md-4 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos5.jpg" class="pos-img">
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">MPOS conectado al celular</h3>
-							      				<p><span>$19.990</span> + IVA*</p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica"><span>*</span>*MPOS lo pagas sólo una vez</div>
-							      	</div>
+							      	</div>	
 								</div>
 							</div>
 				      	  </div>
 
 				      	  </div>
 
+				      	  <div class="gris-claro">
+				      	  	<div class="container">
+				      	  	  <div class="row">
+				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left tx-giros-p">
+				      	  			<h2><span> ¡No pagues de más!</span><br><span class="tx-gris-bl">usa tu POS sin costos mensuales</span></h2>
+				      	  			<p>Si la suma del 10% del monto de otros servicios más la venta de recarga es mayor a 500.000</p>
+				      	  		</div>
+				      	  		<div class="col-md-3 col-sm-3">
+				      	  			<img src="images/pos-free.jpg" class="pos-free">
+				      	  		</div>
+				      	  	  </div>
+				      	  	</div>
+				      	  </div>
 
 				      	  </div>
 

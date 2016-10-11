@@ -38,6 +38,12 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
 .affix .navbar-header .navbar-brand{
     display: block;
   }
+.affix a button.serv-btn{
+    display: block;
+  }
+a button.serv-btn{
+    display: none;
+  }
   .nav-fix .tab-num > li > a {
   	padding-top: 10px!important;
   	padding-bottom: 10px!important
@@ -67,7 +73,14 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
   #section4 {padding-top:55px; height:auto; }
   #section5 {padding-top:55px; height:auto; }
   #section6 {padding-top:55px; height:auto; }
-
+  
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+    border: 0px solid #ddd;
+}
+.menu-medio .navbar-nav > .active > a, .menu-medio .navbar-nav > .active > a:hover, .menu-medio .navbar-nav > .active > a:focus {
+    color: #cc0000!important;
+    border-bottom: 3px solid #cc0000!important;
+}
 a.dropdown-toggle{
   color: #4a4a4a;
   font-weight: 600;
@@ -111,7 +124,9 @@ background: #f9f9f9;
     background-color: #ffffff!important;
     border-bottom: 3px solid #cc0000!important;
 }
-
+strong{
+	font-weight: 600!important;
+}
 .menu-header li .dropdown-menu > li > a {
     display: block;
     clear: both;
@@ -205,9 +220,6 @@ ul.menu-principal > li > a:hover, ul.menu-principal > li > a:focus {
     background-color: rgba(238, 238, 238, 0)!important;
     border:0px!important;
     outline: 0px!important;
-}
-.nav-tabs > li > a {
-    border: 0px solid transparent!important;
 }
 /*header logo - menu - boton*/
 .logo-comercios{
@@ -679,11 +691,9 @@ float: left!important;
 	height: 220px;
 }
 .serv1{
-	height: 63px;
 	margin-bottom: 23px;
 }
 .serv2{
-	height: 71px;
 	margin-bottom: 15px;
 }
 a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
@@ -699,6 +709,8 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	font-size: 28px;
 	font-style: italic;
 	line-height: 42px;
+	margin-top: 0px!important;
+	padding-top: 10px;
 }
 .mas-clientes h2 span{
 	font-weight: 700!important;
@@ -729,10 +741,11 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 .comisiones-escondido{
 	background: #fff;
 	border-bottom: 1px solid #c2c9c7;
+	padding-bottom: 30px;
 }
 .tabl-comisi{
 	margin-top: 55px;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 .tabl-comisi tr .gris-tabl{
 	padding: 15px 35px!important;
@@ -740,6 +753,9 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	font-size: 17px!important;
 	font-weight: 600;
 	color: #666666;
+}
+.tabl-comisi tr .gris-tabl span{
+	font-weight: 400;
 }
 .tabl-comisi tr .rojito{
 	padding: 15px !important;
@@ -1317,8 +1333,8 @@ a .ico-bot-6{background: url(../images/jue-azar.svg) no-repeat center top ;}
     border-bottom: 3px solid #cc0000!important;
 }
 .menu-medio .navbar-nav > li > a{
-    border-bottom: 3px solid rgba(204, 0, 0, 0)!important;
-        color: #646464!important;
+    border-bottom: 3px solid rgba(204, 0, 0, 0);
+        color: #646464;
 }
 .menu-medio {
 	height: 77px;
@@ -1396,7 +1412,7 @@ img.flecha_abajo {
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {
-	color: #3f3f3f; font-size: 17px; margin-top: 80px; padding: 0px 70px;}
+	color: #3f3f3f; font-size: 17px; margin-top: 10px; padding: 0px 45px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info span{
 	font-weight: 600;}
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {    
@@ -1440,10 +1456,6 @@ img.flecha_abajo {
 	padding-top: 90px;
 	padding-bottom: 85px;
 }
-.seccion-comision{
-	padding-top: 5px;
-	padding-bottom: 0px;
-}
 .seccion-comision p{
 	text-align: center;
 	font-size: 21px;
@@ -1455,6 +1467,7 @@ img.flecha_abajo {
 	border-bottom: 4px solid #b1b1b1;
 	text-align: center;
 	margin-top: 46px;
+	max-width: 257px;
 }
 .mas-vendas{
 	text-align: center;
@@ -1499,7 +1512,6 @@ img.flecha_abajo {
 .txt-pos-free{
 	padding-top: 50px;
     padding-left: 30px!important;
-    text-align: right;
 }
 .txt-pos-free h2{
 	font-size: 34px;
@@ -1514,6 +1526,20 @@ img.flecha_abajo {
 	text-transform: uppercase;
 	color: #cc3333;
 	font-weight: 900;
+}
+.txt-pos-free p{
+	font-size: 16px;
+	color: #838383;
+	font-style: italic;
+}
+.txt-rig{
+	text-align: right!important;
+}
+.txt-left{
+	text-align: left!important;
+}
+.txt-center{
+	text-align: center;
 }
 .pos-free{
 	margin-top: 23px;
@@ -1600,6 +1626,17 @@ input.error:focus{
 	    padding: 0px 80px;
 	    margin-bottom: 50px;
 }
+.lupita{
+	height: 19px;
+}
+.input-group-addon {
+    padding: 6px 18px!important;
+    background-color: #333!important;
+    border: 0px solid #ccc!important;
+}
+input[type=text].buscador-{
+    margin: 0px!important;
+}
 .consulta-convenio{
 	border-bottom: 1px solid #ccc;
 	height: 15px;
@@ -1611,6 +1648,7 @@ input.error:focus{
 .consulta-convenio p{
 	background: #fff;
 	font-size: 17px;
+	    font-weight: 600;
 	    display: inline;
     padding: 0px 5px;
 }
@@ -1627,6 +1665,137 @@ input.error:focus{
     font-size: 16px;
     color: #3f3f3f;
     font-weight: 700;
+}
+.ico-text-bene img{
+	    float: left;
+	    margin-right: 15px;
+
+}
+.txt-bene{
+	    width: 70%;
+	    font-size: 17px;
+	    color: #666666;
+	     margin-top: 10px;
+}
+.caja-bene{
+	margin: 30px 0px
+}
+.seccion-bene{
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+.seccion-nuevos-clientes{
+	background: #fff;
+	background-image: url('../images/fondo-atrae-clientes.jpg');
+	    width: 100%;
+        background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-top: 15px;
+}
+.tx-negro{
+	color: #373737!important;
+}
+.st1{
+	height: 19px;
+    margin-top: -10px;
+}
+.st2{
+	height: 33px;
+	    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+.nombre-buscar{
+	font-size: 17px;
+	color: #333;
+	text-align: center;
+}
+.bus-con{
+	text-align: center;
+    color: #898989;
+    margin-top: -20px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.check-pago{
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+	 margin-top: 10px;
+}
+.check-pago img{
+	margin-right: 5px;
+}
+.consultar-error{
+	margin-bottom: 30px;
+}
+.btn-quierosercomercio-lineal{
+	    text-transform: uppercase;
+    margin: 50px auto 35px!important;
+    display: block;
+    padding: 8px 35px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #d32929;
+    background: #fff;
+    font-size: 16px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+/*Giros y depósitos*/
+.banc img{
+	    margin: 0 auto;
+    display: inherit;
+}
+.banc{
+	padding:40px 0px 80px;
+}
+.tabla-comi-pago{
+	margin-bottom: 0px!important;
+}
+.extras-txt{
+    border-top: 1px solid #868787;
+    padding-top: 33px;
+    text-align: center;
+    color: #666666;
+    font-size: 15px;
+}
+.extras-txt span{
+   font-weight: 600;
+   color: #333333;
+}
+.tx-gris-bl{
+	color: #595959!important;
+}
+.tx-giros-p p{
+	font-style: normal;
+	font-size: 25px;
+	line-height: 29px;
+    margin-top: -7px;
+}
+/*Ventas con tarjeta*/
+.tarj-vent{
+	float: left;
+	width: 12.5%;
+}
+.img-tres-cir{
+	margin: 0 auto;
+    display: inherit;
+}
+/*Juegos de azar*/
+.txt-porcentaje-premio p{
+	text-align: center;
+    font-size: 23px;
+    font-style: italic;
+    border-bottom: 2px solid #4c4c4c;
+    float: left;
+    margin-top: 44px;
+    margin-left: 9%;
+}
+.txt-porcentaje-premio img{
+    float: left;
+    margin-top: 20px;
 }
 @media only screen and (max-width: 1199px) {
 	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {

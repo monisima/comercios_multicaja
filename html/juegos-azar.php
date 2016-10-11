@@ -14,7 +14,7 @@
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
 
 <!--font-->
-<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700italic,700,600,600italic,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700italic,700,600,600italic,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
 
 <!--javascript-->
@@ -39,7 +39,7 @@ $(function() {
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
 <div id="inicio"></div>
-       <?php include_once("header.php"); ?>
+      <?php include_once("header.php"); ?>
 
 	<div class="container">
 	 		<div class="col-md-12">
@@ -80,17 +80,19 @@ $(function() {
 		      <div class="collapse navbar-collapse menu-xs-retiro menu-servicios" id="superMenu" style="height: 1px;" aria-expanded="false">
             <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
               <li><a href="recargas-pines.php"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
-              <li><a href="pago-cuentas.php"><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
-              <li><a href="corresp-bancario.php"><div class="ico-bot-3"></div>Corresponsal Bancario</a><div class="lin-sep"></div></li>
+              <li><a href="pago-cuentas.php" ><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
+              <li><a href="giros-depositos.php"><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
               <li><a href="ventas-tarjeta.php"><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
               <li><a href="tarj-alimentacion.php"><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
-              <li class="acto"><a href="#sec1" class="tablinks"><div class="ico-bot-6"></div>Juegos de azar</a></li>
+              <li class="acto"><a  href="#sec1" class="tablinks"><div class="ico-bot-6"></div>Juegos de azar</a></li>
             </ul>
           </div> 
 		    
 		  </div>
-		</nav>   
+		  <a href="quiero-ser-comercio.php"><button type="button" class="btn btn-rojo border-btn-rojo serv-btn">QUIERO SER COMERCIO MULTICAJA</button></a> </div> 
  		
+		</nav> 
+
 <!--header-->
 
 	
@@ -98,199 +100,129 @@ $(function() {
       	  
       			<div class="row">
 				      	  	<div class="container">
-				      			<div class="titulo">
-				      				<h2>Esta hoja es Juegos de Azar</h2>
-				      				<p>Esta hoja es Juegos de Azar</p>
+				      			<div class="titulo-serv">
+				      				<h2>¡Dale suerte a tus clientes!</h2>
+      								<p>Ofrece Loto<span class="rojo">/</span> Loto3<span class="rojo">/</span> Loto4 </p>
 				      			</div>
-				      				<div class='row'>
-									    <div class='col-md-8 col-md-offset-2'>
-									      <div class="carousel slide media-carousel" id="media">
-									        <div class="carousel-inner">
-									          <div class="item  active">
-									            <div class="row">
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_03.jpg"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_05.jpg"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_07.jpg"></a>
-									              </div>
-									                <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_09.jpg"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_11.jpg"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="images/marcas_13.jpg"></a>
-									              </div>  
-									            </div>
-									          </div>
-									          <div class="item">
-									            <div class="row">
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									                <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>       
-									            </div>
-									          </div>
-									          <div class="item">
-									            <div class="row">
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									                <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>          
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>
-									              <div class="col-md-2">
-									                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
-									              </div>  
-									            </div>
-									          </div>
-									        </div>
-									        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-									        <a data-slide="next" href="#media" class="right carousel-control">›</a>
-									      </div>                          
-									    </div>
-				      			<div class="col-md-12 col-sm-12 flecha_descubre">
-				        			<a href="#como-funciona" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
-				            	</div>
-				      		</div>
+				      			<div class="col-md-8 col-md-offset-2">
+				      				<div class="row">
+				      					<div class="col-md-4 banc"><img src="images/loto.jpg"></div>
+				      					<div class="col-md-4 banc"><img src="images/loto3.jpg"></div>
+				      					<div class="col-md-4 banc"><img src="images/loto4.jpg"></div>
+				      				</div>
+				      			</div>	
+<span id="como-funciona"></span>				      		
 				      	  </div>
-				      	  <div class="gris-claro seccion-funciona" id="como-funciona">
-				      	  	<div class="titulo">
-				      				<h2 >¿Cómo funciona?</h2>
-				      		</div>
-				      		<div class="container">
+				      	  <div class="gris-claro seccion-funciona" >
+				
+				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
 				                
-				                <div class="col-xs-4 bs-wizard-step complete">
-				                  <div class="progress"><div class="progress-bar"></div></div>
-				                  <a class="bs-wizard-dot"><img src="images/celular-step.svg" class="step-img-cir1"></a>
-				                  <div class="bs-wizard-info text-center"><span>Vende recargas</span> telefónicas y pines de larga distancia.</div>
+				                <div class="col-sm-4 bs-wizard-step complete">
+				                 <img src="images/ofrece-juegos.jpg" class="img-tres-cir">
+				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
+				                  <div class="bs-wizard-info text-center"><span>Ofrece juegos de azar</span> en tu equipo Multicaja(*).</div>
+				                  <p class="letra-chica">(*)No se podrán canjear premios en tu comercio</p>
 				                </div>
 				                
-				                <div class="col-xs-4 bs-wizard-step complete"><!-- complete -->
-				                  <div class="progress"><div class="progress-bar"></div></div>
-				                  <a class="bs-wizard-dot"><img src="images/click-step.svg" class="step-img-cir2"></a>
-				                  <div class="bs-wizard-info text-center"><span>Montos de recarga flexibles</span> según compañía móvil.
-
-				</div>
+				                <div class="col-sm-4 bs-wizard-step complete">
+				                <img src="images/apuestas-al-azar.jpg" class="img-tres-cir">
+				                  <div class="bs-wizard-info text-center"><span>Las  apuestas pueden ser al azar</span> o con elección de números</div>
 				                </div>
 				                
-				                <div class="col-xs-4 bs-wizard-step active"><!-- complete -->
-				                  <div class="progress"><div class="progress-bar"></div></div>
-				                  <a class="bs-wizard-dot"><img src="images/caja-step.svg" class="step-img-cir3"></a>
-				                  <div class="bs-wizard-info text-center"><span>Prepago:</span> debes cargar el saldo de tu terminal para operar.</div>
+				                <div class="col-sm-4 bs-wizard-step active">
+				                <img src="images/revancha-desquite.jpg" class="img-tres-cir">
+				                  <div class="bs-wizard-info text-center">Opciones de<span> Revancha, Desquite y Multiplicador.</div>
 				                </div>
 				                
+				               	<div class="col-md-10 col-md-offset-1 txt-porcentaje-premio">
+				               	 <p>¡Si vendes un Loto ganador sobre 3 millones de pesos,<span class="rojo"> te llevas el 1% del premio! </span></p>
+				               	 <img src="images/copa.png">
+				               	</div>
 				            </div>
 							</div>
 				      	  </div>
 
-				      	  <div class="gris-oscuro seccion-comision">
+				      	  <div class="gris-oscuro seccion-comision" >
 				      	  		<div class="mas-clientes mas-vendas">
-				      	  		<h2>mientras más vendas<img src="images/sticker-like.jpg">más comisión ganas</h2>
+				      	  		<h2>mientras más vendas<img src="images/sticker-like.jpg" class="sticker-like">más comisión ganas</h2>
 				      	  		</div>
 				      	  		<p>Revisa las comisiones vigentes</p>
-				      	  		<div class="btn-lineal">
+				      	  		<a href="#comision-ancla"><button data-toggle="collapse" data-target="#comisiones" class="btn-lineal btn-comision">
 				      	  			comisiones
-				      	  		</div>
+				      	  		</button></a>
 				      	  		<div class="flecha_descubre">
 				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
+				            	
 				      	  </div>
+				      	  <div id="comisiones" class="collapse comisiones-escondido container-fluid">
+				      	  <div class="container">
+				      	  <div class="row">
+				      	  <div class="col-md-8 col-md-offset-2 row">
+				            	<table class="tabl-comisi row" width="100%">
+									  <tr>
+									    <th class="rojito">Servicio</th>
+									    <th class="rojito">% Comisión</th>
+									  </tr>
+									  <tr>
+									    <td class="gris-tabl">Loto, Loto3 y Loto4</td>
+									    <td>4,50%</td>
+									  </tr>									 
+									</table>
+							</div>
+							</div>
+							</div>
+				          </div>
 
-				      	  <div class="seccion-funciona" id="equipos">
+				      	   <div class="seccion-funciona" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-						      	<div class="col-md-3">
-						      		<div class="polaroid">
-						      		<img src="images/pos1.jpg">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-						      				<p><span>0,65 UF</span> + IVA / Mes</p>
-						      			</div>
-						      		</div>
-						      	</div>
-						      	<div class="col-md-3">
-						      		<div class="polaroid">
-						      		<img src="images/pos2.jpg">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-						      				<p><span>0,5 UF</span> + IVA / Mes</p>
-						      			</div>
-						      		</div>
-						      	</div>
-						      	<div class="col-md-3">
-						      		<div class="polaroid">
-						      		<img src="images/pos3.jpg">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Web</h3>
-						      				<p><span>Sin costo</span></p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Necesitas un computador con conexión a internet.</div>
-						      	</div>
-						      	<div class="col-md-3">
-						      		<div class="polaroid">
-						      		<img src="images/pos4.jpg">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Celular</h3>
-						      				<p><span>Sin costo</span></p>
-						      			</div>
-						      		</div>
-						      		<div class="letra-chica"><span>*</span>Necesitas un teléfono móvil con Sim Movistar</div>
-						      	</div>
-
-						      
+							      <div class="col-md-8 col-md-offset-2">
+							      	<div class="col-md-6 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos1.jpg" class="pos-img" >
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
+							      				<p><span>0,65 UF</span> + IVA / Mes</p>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	</div>
+							      	<div class="col-md-6 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos2.jpg" class="pos-img">
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
+							      				<p><span>0,5 UF</span> + IVA / Mes</p>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	</div>	
+								</div>
 							</div>
 				      	  </div>
 
 				      	  </div>
 
-				      	  <div class="gris-claro seccion-comision">
+				      	  <div class="gris-claro">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  		<div class="col-md-7 col-md-offset-1 txt-pos-free">
-				      	  			<h2>Si vendes más de 500.000 en recargas,<span> tu pos es gratis!</span></h2>
+				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left">
+				      	  			<h2><span> tu pos es gratis!</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
+				      	  			<p>(*) Se considera el monto de la venta de recarga y azar más el 10% del monto de otros servicios (pago de cuentas, corresponsalía bancaria, pago proveedores y SOAP)</p>
 				      	  		</div>
-				      	  		<div class="col-md-3">
-				      	  			<img src="images/pos-free.jpg">
+				      	  		<div class="col-md-3 col-sm-3">
+				      	  			<img src="images/pos-free.jpg" class="pos-free">
 				      	  		</div>
 				      	  	  </div>
-				      	  	</div>
-				      	  	<div class="flecha_descubre">
+				      	  	  <div class="flecha_descubre">
 						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
 						    </div>
+				      	  	</div>
 				      	  </div>
 
 				      	  </div>
@@ -298,6 +230,7 @@ $(function() {
       	</div>
 <!--content-->
 
+<!--Footerrrrrrrrrrrrr-->
 <!--Footerrrrrrrrrrrrr-->
 <?php include_once("footer.php"); ?>
 
