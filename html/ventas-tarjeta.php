@@ -68,7 +68,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-
+		    	 <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -100,21 +100,24 @@ $(function() {
       	  
       			<div class="row">
 				      	  	<div class="container seccion-local-banc">
-				      			<div class="titulo-serv">
-				      				<h2>¡Suma tarjetas de crédito y aumenta tus ventas!</h2>
-				      			</div>
-				      		<div class="banc tarj-vent"><img src="images/hites.jpg"></div>
-				      		<div class="banc tarj-vent"><img src="images/ripley.jpg"></div>	
-				      		<div class="banc tarj-vent"><img src="images/abcdin.jpg"></div>	
-				      		<div class="banc tarj-vent"><img src="images/corona.jpg"></div>	
-				      		<div class="banc tarj-vent"><img src="images/lapolar.jpg"></div>	
-				      		<div class="banc tarj-vent"><img src="images/cmr.jpg"></div>
-				      		<div class="banc tarj-vent"><img src="images/cruzverde.jpg"></div>	
-				      		<div class="banc tarj-vent"><img src="images/chilquinta.jpg"></div>	
-	<span id="como-funciona"></span>	
+				      	  		<div class="row">
+							      			<div class="titulo-serv">
+							      				<h2>¡Suma tarjetas de crédito y aumenta tus ventas!</h2>
+							      			</div>
+							      		<div class="banc tarj-vent"><img src="images/hites.jpg"></div>
+							      		<div class="banc tarj-vent"><img src="images/ripley.jpg"></div>	
+							      		<div class="banc tarj-vent"><img src="images/cmr.jpg"></div>
+							      		<div class="banc tarj-vent"><img src="images/corona.jpg"></div>	
+							      		<div class="banc tarj-vent"><img src="images/lapolar.jpg"></div>								      		
+							      		<div class="banc tarj-vent"><img src="images/abcdin.jpg"></div>	
+							      		<div class="banc tarj-vent"><img src="images/cruzverde.jpg"></div>	
+							      		<div class="banc tarj-vent"><img src="images/chilquinta.jpg"></div>	
+
+				<span id="como-funciona"></span>	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-bene">
+				      	  </div>
+				      	  <div class="gris-claro seccion-funciona">
 				
 				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
@@ -132,7 +135,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
 				                  <img src="images/llamanos.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailComercios@multicaja.cl" class="rojo">mailComercios@multicaja.cl</a> y serás contactado por un ejecutivo.
+				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailcomercios@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a> y serás contactado por un ejecutivo.
 </div>
 				                </div>
 				                
@@ -140,22 +143,21 @@ $(function() {
 							</div>
 				      	  </div>
 
-				      	  <div class="gris-oscuro seccion-comision container-fluid" >
+				      	  <div class="gris-oscuro seccion-comision container-fluid seccion-merch" >
+				      	  	<div class="container">	
 				      	  	<div class="col-md-2 col-md-offset-1"><img src="images/descubre-tarjetas.jpg"></div>
 				      	  	<div class="col-md-6">
 				      	  		<p>Descubre qué comisión debes pagar según tu rubro</p>
-				      	  		<a href="#"><button class="btn-lineal btn-comision">
+				      	  		<a href="#"><button class="btn-lineal btn-comision btn-merch">
 				      	  			VER Merchant Discount
 				      	  		</button></a>
-				      	  		<div class="flecha_descubre">
-				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
-				            	</div>
 				            </div>	
+				      	  </div>
 				      	  </div>
 
 				    
 
-				      	  <div class="seccion-funciona" id="equipos">
+				      	  <div class="seccion-equipos-venta-tar" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos </h2>
 				      		</div>
@@ -187,9 +189,11 @@ $(function() {
 							</div>
 							</div>
 				      	  </div>
-
+				      	  
 				      	  </div>
-
+							<div class="flecha_descubre flecha-retor-ini">
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+							</div>
 
 				      	  </div>
 

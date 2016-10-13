@@ -69,6 +69,8 @@ $(function() {
 		  <div class="container">
 		    <div class="navbar-header">
 
+		   <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
+		 
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -110,66 +112,66 @@ $(function() {
 									        <div class="carousel-inner">
 									          <div class="item  active ">
 									            <div class="row">
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_03.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_05.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_07.jpg"></a>
 									              </div>
-									                <div class="col-md-2 col-sm-2 col-xs-4">
+									                <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_09.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_11.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
 									              </div>  
 									            </div>
 									          </div>
 									          <div class="item">
 									            <div class="row">
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_03.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_05.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_07.jpg"></a>
 									              </div>
-									                <div class="col-md-2 col-sm-2 col-xs-4">
+									                <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_09.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_11.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
 									              </div>  
 									            </div>
 									          </div>  
 									           <div class="item">
 									            <div class="row">
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_03.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_05.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_07.jpg"></a>
 									              </div>
-									                <div class="col-md-2 col-sm-2 col-xs-4">
+									                <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_09.jpg"></a>
 									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_11.jpg"></a>
 									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-4">
+									              <div class="col-md-2 col-sm-2 col-xs-6">
 									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
 									              </div>  
 									            </div>
@@ -194,7 +196,6 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
 				                 <img src="images/vende-recargas.jpg" class="img-tres-cir">
-				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 				                  <div class="bs-wizard-info text-center"><span>Vende recargas</span> telefónicas y pines de larga distancia.</div>
 				                </div>
 				                
@@ -210,7 +211,7 @@ $(function() {
 				                  <div class="bs-wizard-info text-center"><span>Prepago:</span> debes cargar el saldo de tu terminal para operar.</div>
 				                </div>
 				                
-				            </div>
+				            </div><span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 							</div>
 				      	  </div>
 
@@ -230,7 +231,7 @@ $(function() {
 				      	  <div id="comisiones" class="collapse comisiones-escondido container-fluid">
 				      	  <div class="container">
 				      	  <div class="row">
-				      	  <div class="col-md-8 col-md-offset-2 row">
+				      	  <div class="col-md-8 col-md-offset-2 row col-sm-12">
 				            	<table class="tabl-comisi row" width="100%">
 									  <tr>
 									    <th colspan="2" class="rojito">Venta Mensual de Recarga por Terminal</th>
@@ -370,7 +371,7 @@ $(function() {
 				      	  <div class="gris-claro seccion-comision">
 				      	  	<div class="container">
 				      	  	  <div class="row">				      	  	  
-				      	  		<div class="col-md-7 col-md-offset-1 col-sm-7 txt-pos-free txt-rig">
+				      	  		<div class="col-md-7 col-md-offset-1 col-sm-7 txt-pos-free txt-rig padding-titulo-casi">
 				      	  			<h2>¡Si vendes más de 500.000 en recargas,<span> tu pos es gratis!</span></h2>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">

@@ -68,7 +68,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-
+		    		 <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -106,21 +106,19 @@ $(function() {
 				      			</div>
 				      			<div class="col-md-8 col-md-offset-2">
 				      				<div class="row">
-				      					<div class="col-md-4 banc"><img src="images/loto.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/loto3.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/loto4.jpg"></div>
+				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto.jpg" class="loto-azar"></div>
+				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto3.jpg" class="loto3-azar"></div>
+				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto4.jpg" class="loto4-azar"></div>
 				      				</div>
-				      			</div>	
-<span id="como-funciona"></span>				      		
+				      			</div>				      		
 				      	  </div>
 				      	  <div class="gris-claro seccion-funciona" >
-				
 				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
 				                 <img src="images/ofrece-juegos.jpg" class="img-tres-cir">
-				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
+
 				                  <div class="bs-wizard-info text-center"><span>Ofrece juegos de azar</span> en tu equipo Multicaja(*).</div>
 				                  <p class="letra-chica">(*)No se podrán canjear premios en tu comercio</p>
 				                </div>
@@ -140,6 +138,7 @@ $(function() {
 				               	 <img src="images/copa.png">
 				               	</div>
 				            </div>
+				            <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 							</div>
 				      	  </div>
 
@@ -190,7 +189,7 @@ $(function() {
 							      				<p><span>0,65 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>
 							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
@@ -200,7 +199,7 @@ $(function() {
 							      				<p><span>0,5 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>	
 								</div>
 							</div>

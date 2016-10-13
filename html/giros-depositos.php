@@ -68,7 +68,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-
+		    		 <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -103,16 +103,16 @@ $(function() {
 				      			<div class="titulo-serv">
 				      				<h2>¡Convierte tu local en una sucursal bancaria!</h2>
 				      			</div>
-				      		<div class="col-md-2 banc"><img src="images/bci.jpg"></div>
-				      		<div class="col-md-2 banc"><img src="images/bci-nova.jpg"></div>	
-				      		<div class="col-md-2 banc"><img src="images/tbanc.jpg"></div>	
-				      		<div class="col-md-2 banc"><img src="images/banefe.jpg"></div>	
-				      		<div class="col-md-2 banc"><img src="images/hites-pago.jpg"></div>	
-				      		<div class="col-md-2 banc"><img src="images/santander.jpg"></div>	
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci.jpg"></div>
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci-nova.jpg"></div>	
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/tbanc.jpg"></div>	
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/banefe.jpg"></div>	
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/hites-pago.jpg"></div>	
+				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/santander.jpg"></div>	
 	<span id="como-funciona"></span>	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-bene" >
+				      	  <div class="gris-claro seccion-giros-dep" >
 				
 				      		<div class="container" >
 						      		<div class="col-md-5 col-md-offset-1 ico-text-bene">
@@ -134,7 +134,7 @@ $(function() {
 						      		<div class="extras-txt col-md-6 col-md-offset-3">
 						      				  <p><img src="images/down.png" class="caret-como-fun"><span>Giros:</span> Máximo <strong>$100.000 o 2 veces al día</strong> por cuenta bancaria</p>
 						      				  <p><img src="images/down.png" class="caret-como-fun"><span>Depósitos:</span> Máximo <strong>Bci $150.000, Santander $400.000 o 5 veces al día</strong> por cuenta</p>
-						      		</div>
+						      		</div><span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 							</div>
 				      	  </div>
 
@@ -194,7 +194,7 @@ $(function() {
 							      				<p><span>0,65 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>
 							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
@@ -204,7 +204,7 @@ $(function() {
 							      				<p><span>0,5 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>	
 								</div>
 							</div>
@@ -224,6 +224,9 @@ $(function() {
 				      	  		</div>
 				      	  	  </div>
 				      	  	</div>
+				      	  	<div class="flecha_descubre">
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+							</div>
 				      	  </div>
 
 				      	  </div>

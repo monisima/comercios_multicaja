@@ -5,9 +5,9 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 caja-redes">
 		      	<div class="txt-redes">
 			      	<p>Encuéntranos en: </p>
-			      	<img src="images/f.svg" class="redes-sociales">
-			      	<img src="images/yt.svg" class="redes-sociales">
-			      	<img src="images/twt.svg" class="redes-sociales">
+			      	<a href=""><img src="images/f.svg" class="redes-sociales"></a>
+			      	<a href=""><img src="images/yt.svg" class="redes-sociales"></a>
+			      	<a href=""><img src="images/twt.svg" class="redes-sociales"></a>
 			    </div> 	
 		      	<div class="linea-footer rig"></div>
 		      </div>
@@ -23,7 +23,7 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 ayuda">
 		      <div class="linea-footer"></div>
 			      <div class="txt-ayuda">
-			      	<span>¿Necesitas ayuda?</span>
+			      	<a href="#"><span>¿Necesitas ayuda?</span></a>
 			      	
 			      </div>
 		      </div>

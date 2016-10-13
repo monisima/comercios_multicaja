@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 
+
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
 
@@ -20,6 +21,7 @@
 <!--javascript-->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
  <script>
 $(function() {
   $('.tablinks, .flecha_ancla').click(function() {
@@ -68,7 +70,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-
+		    		<a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -103,19 +105,18 @@ $(function() {
 				      			<div class="titulo-serv">
 				      				<h2>La más amplia oferta de convenios del mercado</h2>
 				      			</div>
-				      		<div class="col-md-10 col-md-offset-1">
-				      			<ul class="nav nav-tabs tab-cuentas">
-								    <li class="active"><a data-toggle="tab" href="#agua">Agua</a> <span>•</span> </li>
-								    <li><a data-toggle="tab" href="#gas">Gas</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#luz">Luz</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#telefonia">Telefonía</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#internet">Internet</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#autopistas">Autopistas</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#cosmeticos">Cosméticos</a><span>•</span> </li>
-								    <li><a data-toggle="tab" href="#retail">Retail</a></li>
-								</ul>
-
-								  <div class="tab-content contenido-tab-cuenta">
+				      		<div class="col-md-10 col-md-offset-1 fondo-blanco">
+					      			<ul class="nav nav-tabs tab-cuentas" id="myTab">
+									    <li class="active"><a data-toggle="tab" href="#agua">Agua</a> <span>•</span> </li>
+									    <li><a data-toggle="tab" href="#gas">Gas</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#luz">Luz</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#telefonia">Telefonía</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#internet">Internet</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#autopistas">Autopistas</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#cosmeticos">Cosméticos</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#retail">Retail</a></li>
+									</ul>
+								  <div class="tab-content contenido-tab-cuenta"  id="myTabContent">
 								    <div id="agua" class="tab-pane fade in active">								     
 								      <p>Aguas Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
 								    </div>
@@ -141,6 +142,8 @@ $(function() {
 								       <p>RETAIL Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
 								    </div>
 								  </div>
+					</div>
+					<div class="col-md-10 col-md-offset-1">
 		<span id="como-funciona"></span>	
 								<div id="consultar-convenio">
 								  <div class="consulta-convenio col-md-12"><p>Consulta el convenio que necesitas</p></div>	
@@ -148,12 +151,12 @@ $(function() {
 								</div>
 								<div id="consultar-convenio">
 								  <div class="consulta-convenio col-md-12"><p>¿No encuentras el convenio que necesitas?</p></div>	
-								  		<div class="col-md-6 col-md-offset-3">
+								  		<div class="col-md-6 col-md-offset-3 padding-buscador">
 								  			<div class="row">
 										  		<p class="bus-con">Busca un convenio específico</p>
 										  		<p class="nombre-buscar">Ingresa el nombre de la empresa que deseas buscar</p>
 										  		<div class="input-group ">										  
-												  <input type="text" class="form-control buscador-" placeholder="Nombre de usuario">
+												  <input type="text" class="form-control buscador-" placeholder="Ingresa nombre empresa">
 												  <span class="input-group-addon"><img src="images/lupa-buscar.svg" class="lupita"></span>
 												</div>
 												<p class="check-pago"><img src="images/check.jpg">Ofrecemos el pago de las cuentas de la empresa buscada.</p>
@@ -167,14 +170,14 @@ $(function() {
 								<div id="consultar-convenio-error">	
 										<div class="col-md-12 consultar-error">				  
 										  		<p class="check-pago"><img src="images/atencion.jpg">Lamentablemente no tenemos convenio con la empresa que buscas.<br>
-		Verifica que esté bien escrita, si no aparece contáctanos y dinos el convenio que necesitas para ver si lo podemos conseguir.
+		Verifica que esté bien escrita, si no aparece <a href="#" class="rojo">contáctanos</a> y dinos el convenio que necesitas para ver si lo podemos conseguir.
 		</p>
 										</div>			
 								</div>
 
 
 								  
-							</div>	
+						</div>	
 	
 								
 				      	  </div>
@@ -197,7 +200,7 @@ $(function() {
 						      				<img src="images/aumenta-ingresos.jpg"><div class="txt-bene"><strong>Aumenta tus ingresos</strong> a través de comisiones por vender este servicio.</div>
 						      			</div>
 						      		</div>
-							</div>
+							</div><span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 				      	  </div>
 
 				      	  <div class="gris-oscuro seccion-comision" >
@@ -223,11 +226,11 @@ $(function() {
 									    <th class="rojito" width="50%">Comisión Monto por transacción</th>
 									  </tr>									  
 									  <tr>
-									    <td class="gris-tabl">Pago de Cuentas Santander (excepto servicios de Luz y Agua)</td>
+									    <td class="gris-tabl">Pago de Cuentas Santander <span>(excepto servicios de Luz y Agua)</span></td>
 									    <td>$66(*)</td>
 									  </tr>
 									  <tr>
-									    <td class="gris-tabl">Pago de Cuentas Sencillito (excepto servicios de Luz, Agua, Telefonía, TV e Internet)</td>
+									    <td class="gris-tabl">Pago de Cuentas Sencillito <span>(excepto servicios de Luz, Agua, Telefonía, TV e Internet)</span></td>
 									    <td>$66(*)</td>
 									  </tr>
 									  <tr>
@@ -261,7 +264,7 @@ $(function() {
 							      				<p><span>0,65 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
@@ -271,7 +274,7 @@ $(function() {
 							      				<p><span>0,5 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 							      	</div>
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
@@ -281,7 +284,7 @@ $(function() {
 							      				<p><span>Sin costo</span></p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Necesitas un computador con conexión a internet.</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Necesitas un computador con conexión a internet.</div>
 							      	</div>
 								</div>
 							</div>
@@ -292,8 +295,8 @@ $(function() {
 				      	  <div class="gris-claro">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left">
-				      	  			<h2><span> tu pos es gratis!</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
+				      	  		<div class="col-md-8 col-sm-8 txt-pos-free txt-left">
+				      	  			<h2><span> tu pos es gratis</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
 				      	  			<p>(*) Se considera el monto de la venta de recarga y azar más el 10% del monto de otros servicios (pago de cuentas, corresponsalía bancaria, pago proveedores y SOAP)</p>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">
@@ -307,15 +310,19 @@ $(function() {
 				      	  <div class="seccion-nuevos-clientes">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  	  <div class="col-md-3 col-sm-3">
-				      	  			<img src="images/cupon-de-pago-cel.png">
+				      	  	  <div class="col-md-3 col-sm-5">
+				      	  			<img src="images/cupon-de-pago-cel.png" class="pos-pago">
 				      	  		</div>
-				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-center">
+				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-center col-sm-7">
 				      	  			<h2><img src="images/star.svg" class="st1"><img src="images/star.svg"  class="st2"><span>atrae nuevos</span><span class="tx-negro"> clientes</span><img src="images/star.svg"  class="st2"><img src="images/star.svg"  class="st1"> <br>con el cupón de pago de multicaja</h2>
 				      	  			
 				      	  		</div>				      	  		
 				      	  	  </div>
 				      	  	</div>
+				      	  	<div class="flecha_descubre flecha-pago-cuentas">
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+							</div>
+
 				      	  </div>
 
 
@@ -359,6 +366,12 @@ $(document).ready(function() {
 	});
 	
 });
+</script>
+<!-- Bootstrap TabCollapse-->
+<script type="text/javascript" src="js/bootstrap-tabcollapse.js"></script>
+
+<script type="text/javascript">
+    $('#myTab').tabCollapse();
 </script>
 </body>
 </html>

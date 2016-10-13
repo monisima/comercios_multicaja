@@ -22,8 +22,8 @@
 <script src="js/bootstrap.min.js"></script>
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="65">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="20">
+<div id="inicio"></div>
 		<?php include_once("header.php"); ?>
 
 <div class="container">
@@ -82,7 +82,7 @@
 				       	<a href="#" class="link-quiero"><p>Olvidé mi clave</p></a>
 				        <button type="button" class="btn-rojo btn-block btn-login">ENTRAR</button>
 				        <div class="foot-login"><a href="quiero-ser-comercio.php" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
-				    </div> 
+				  </div> 
 		          <div class="col-md-9 col-sm-12">
 		          <div class="row txt-banner-cont">
 				  <div class="texto-banner col-md-4 col-sm-4 col-xs-12">
@@ -100,18 +100,14 @@
 		   </div>
 		</div><!-- End Item -->
 		 <div class="item">
-		   <img src="images/banner_fondo1.jpg" class="bann-img">
-		      <div class="container caja-tx-banner">
-		          <div class="col-md-3"></div>
-		          <div class="texto-banner col-md-6"></div>
-			  </div>
+		    <div class="banner-fondo-img bann-img">
+					      
+			</div>
 		</div><!-- End Item -->
 		 <div class="item">
-		   <img src="images/banner_fondo1.jpg" class="bann-img">
-		      <div class="container caja-tx-banner">
-		          <div class="col-md-3"></div>
-		          <div class="texto-banner col-md-6"></div>
-			  </div>
+		    <div class="banner-fondo-img bann-img">
+					      
+			</div>
 		</div><!-- End Item -->
       </div><!-- End Carousel Inner -->
 
@@ -131,35 +127,18 @@
 </div>
 
 	
-		<nav class="nav-fix navbar navbar-default" data-spy="affix" data-offset-top="555">
+		<nav class="nav-fix-home navbar navbar-default" data-spy="affix" data-offset-top="555">
 		  <div class="container">
 		    <div class="navbar-header">
 		    	<a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo">QUIERO SER COMERCIO MULTICAJA</button></a>
-
-		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#myNavbar2">
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>
-		          <span class="icon-bar"></span>                        
-		      </button>
-		    
 		    </div>
-		    
-		      <div class="collapse navbar-collapse menu-xs-retiro" id="myNavbar2" style="height: 1px;" aria-expanded="false">
-		        <ul class="nav navbar-nav collapse-xs-menu">
-		          <li><a href="#section1" class="sec_ancla"  >Servicios</a></li>
-		          <li><a href="#section2"  class="sec_ancla" >Simula tus comisiones</a></li>
-		          <li><a href="#section3"  class="sec_ancla"  >Beneficios</a></li>
-		          <li><a href="#section4"  class="sec_ancla"  >¿Necesitas ayuda?</a></li>
-		        </ul>
-		      </div>
-		    
 		  </div>
 		</nav>   
  		
 <!--header-->
 
       	<div id="section1" class="container ">
-      	<div class="row col-md-12 col-sm-12 tx_center">
+      	<div class="col-md-12 col-sm-12 tx_center">
       		<div class="titulo">
       				<h2>Más servicios para tu negocio</h2>
       				<p>Únete a la red de comercios Multicaja</p>
@@ -209,14 +188,18 @@
 					</div>
 				  </a>
 				</div>
-
+			</div>	
 			</div>
-			</div>
+		<div class="col-md-12 col-sm-12 flecha_descubre flecha-home-serv">
+		  <div class="row">
+			<a href="#section-mas-ventas" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+		</div>
+		</div>
       	</div>
-      	<div id="section2" class="container-fluid ">
+      	<div class="container-fluid ">
       	  <div class="row">
       		<div class="gris-oscuro cte-comercio">
-      			<div class="container">
+      			<div class="container" id="section-mas-ventas">
 	      			<div class="col-md-4 col-sm-6 col-xs-12">
 	      				<img src="images/comercio-clientes.svg" class="comercio-cliente">
 	      			</div>
@@ -291,6 +274,9 @@
 	      			<p><img src="images/ayudapf4.png" class="img-ayuda">MPOS</p>
 	      		</div></a>
 	      	</div>
+	      	<div class="flecha_descubre flecha-retor-ini">
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+			</div>
       	</div>
 <!--content-->
 

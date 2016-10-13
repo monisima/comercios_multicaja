@@ -68,7 +68,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-
+		    		 <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -105,9 +105,9 @@ $(function() {
 				      			</div>
 				      			<div class="col-md-8 col-md-offset-2">
 				      				<div class="row">
-				      					<div class="col-md-4 banc"><img src="images/sodexo.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/edenred.jpg"></div>
-				      					<div class="col-md-4 banc"><img src="images/amipass.jpg"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/sodexo.jpg" class="sodexo-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/edenred.jpg" class="edenred-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/amipass.jpg" class="amipass-banc"></div>
 				      				</div>
 				      			</div>
 
@@ -115,7 +115,7 @@ $(function() {
 	<span id="como-funciona"></span>	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-bene">
+				      	  <div class="gris-claro seccion-funciona">
 				
 				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
@@ -133,7 +133,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
 				                  <img src="images/llamanos-mc.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailComercios@multicaja.cl" class="rojo">mailComercios@multicaja.cl</a>
+				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailcomercios@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a>
 </div>
 				                </div>
 				                
@@ -141,7 +141,7 @@ $(function() {
 							</div>
 				      	  </div>
 
-				      	  <div class="seccion-funciona" id="equipos">
+				      	  <div class="seccion-equipos-venta-tar" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
@@ -151,39 +151,41 @@ $(function() {
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos1.jpg" class="pos-img" >
-							      			<div class="text-equipos">
+							      			<div class="text-equipos alimenta-tx">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico con conexión celular</h3>
 							      				<p><span>7.8 UF</span> + IVA / Anual</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	
 							      	</div>
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos">
+							      			<div class="text-equipos alimenta-tx">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo con conexión celular</h3>
 							      				<p><span>6 UF</span> + IVA / Anual</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	
 							      	</div>
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos5.jpg" class="pos-img">
-							      			<div class="text-equipos">
+							      			<div class="text-equipos alimenta-tx">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">MPOS conectado al celular</h3>
 							      				<p><span>$19.990</span> + IVA*</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica"><span>*</span>*MPOS lo pagas sólo una vez</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>MPOS lo pagas sólo una vez</div>
 							      	</div>
 								</div>
 							</div>
 				      	  </div>
 
 				      	  </div>
-
+				      	  <div class="flecha_descubre flecha-retor-ini">
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+							</div>
 
 				      	  </div>
 

@@ -29,24 +29,24 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
       width: 100%;
       z-index: 9999 !important;
   }
+  .navbar-header .navbar-brand.btn-rojo {
+    display: none !important;
+}
 .caret {
     border-top: 5px dashed!important;
     border-top: 5px solid!important;
     border-right: 5px solid transparent!important;
     border-left: 5px solid transparent!important;
 }
-.affix .navbar-header .navbar-brand{
-    display: block;
-  }
+  
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    background-color: #990000!important;
+}
 .affix a button.serv-btn{
     display: block;
   }
 a button.serv-btn{
     display: none;
-  }
-  .nav-fix .tab-num > li > a {
-  	padding-top: 10px!important;
-  	padding-bottom: 10px!important
   }
     .affix ~ .container-fluid {
      position: relative;
@@ -54,9 +54,8 @@ a button.serv-btn{
   }
     .affix ~ .container {
      position: relative;
-     top: 85px;
+     top: 75px;
   } 
-
  .navbar-header .navbar-brand{
     display: none;
     height: 40px;
@@ -382,7 +381,7 @@ background: url(../images/banner_fondo1.jpg) no-repeat;
 	background: #fff;
 	z-index: 2;
 	text-align:left;
-	padding: 36px 42px 0px!important;
+	padding: 30px 40px 0px!important;
     color:#333;
     margin-top: 5px;
 }
@@ -394,8 +393,8 @@ background: url(../images/banner_fondo1.jpg) no-repeat;
 }
 .login-user p{
 	text-align: right;
-	margin-top: 5px;
 	margin-bottom: 10px!important;
+	    margin-top: 10px;
 }
 .img-login{
 	height: 23px;
@@ -411,7 +410,7 @@ input[type=text] {
 input[type=password] {
     width: 100%;
     padding: 5px 10px;
-    margin: 20px 0px 0px;
+    margin: 30px 0px 0px;
     box-sizing: border-box;
     font-size: 15px;
 }
@@ -487,9 +486,12 @@ pre {
     border-bottom: 3px solid rgba(204, 0, 0, 0);
     color: #6d6d6d;
     background-color: transparent!important;
-    padding-top: 25px;
 }
-
+.menu-medio .navbar-nav > li > a {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+    line-height: 20px!important;
+}
  .nav-fix .navbar-brand {
 	border-bottom: 3px solid #971111!important;
     color: #FFF!important;
@@ -526,6 +528,9 @@ text-decoration: none!important;
 	float: left;
 	height: 30px;
 	margin-right: 10px;
+}
+.redes-sociales:hover {
+    opacity: 0.7;
 }
 #footer{
 	color: #fff;
@@ -696,6 +701,13 @@ float: left!important;
 .serv2{
 	margin-bottom: 15px;
 }
+.flecha-home-serv{
+	margin-top: 30px;
+    margin-bottom: 10px;
+}
+.flecha-retor-ini{
+	margin-bottom: 10px;
+}
 a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	text-decoration: none;
 }
@@ -710,7 +722,7 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	font-style: italic;
 	line-height: 42px;
 	margin-top: 0px!important;
-	padding-top: 10px;
+	padding-top: 18px;
 }
 .mas-clientes h2 span{
 	font-weight: 700!important;
@@ -730,13 +742,13 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	padding: 15px;
 	width: 100%;
 	max-width:244px; 
-	margin-top: 30px;
+	margin-top: 35px;
 }
 .btn-comision{
 	background: #313131;
     float: none;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 .comisiones-escondido{
 	background: #fff;
@@ -753,6 +765,7 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	font-size: 17px!important;
 	font-weight: 600;
 	color: #666666;
+	text-align: left;
 }
 .tabl-comisi tr .gris-tabl span{
 	font-weight: 400;
@@ -770,6 +783,7 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	border: 1px solid #cccccc;
 	font-size: 16px;
 	color: #808080;
+	text-align: center;
 
 }
 .cte-comercio{
@@ -784,6 +798,7 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 .servi-comi strong{
 	font-size: 18px;
 	color: #4c4c4c;
+	font-weight: 700!important;
 }
 .servi-comi{
 	font-size: 16px;
@@ -804,13 +819,13 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	padding-right: 30px;
 }
 .img-ayuda{
-	height: 54px;
 	margin-right: 15px;
 }
 .caj-ayuda{
 	display: flex;
 	padding: 30px 20px 24px;
-	margin-bottom: 115px;
+	margin-bottom: 45px;
+		height: 110px;
 }
 .caj-ayuda p{
 	vertical-align: middle;
@@ -973,6 +988,14 @@ padding-right: 20px;
 	padding-top: 40px;
 	padding-bottom: 30px;
 	padding-left: 54px !important;
+}
+.nav-tabs.tab-num > li > a {
+    border-bottom: 3px solid rgba(204, 0, 0, 0)!important;
+    border-radius: 0px!important;
+}
+.nav-tabs.tab-num > li.acto > a {
+    border-bottom: 3px solid #cc0000!important;
+    border-radius: 0px!important;
 }
  /*Ayuda*/
  .dudas{
@@ -1294,7 +1317,10 @@ ul.tab-num li a:focus, .active { color: #3399cc!important;}
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
+.acto a {
+	color: #cc0000!important;
+    border-bottom: 3px solid #cc0000!important;
+}
 .ico-bot-1{width:23px; height: 31px;}
 .ico-bot-2{width:35px; height: 31px;}
 .ico-bot-3{width:42px; height: 34px;}
@@ -1316,10 +1342,7 @@ a .ico-bot-6{background: url(../images/jue-azar.svg) no-repeat center top ;}
 .acto a .ico-bot-5, a:hover .ico-bot-5{background: url(../images/tarjeta-alim_hover.svg) no-repeat center top ;}
 .acto a .ico-bot-6, a:hover .ico-bot-6{background: url(../images/jue-azar_hover.svg) no-repeat center top ;}
 
-.acto a {
-	color: #cc0000!important;
-    border-bottom: 3px solid #cc0000!important;
-}
+
 .lin-sep{
 	width: 1px;
 	height: 42px;
@@ -1328,20 +1351,23 @@ a .ico-bot-6{background: url(../images/jue-azar.svg) no-repeat center top ;}
     bottom: 0;
     right: 0;
 }
-.menu-medio .navbar-nav > li > a:hover, .menu-medio .navbar-nav > li > a:focus {
+.menu-medio .navbar-nav > li > a:hover, .menu-medio .navbar-nav > li > a:focus, .nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
     color: #cc0000!important;
     border-bottom: 3px solid #cc0000!important;
+    border-top: 1px solid rgba(255, 0, 0, 0)!important;
+    border-left: 1px solid rgba(255, 0, 0, 0)!important;
+    border-right: 1px solid rgba(255, 0, 0, 0)!important;
 }
 .menu-medio .navbar-nav > li > a{
     border-bottom: 3px solid rgba(204, 0, 0, 0);
-        color: #646464;
+    color: #646464;
+    border-radius: 0px!important;
 }
 .menu-medio {
-	height: 77px;
+	height: 78px;
 }
 .flecha_descubre {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     text-align: center;
 }
 img.flecha_abajo {
@@ -1412,7 +1438,7 @@ img.flecha_abajo {
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {
-	color: #3f3f3f; font-size: 17px; margin-top: 10px; padding: 0px 45px;}
+	color: #666666; font-size: 17px; margin-top: 10px; padding: 0px 45px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info span{
 	font-weight: 600;}
 .bs-wizard > .bs-wizard-step > .bs-wizard-dot {    
@@ -1460,6 +1486,8 @@ img.flecha_abajo {
 	text-align: center;
 	font-size: 21px;
 	color: #ffffff;
+	    margin-bottom: 20px;
+    margin-top: -10px;
 }
 .polaroid{
 	border: 1px solid #e9e9e9;
@@ -1471,6 +1499,7 @@ img.flecha_abajo {
 }
 .mas-vendas{
 	text-align: center;
+	padding-top: 15px;
 }
 .text-equipos h3{
 	font-size: 18px;
@@ -1585,13 +1614,36 @@ img.flecha_abajo {
 .error-tx{
 	color:#cc3333;
 	font-size: 14px;
+	position: absolute;
 	 
 }
 input.error:focus{
     border: 1px solid #cc0000;
         padding: 6px 10px;
 }
+.padding-titulo-casi{
+	padding-top: 75px!important;
+}
 /*PAgo de cuentas*/
+ .fondo-blanco{
+ 	background: #fff;
+ 	z-index: 999;
+ }
+.padding-buscador{
+	padding: 0 50px!important;
+}
+.flecha-pago-cuentas{
+	position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+}
+.caja-texto-descrip{
+	width: 100%;
+	max-width: 238px;
+}
 .tab-cuentas li span{
 	float: right;
 	display: inline;
@@ -1605,6 +1657,7 @@ input.error:focus{
 	font-size: 17px;
 	color: #494949;
 	padding: 0px 18px 3px!important;
+	border:0px!important;
 }
 .tab-cuentas > li.active > a, .tab-cuentas > li.active > a:hover, .tab-cuentas > li.active > a:focus, .tab-cuentas > li > a:hover {
     color: #fff!important;
@@ -1613,11 +1666,12 @@ input.error:focus{
     border-radius: 13px;
     -webkit-border-radius: 13px;
 -moz-border-radius:13px;
+border:0px!important;
 }
 .tab-cuentas{
 	border-bottom: 0px!important;
 	    margin-top: 30px;
-	        width: 85%;
+	        width: 86%;
 }
 .contenido-tab-cuenta .tab-pane p{
 	color: #8d8d8c;
@@ -1744,6 +1798,9 @@ input[type=text].buscador-{
     font-weight: 700;
 }
 /*Giros y depósitos*/
+.seccion-giros-dep{
+	    padding: 40px 0px;
+}
 .banc img{
 	    margin: 0 auto;
     display: inherit;
@@ -1782,6 +1839,20 @@ input[type=text].buscador-{
 .img-tres-cir{
 	margin: 0 auto;
     display: inherit;
+}
+.alimenta-tx{
+	max-width: 200px;
+}
+.seccion-merch{
+	padding-top: 60px;
+    padding-bottom: 40px;
+}
+.btn-merch{
+	max-width: 270px!important;
+}
+.seccion-equipos-venta-tar{
+	padding-top: 40px;
+    padding-bottom: 50px;
 }
 /*Juegos de azar*/
 .txt-porcentaje-premio p{
@@ -1832,6 +1903,27 @@ input.simula {
 	width: 100%;
 	max-width: 90px;
 	margin-right: 10px;
+}
+.tab-cuentas {
+    border-bottom: 0px !important;
+    margin-top: 30px;
+    width: 88%;
+}
+.tab-cuentas > li > a{
+	padding: 0px 10px 3px!important;
+}
+.tab-cuentas > li.active > a, .tab-cuentas > li.active > a:hover, .tab-cuentas > li.active > a:focus, .tab-cuentas > li > a:hover {
+        padding: 0px 10px 3px!important;
+}
+.tarj-vent {
+    float: left;
+    width: 25%;
+}
+.txt-porcentaje-premio p {
+    width: 60%;
+}
+.txt-porcentaje-premio img {
+    margin-top: 52px;
 }
 }
 @media only screen and (max-width: 991px) {
@@ -1934,6 +2026,44 @@ position: relative;
     padding-bottom: 10px;
     padding-left: 54px !important;
 }
+.tab-cuentas {
+    border-bottom: 0px !important;
+    margin-top: 30px;
+    width: 96%;
+}
+.caja-bene {
+    margin: 30px auto !important;
+    float: none;
+    display: inherit;
+    width: 75%;
+}
+img.pos-pago {
+    width: 100%;
+    max-width: 413px;
+}
+.txt-pos-free {
+    padding-top: 0px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.seccion-nuevos-clientes {
+    padding-top: 0px;
+}
+.banc {
+    padding: 10px 0px 40px;
+    height: 130px;
+}
+.ico-bot-1{width:23px; height: 24px;}
+.ico-bot-2{width:35px; height: 25px;}
+.ico-bot-3{width:42px; height: 23px;}
+.ico-bot-4{width:38px; height: 23px;}
+.ico-bot-5{width:43px; height: 24px;}
+.ico-bot-6{width:33px; height: 23px;}
+.menu-medio .navbar-nav > li > a {
+    padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    line-height: 18px!important;
+}
 }
 @media only screen and (max-width: 980px) {
 	.banner-ayuda{
@@ -1944,8 +2074,61 @@ position: relative;
 	.banner-ayuda{
     background: url(../images/banner-footer-768.jpg) no-repeat center top ;
 }
+.tabl-comisi {
+    margin-top: 55px;
+    margin-bottom: 30px;
+    width: 85% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.txt-bene {
+    width: 100%;
+    font-size: 17px;
+    color: #666666;
+    margin-top: 10px;
+}
+.caja-bene {
+    margin: 30px auto !important;
+    float: none;
+    display: inherit;
+    width: 100%;
+}
+.txt-porcentaje-premio p {
+        margin-left: 15%;
+}
 }
 @media only screen and (max-width: 767px) {
+
+#myTab-accordion .panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 0px solid transparent !important;
+    border-radius: 8px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#myTab-accordion.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0px solid #ddd!important;
+}
+.algorojo{
+	background: #f00;
+}
+	.thumbnail {
+    margin-bottom: 0px;
+}
+.affix .navbar-header .navbar-brand.btn-rojo{
+    display: block!important;
+        position: absolute;
+    left: 30px;
+    max-width: 280px;
+    font-size: 14px;
+        padding: 5px 10px!important;
+    height: 35px!important;
+}
+a button.serv-btn {
+    display: none!important;
+}
 .lin-sep{
 	display: none;
 }
@@ -1958,7 +2141,7 @@ position: relative;
     background: #fff;
     height: 40px;
     width: 40px;
-    margin-top: 70px;
+    margin-top: 120px;
     font-size: 70px;
     color: #8f8f8f;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
@@ -1969,7 +2152,7 @@ position: relative;
     background: #fff;
     height: 40px;
     width: 40px;
-    margin-top: 70px;
+    margin-top: 120px;
     font-size: 70px;
     color: #8f8f8f;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0);
@@ -2103,8 +2286,9 @@ ul.menu-prin-res li a.seg-sub{
 .menu-primero .navbar-toggle {
     margin-top: 40px;
 }
-.navbar-header .navbar-brand {
-    display: block;
+  .navbar-header .navbar-brand {
+  display: block;
+
 }
 .logo-comercios{
 	margin:0px;
@@ -2281,6 +2465,61 @@ right: 0;
     padding-bottom: 10px;
     padding-left: 15px !important;
 }
+.ico-bot-1{display: inline-block;}
+.ico-bot-2{display: inline-block;}
+.ico-bot-3{display: inline-block;}
+.ico-bot-4{display: inline-block;}
+.ico-bot-5{display: inline-block;}
+.ico-bot-6{display: inline-block;}
+.menu-medio .navbar-collapse {
+    border-color: #e7e7e7;
+    background: #fff !important;
+}
+.menu-medio {
+    height: auto;
+}
+.menu-medio .navbar-nav > li > a{
+	border-bottom: 3px solid rgba(204, 0, 0, 0);	
+}
+.nav-tabs.tab-num > .active > a, .nav-tabs.tab-num > .active > a:hover, .nav-tabs.tab-num > .active > a:focus {
+    border-top: 0px solid #ddd!important;
+    border-left: 0px solid #ddd!important;
+    border-right: 0px solid #ddd!important;
+}
+.nav-tabs.tab-num  > li {
+    float: none;
+    width: 50%;
+}
+a .ico-bot-1{vertical-align: middle; margin-right: 5px;}
+a .ico-bot-2{vertical-align: middle; margin-right: 5px;}
+a .ico-bot-3{vertical-align: middle; margin-right: 5px;}
+a .ico-bot-4{vertical-align: middle; margin-right: 5px;}
+a .ico-bot-5{vertical-align: middle; margin-right: 5px;}
+a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
+.bs-wizard > .bs-wizard-step {
+    margin-bottom: 30px;
+}
+.tarj-vent {
+    float: left;
+    width: 33%;
+}
+.sodexo-banc{width: 100%; max-width: 169px;}
+.edenred-banc{width: 100%; max-width: 190px;}
+.amipass-banc{width: 100%; max-width: 208px;}
+.loto-azar{width: 100%; max-width: 104px;}
+.loto3-azar{width: 100%; max-width: 159px;}
+.loto4-azar{width: 100%; max-width: 164px;}
+.txt-porcentaje-premio p {
+    width: auto;
+    border: none;
+        margin-left: 0;
+}
+.txt-porcentaje-premio img {
+    float: none;
+    margin: 0px auto!important;
+    display: inherit;
+    padding-top: 20px;
+}
 }
 @media only screen and (max-width: 679px) {
 .num-cf-mar{
@@ -2292,6 +2531,22 @@ right: 0;
     padding-left: 15px !important;
 }
 }
+@media only screen and (max-width: 580px) {
+	.tabl-comisi tr .rojito {
+    padding: 10px !important;
+    font-size: 15px !important;
+}
+.tabl-comisi tr .gris-tabl {
+    padding: 10px 10px !important;
+    font-size: 15px !important;
+}
+.tabl-comisi tr th, .tabl-comisi tr td {
+    padding: 8px 8px !important;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    color: #808080;
+}
+	}
 @media only screen and (max-width: 516px) {
 .num-cf-mar-mov{
 	margin-top: 20px;
@@ -2342,6 +2597,13 @@ input.simula {
 	.bann-img {
     min-height: 600px;
 }
+.tabl-comisi {
+    width: 70% !important;
+}
+.tarj-vent {
+    float: left;
+    width: 50%;
+}
 }
 @media only screen and (max-width: 400px) {
 	.banner-ayuda{
@@ -2368,6 +2630,37 @@ input.simula {
 }
 	.bann-img {
     min-height: 600px;
+}
+.nav-tabs.tab-num  > li {
+    float: none;
+    width: 100%;
+}
+.navbar-nav {
+    margin: 7.5px -15px 7.5px 0px!important;
+}
+.tabl-comisi tr .rojito {
+    padding: 5px !important;
+    font-size: 13px !important;
+}
+.tabl-comisi tr .gris-tabl {
+    padding: 5px 5px !important;
+    font-size: 13px !important;
+}
+.tabl-comisi tr th, .tabl-comisi tr td {
+    padding: 5px 5px !important;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    color: #808080;
+}
+.txt-bene {
+    width: 100%;
+    font-size: 17px;
+    color: #666666;
+    margin-top: -5px;
+}
+.affix .navbar-header .navbar-brand.btn-rojo {
+    max-width: 270px;
+    font-size: 13px !important;
 }
 }
 @media only screen and (max-width: 336px) {
