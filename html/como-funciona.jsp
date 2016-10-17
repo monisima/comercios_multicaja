@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>Multicaja Comercios</title>
   <meta charset="utf-8">
@@ -26,12 +31,12 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
          
-	<?php include_once("header.php"); ?>
+	<jsp:include page="header.jsp" />
 	  
 	 	<div class="container">
 	 		<div class="col-md-12">
 			<ol class="breadcrumb">
-				<li><a href="index.php">Inicio</a></li>
+				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Cómo funciona</li>
 			</ol>
 			</div>
@@ -89,7 +94,7 @@
 						    <div class="collapse txt-cmo-fun" id="preg2">
 						        <p><img src="images/down.png" class="caret-como-fun">Nuestra forma de operación es <strong>PREPAGO,</strong> es decir, para ofrecer los distintos servicios debes contar con dinero en tu saldo Multicaja.</p>
 						        <p><img src="images/down.png" class="caret-como-fun">Revisa cómo puedes aumentar tu saldo en ¿Cómo funciona?</p>
-						        <p><img src="images/down.png" class="caret-como-fun">Entérate de las comisiones que puedes ganar en <a href="recargas-pines.php" class="rojo"> Servicios.</a></p>
+						        <p><img src="images/down.png" class="caret-como-fun">Entérate de las comisiones que puedes ganar en <a href="recargas-pines.jsp" class="rojo"> Servicios.</a></p>
 						        <p><img src="images/down.png" class="caret-como-fun">El pago de las comisiones se realiza dentro de los <strong>primeros 5 días hábiles del mes.</strong> </p>
 						        <p><img src="images/down.png" class="caret-como-fun">Las comisiones son abonadas<strong> directamente en tu saldo Multicaja. </strong></p>
 						    </div>
@@ -173,7 +178,7 @@
       	</div>
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
-     <?php include_once("footer.php"); ?>
+     <jsp:include page="footer.jsp" />
 
 
      

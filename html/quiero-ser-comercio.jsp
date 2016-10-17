@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>Multicaja Comercios</title>
   <meta charset="utf-8">
@@ -25,12 +30,12 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
-<?php include_once("header.php"); ?>
+<jsp:include page="header.jsp" />
 
 	   <div class="container">
 	 		<div class="col-md-12">
 	 	 	<ol class="breadcrumb">
-				<li><a href="index.php">Inicio</a></li>
+				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Quiero ser comercio Multicaja</li>
 			</ol>
 		</div>				        
@@ -50,7 +55,7 @@
 	      				<h2>Únete a la red de comercios Multicaja</h2>
 	      				<ul class="bullet">
 	      				<li><p>Completa el formulario y un ejecutivo te contactará dentro de <span>24 horas hábiles.</span></p></li>
-	      				<li><p>Visita la sección <a href="recargas-pines.php" class="rojo">Servicios</a> para conocer más detalles.</p></li>
+	      				<li><p>Visita la sección <a href="recargas-pines.jsp" class="rojo">Servicios</a> para conocer más detalles.</p></li>
 	      				<li><p>Conoce <a href="#" class="rojo">Cómo funciona</a> Multicaja.</p></li>
 	      				</ul>
 	      		</div>
@@ -97,7 +102,7 @@
 </div>
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
-<?php include_once("footer.php"); ?>
+<jsp:include page="footer.jsp" />
 
 	<script>
 	$(document).ready( function() {

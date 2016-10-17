@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>Multicaja Comercios</title>
   <meta charset="utf-8">
@@ -39,12 +44,12 @@ $(function() {
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
 <div id="inicio"></div>
-      <?php include_once("header.php"); ?>
+     <jsp:include page="header.jsp" />
 
 	<div class="container">
 	 		<div class="col-md-12">
 			<ol class="breadcrumb">
-				<li><a href="index.php">Inicio</a></li>
+				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Giros y depósitos</li>
 			</ol>
 		</div>
@@ -68,7 +73,7 @@ $(function() {
 		<nav class="nav-fix navbar navbar-default menu-medio" data-spy="affix" data-offset-top="490">
 		  <div class="container">
 		    <div class="navbar-header">
-		    		 <a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
+		    		 <a href="quiero-ser-comercio.jsp"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo visible-xs">QUIERO SER COMERCIO MULTICAJA</button></a>
 		        <button type="button" class="navbar-toggle segundo-menu-toggle" data-toggle="collapse" data-target="#superMenu">
 		          <span class="icon-bar"></span>
 		          <span class="icon-bar"></span>
@@ -79,17 +84,17 @@ $(function() {
 		    
 		      <div class="collapse navbar-collapse menu-xs-retiro menu-servicios" id="superMenu" style="height: 1px;" aria-expanded="false">
             <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
-              <li><a href="recargas-pines.php"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
-              <li><a href="pago-cuentas.php" ><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
+              <li><a href="recargas-pines.jsp"><div class="ico-bot-1"></div>Recargas y Pines</a><div class="lin-sep"></div></li>
+              <li><a href="pago-cuentas.jsp" ><div class="ico-bot-2"></div>Pago de cuentas</a><div class="lin-sep"></div></li>
               <li class="acto"><a href="#sec1" class="tablinks" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
-              <li><a href="ventas-tarjeta.php" ><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
-              <li><a href="tarj-alimentacion.php" ><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
-              <li><a href="juegos-azar.php" ><div class="ico-bot-6"></div>Juegos de azar</a></li>
+              <li><a href="ventas-tarjeta.jsp" ><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
+              <li><a href="tarj-alimentacion.jsp" ><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
+              <li><a href="juegos-azar.jsp" ><div class="ico-bot-6"></div>Juegos de azar</a></li>
             </ul>
           </div> 
 		    
 		  </div>
-		  <a href="quiero-ser-comercio.php"><button type="button" class="btn btn-rojo border-btn-rojo serv-btn">QUIERO SER COMERCIO MULTICAJA</button></a> </div> 
+		  <a href="quiero-ser-comercio.jsp"><button type="button" class="btn btn-rojo border-btn-rojo serv-btn">QUIERO SER COMERCIO MULTICAJA</button></a> </div> 
  		
 		</nav> 
 
@@ -236,7 +241,7 @@ $(function() {
 
 <!--Footerrrrrrrrrrrrr-->
 <!--Footerrrrrrrrrrrrr-->
-<?php include_once("footer.php"); ?>
+<jsp:include page="footer.jsp" />
 
 <script>
 $(document).ready(function() {

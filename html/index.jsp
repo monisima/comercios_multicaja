@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<title>Multicaja Comercios</title>
   <meta charset="utf-8">
@@ -24,7 +29,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="20">
 <div id="inicio"></div>
-		<?php include_once("header.php"); ?>
+		<jsp:include page="header.jsp" />
 
 <div class="container">
 	 		<div class="col-md-12">
@@ -54,7 +59,7 @@
 						       	<span class="error-tx">Clave incorrecta</span>
 						       	<a href="#" class="link-quiero"><p>Olvidé mi clave</p></a>
 						        <button type="button" class="btn-rojo btn-block btn-login">ENTRAR</button>
-						        <div class="foot-login"><a href="quiero-ser-comercio.php" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+						        <div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
 
 						    </div>
 						 </div>
@@ -81,7 +86,7 @@
 				       	<span class="error-tx">Clave incorrecta</span>
 				       	<a href="#" class="link-quiero"><p>Olvidé mi clave</p></a>
 				        <button type="button" class="btn-rojo btn-block btn-login">ENTRAR</button>
-				        <div class="foot-login"><a href="quiero-ser-comercio.php" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+				        <div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
 				  </div> 
 		          <div class="col-md-9 col-sm-12">
 		          <div class="row txt-banner-cont">
@@ -130,7 +135,7 @@
 		<nav class="nav-fix-home navbar navbar-default" data-spy="affix" data-offset-top="555">
 		  <div class="container">
 		    <div class="navbar-header">
-		    	<a href="quiero-ser-comercio.php"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo">QUIERO SER COMERCIO MULTICAJA</button></a>
+		    	<a href="quiero-ser-comercio.jsp"><button type="button" class="navbar-brand btn btn-rojo border-btn-rojo">QUIERO SER COMERCIO MULTICAJA</button></a>
 		    </div>
 		  </div>
 		</nav>   
@@ -145,7 +150,7 @@
       		</div>
       		<div class="row marg-top-50">
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
-				  <a href="recargas-pines.php" class="servc" target="_blank">
+				  <a href="recargas-pines.jsp" class="servc" target="_blank">
 					<div class="borde-serv servicios">
 						<img src="images/pago-cuentas.png" class="serv1">
 						<p>Ofrece Pago de Cuentas, Recargas, Pines y Juegos de Azar</p>
@@ -154,7 +159,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
-				  <a href="ventas-tarjeta.php" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/giros-depos.png" class="serv2">
 						<p>Ofrece Transacciones Bancarias: Giros y depósitos</p>
@@ -163,7 +168,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
-				  <a href="ventas-tarjeta.php" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pagos-tarjetas.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas bancarias y de casas comerciales</p>
@@ -207,7 +212,7 @@
 	      				<h2 >Más clientes, Más ventas,<br><span> Mejor comisión</span></h2>
 	      			</div>
 	      			<div class="col-md-4 col-xs-12">
-	      				<a href="simulador.php"><div class="btn-lineal">
+	      				<a href="simulador.jsp"><div class="btn-lineal">
 	      				Simula  tus comisiones
 	      				</div></a>
 	      			</div>
@@ -280,7 +285,7 @@
       	</div>
 <!--content-->
 
-<?php include_once("footer.php"); ?>
+<jsp:include page="footer.jsp" />
 
       <!-- Modal -->
 <div class="modal fade" id="modal-avisoMC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

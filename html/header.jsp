@@ -4,7 +4,7 @@
            <div class="row">
 	      	<nav role="navigation" class="navbar navbar-default menu-primero">
 			        <div class="navbar-header">
-			        <a href="index.php" class="navbar-brand"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
+			        <a href="index.jsp" class="navbar-brand"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
 
 			            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 			                <span class="sr-only">Toggle navigation</span>
@@ -22,10 +22,10 @@
 				      			<li ><a href="#">EMISORES</a></li>
 				      			<li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FILIALES<span class="caret"></span></a>
 				      				<ul class="dropdown-menu">
-							            <li><a href="https://www.multicaja.cl/personas/filiales.php">Iswitch</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.php">Pincenter</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.php">Multitarjeta</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.php">Red Fácil</a></li>
+							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Iswitch</a></li>
+							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Pincenter</a></li>
+							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Multitarjeta</a></li>
+							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Red Fácil</a></li>
 							        </ul>
 				      			</li>
 				      			<li ><a href="#">CORPORATIVO</a></li>
@@ -41,10 +41,10 @@
 											<li>
 												<a class="trigger right-caret pri-sub">FILIALES</a>
 												<ul class="dropdown-menu sub-menu">
-													<li><a href="https://www.multicaja.cl/personas/filiales.php" class="seg-sub">Iswitch</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.php" class="seg-sub">Pincenter</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.php" class="seg-sub">Multitarjeta</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.php" class="seg-sub">Red Fácil</a></li>
+													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Iswitch</a></li>
+													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Pincenter</a></li>
+													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Multitarjeta</a></li>
+													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Red Fácil</a></li>
 												</ul>
 											</li>
 											<li><a href="#" class="pri-sub">CORPORATIVO</a></li>
@@ -58,24 +58,24 @@
 				       		
 					      	<div class="col-md-2 col-sm-2 visible-sm visible-md visible-lg">
 					      	<div class="row">
-					      		 <a href="index.php"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
+					      		 <a href="index.jsp"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
 					      	</div>
 					      	</div>
 
 					      	<div class="col-md-7 col-sm-7 marg-menu-home">
 					      		<ul class="nav navbar-nav menu-header">
-							         <li class="active"><a href="index.php">HOME</a></li>
-							        <li><a href="servicios.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
+							         <li class="active"><a href="index.jsp">HOME</a></li>
+							        <li><a href="servicios.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
-							            <li><a href="recargas-pines.php">Recargas y Pines</a></li>
-							            <li><a href="pago-cuentas.php">Pago de cuentas</a></li>
-							            <li><a href="giros-depositos.php">Giros y Depósitos</a></li>
-							            <li><a href="ventas-tarjeta.php">Ventas con tarjeta</a></li>
-							            <li><a href="tarj-alimentacion.php">Tarjetas de alimentación</a></li>
-							            <li><a href="juegos-azar.php">Juegos de azar</a></li>
+							            <li><a href="recargas-pines.jsp">Recargas y Pines</a></li>
+							            <li><a href="pago-cuentas.jsp">Pago de cuentas</a></li>
+							            <li><a href="giros-depositos.jsp">Giros y Depósitos</a></li>
+							            <li><a href="ventas-tarjeta.jsp">Ventas con tarjeta</a></li>
+							            <li><a href="tarj-alimentacion.jsp">Tarjetas de alimentación</a></li>
+							            <li><a href="juegos-azar.jsp">Juegos de azar</a></li>
 							        </ul>
 							        </li>
-							        <li><a href="como-funciona.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿CÓMO FUNCIONA?<span class="caret"></span></a>
+							        <li><a href="como-funciona.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿CÓMO FUNCIONA?<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
 							            <li><a href="#">Comercios Multicaja</a></li>
 							            <li><a href="#">Requisitos</a></li>
@@ -86,7 +86,7 @@
 							    </ul>
 					      	</div>
 					      	<div >
-					      		<a href="quiero-ser-comercio.php"><button type="button" class="btn btn-rojo border-btn-rojo marg-btn-quiero">QUIERO SER COMERCIO MULTICAJA</button></a>
+					      		<a href="quiero-ser-comercio.jsp"><button type="button" class="btn btn-rojo border-btn-rojo marg-btn-quiero">QUIERO SER COMERCIO MULTICAJA</button></a>
 					      	</div>
 					      
 					      </div><!--container logo-->
