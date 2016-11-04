@@ -744,6 +744,23 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	max-width:244px; 
 	margin-top: 35px;
 }
+.btn-lineal-negat{
+	border:2px solid #313131;
+	color: #393939;
+	-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+	max-width: 208px;
+    margin: 30px auto 60px;
+    display: block;
+    background: #fff;
+}
 .btn-comision{
 	background: #313131;
     float: none;
@@ -906,7 +923,7 @@ margin-top: 5px;
     margin-bottom: 20px;
 }
 .lista-acordeon{
-padding-left: 95px;
+padding-left: 60px;
 padding-right: 20px;
 }
 .lista-acordeon li{
@@ -915,7 +932,7 @@ padding-right: 20px;
 }
 .lista-acordeon li p1{
 	color: #666666;
-	font-size: 16px;
+	font-size: 16.5px;
 }
 .lista-acordeon li strong{
 	font-weight: 600;
@@ -968,8 +985,8 @@ padding-right: 20px;
 }
 .num-cf{
 	float: left;
-	margin-right: 15px;
-	margin-top: 6px;
+	margin-right: 20px;
+	margin-top: -3px;
 }
 /* fiN ACORDEON  */
 .img-dispos {
@@ -1078,7 +1095,7 @@ img.i-tooltip{
 	position: absolute;
 	z-index: 999;
 	border: 1px solid #dfdfdf;
-	margin-top: -25px;
+	margin-top: -13px;
 	margin-left: 10px;
 	color: #848484;
 }
@@ -1171,6 +1188,7 @@ ul.bullet {
 }
 .formulario-solicitud p.marg-p{
  margin-top: 25px;
+ margin-bottom: 10px;
  }
  .formulario-solicitud p{
 margin-top: 30px;
@@ -1431,7 +1449,145 @@ img.flecha_abajo {
 }
 /* End carousel */
 /*Step- como funciona*/
+/*banner como funciona*/
+.banner-cmo-funciona{
+background: url(../images/bnner-cmo-funciona.jpg) no-repeat center top ;
+margin-top: 0px;
+text-align: center;
+background-attachment: relative;
+background-position: center center;
+min-height: 297px;
+width: 100%;
 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+/* background-size: cover; */
+}
+.seccion-como-fun-txt{
+	padding-bottom: 55px;
+}
+.seccion-como-fun-txt h5{
+	text-align: center;
+    color: #333;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 25px 80px 8px;
+}
+.seccion-como-fun-txt p{
+	 text-align: center;
+    color: #666;
+    font-size: 18px;
+    padding: 8px 150px;
+}
+.seccion-cmo-operamos p{
+	font-size: 18px;
+    color: #666;
+    padding-top: 10px;
+    text-indent: -0.6em;
+}
+.seccion-cmo-operamos{
+	padding-top: 40px;
+}
+.marg-operamos{
+	margin-top: 40px;
+    margin-bottom: 20px;
+}
+.title-atencion{
+	font-size: 18px;
+    color: #3c3c3c;
+    padding-bottom: 10px;
+    display: block;
+    padding-top: 10px;
+}
+.atencion-marg-circ{
+	margin-top: 40px;
+}
+.txt-cmo-fnc-oscr{
+	text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    font-size: 28px;
+    font-style: italic;
+    line-height: 42px;
+    margin-top: 0px!important;
+    padding-top: 35px;
+    text-align: center;
+}
+.txt-cmo-fnc-oscr span{
+    font-size: 45px;
+}
+.flo-left{
+	float: left;
+}
+.seccion-encuentranos-cmofun{
+	padding-top:40px 
+}
+.seccion-comercios-cmf{
+	background: #fff;
+    background-image: url(../images/fondo-cmo-funciona.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-top: 90px;
+}
+span.txt22{
+	font-size: 22px!important;
+    font-style: italic!important;
+    text-transform: uppercase!important;
+    color: #595959!important;
+    font-weight: 600!important;
+}
+.txt-Publicidad h2 span{
+	font-size: 42px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #cc3333;
+    font-weight: 900;
+}
+.local-comercio{
+	margin-bottom: -30px;
+}
+.enumerar-necesito-ser{
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.enumerar-necesito-ser p{
+	text-align: left;
+    font-size: 16.5px;
+    color: #666;
+    min-height: 40px;
+    padding-top: 15px;
+    text-indent: -0.6em;
+}
+.flech-necesito-ser-mc{
+	padding-left: 40px;
+}
+.marg-let-necesito-ser{
+	padding-left: 45px;
+}
+.font-165{
+	font-size: 16.5!important;
+}
+.btn-lineal-quiero{
+	border: 2px solid #d32929;
+    color: #3f3f3f;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 80px 0px 160px;
+    display: block;
+    background: #fff;
+}
+.p-tooltip{
+	    display: inline-block!important;
+}
 /*Form Wizard*/
 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
 .bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
@@ -1888,12 +2044,6 @@ input.simula {
 .puntos {
     width: 90%;
 }
-.num-cf {
-    margin-top: 18px;
-}
-.num-cf-mar{
-	margin-top: 8px!important;
-}
 .btn.marg-btn-quiero{
 	width: 23%;
 	white-space: normal!important;
@@ -2014,12 +2164,6 @@ position: relative;
     margin-right: auto;
     display: block;
     text-align: center;
-}
-.num-cf {
-    margin-top: 5px;
-}
-.num-cf-mar{
-	margin-top: -3px!important;
 }
 .caj-comenzar {
     padding-top: 10px;
@@ -2522,9 +2666,6 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
 }
 }
 @media only screen and (max-width: 679px) {
-.num-cf-mar{
-	margin-top: 5px!important;
-}
 .caj-comenzar {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2546,12 +2687,8 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
     font-size: 14px;
     color: #808080;
 }
-	}
-@media only screen and (max-width: 516px) {
-.num-cf-mar-mov{
-	margin-top: 20px;
 }
-}
+
 @media only screen and (max-width: 508px) {
 	.puntos {
     width: auto;
@@ -2582,14 +2719,8 @@ input.simula {
 .puntos p {
     font-size: 15px;
 }
-.num-cf-mar-mov-498{
-	margin-top: 20px;
-}
 .caja-comienzo p {
     font-size: 14.5px;
-}
-.num-cf {
-    height: 27px;
 }
 .cmo-fun .txt-cmo-fun h4 {
     font-size: 15px;
@@ -2680,17 +2811,6 @@ input.simula {
 .direccion {
     margin: 30px auto 0px !important;
     width: 220px;
-}
-.num-cf{
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-.num-cf-mar-mov-498{
-	margin-top: 20px;
-	margin-bottom: 30px;
-}
-.num-cf-mar {
-    margin-top: 20px !important;
 }
 	.polaroid {
     width: 200px;

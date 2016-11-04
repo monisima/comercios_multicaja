@@ -91,7 +91,7 @@ $(function() {
               <li><a href="giros-depositos.jsp" ><div class="ico-bot-3"></div>Giros y depósitos</a><div class="lin-sep"></div></li>
               <li><a href="ventas-tarjeta.jsp" ><div class="ico-bot-4"></div>Ventas con tarjeta</a><div class="lin-sep"></div></li>
               <li><a href="tarj-alimentacion.jsp" ><div class="ico-bot-5"></div>Tarjetas de alimentación</a><div class="lin-sep"></div></li>
-              <li><a href="juegos-azar.jsp" ><div class="ico-bot-6"></div>Juegos de azar</a></li>
+              <li><a href="loto.jsp" ><div class="ico-bot-6"></div>Loto</a></li>
             </ul>
           </div> 
 		    

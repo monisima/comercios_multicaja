@@ -77,8 +77,17 @@
 							  <option value="3">Alimentación y MPOS</option>
 							  <option value="4">Comercio electrónico</option>
 							</select>	
+					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado</div></div>
+				    		<select class="selectpicker" data-width="100%">
+							  <option value="" disabled selected style="display: none;">Selecciona el horario</option>
+							  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
+							  <option value="2">Ventas con tarjetas</option>
+							  <option value="3">Alimentación y MPOS</option>
+							  <option value="4">Comercio electrónico</option>
+							</select>	
 					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Nombre *</div></div>    
 						<input type="text" class="form-solic" id="nombre" name="nombre" placeholder="Ingresa nombre" required>
+						<span class="error-tx">Ingresa un nombre</span>
 					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">RUT *</div></div>					
 				        <input type="text" class="form-solic" id="rut" name="rut" placeholder="Ingresa RUT sin puntos ni guión" required>
 				    <div class="juntos-mail">    

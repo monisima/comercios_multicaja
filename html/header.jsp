@@ -72,14 +72,14 @@
 							            <li><a href="giros-depositos.jsp">Giros y Depósitos</a></li>
 							            <li><a href="ventas-tarjeta.jsp">Ventas con tarjeta</a></li>
 							            <li><a href="tarj-alimentacion.jsp">Tarjetas de alimentación</a></li>
-							            <li><a href="juegos-azar.jsp">Juegos de azar</a></li>
+							            <li><a href="loto.jsp">Loto</a></li>
 							        </ul>
 							        </li>
 							        <li><a href="como-funciona.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿CÓMO FUNCIONA?<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
-							            <li><a href="#">Comercios Multicaja</a></li>
-							            <li><a href="#">Requisitos</a></li>
-							            <li><a href="#">¿Cómo empezar a vender?</a></li>
+							            <li><a href="comercios-mc.jsp">Comercios Multicaja</a></li>
+							            <li><a href="requisitos.jsp">Requisitos</a></li>
+							            <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
 							         </ul>
 							        </li>
 							        <li><a href="#"> AYUDA</a></li>

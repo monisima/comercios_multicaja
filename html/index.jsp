@@ -153,7 +153,7 @@
 				  <a href="recargas-pines.jsp" class="servc" target="_blank">
 					<div class="borde-serv servicios">
 						<img src="images/pago-cuentas.png" class="serv1">
-						<p>Ofrece Pago de Cuentas, Recargas, Pines y Juegos de Azar</p>
+						<p>Ofrece Pago de Cuentas, Recargas, Pines y Loto</p>
 					</div>
 				   </a>
 				</div>
@@ -201,7 +201,7 @@
 		</div>
 		</div>
       	</div>
-      	<div class="container-fluid ">
+      	<!--<div class="container-fluid ">
       	  <div class="row">
       		<div class="gris-oscuro cte-comercio">
       			<div class="container" id="section-mas-ventas">
@@ -215,6 +215,22 @@
 	      				<a href="simulador.jsp"><div class="btn-lineal">
 	      				Simula  tus comisiones
 	      				</div></a>
+	      			</div>
+      			</div>
+      		</div>
+      	  </div>
+      	</div>-->
+      	<div class="container-fluid ">
+      	  <div class="row">
+      		<div class="gris-oscuro cte-comercio">
+      			<div class="container" id="section-mas-ventas">
+	      			<div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
+	      				<img src="images/comercio-clientes.svg" class="comercio-cliente">
+	      			</div>
+	      			<div class="col-md-4 col-sm-6 col-xs-12 mas-clientes">
+	      				<h2 >Más clientes, Más ventas,<br><span> Mejor comisión</span></h2>
+	      			</div>
+	      			<div class="col-md-2 col-xs-0">
 	      			</div>
       			</div>
       		</div>
