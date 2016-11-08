@@ -1,3 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"  pageEncoding="utf-8"%>
+<!doctype html>
+	<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+	<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+	<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+</head>
+<body>
 <!--Footerrrrrrrrrrrrr-->
       <div id="footer" class="container-fluid gris-oscuro-dos">
 	      <div class="container">
@@ -38,3 +48,5 @@
 		  </div>
 	      </div>
       </div><!--footer-->
+</body>
+</html>

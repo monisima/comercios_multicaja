@@ -179,33 +179,37 @@ $(function() {
 							</div>
 				          </div>
 
-				      	   <div class="seccion-funciona" id="equipos">
+				      	   <div class="seccion-equip" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-							      <div class="col-md-8 col-md-offset-2">
+							      <div class="col-md-8 col-md-offset-2">							      	
+							      	<div class="col-md-6 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos2.jpg" class="pos-img">
+							      			<div class="text-equipos">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>							      				
+							      			</div>
+							      		</div>
+							      	</div>
 							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos1.jpg" class="pos-img" >
 							      			<div class="text-equipos">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-							      				<p><span>0,65 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-							      	</div>
-							      	<div class="col-md-6 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-							      				<p><span>0,5 UF</span> + IVA / Mes</p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>El POS inalámbrico tiene un costo adicional de 0,15 UF+ IVA</div>
 							      	</div>	
+								</div>
+							</div>
+							<div class="row">
+								<div class="extras-txt col-md-8 col-md-offset-2">
+									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
+									<a href="#" target="_self"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>
 				      	  </div>

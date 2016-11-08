@@ -110,12 +110,14 @@ $(function() {
 				      			</div>
 				      			<div class="col-md-8 col-md-offset-2">
 				      				<div class="row">
-				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/sodexo.jpg" class="sodexo-banc"></div>
-				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/edenred.jpg" class="edenred-banc"></div>
-				      					<div class="col-md-4 col-sm-4 col-xs-6 banc"><img src="images/amipass.jpg" class="amipass-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/sodexo.jpg" class="sodexo-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/edenred.jpg" class="edenred-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/amipass.jpg" class="amipass-banc"></div>
 				      				</div>
 				      			</div>
-
+				      			<div class="flecha_descubre col-md-12">
+				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				            	</div>
 				      		
 	<span id="como-funciona"></span>	
 								
@@ -138,7 +140,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
 				                  <img src="images/llamanos-mc.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailcomercios@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a>
+				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:contacto@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a>
 </div>
 				                </div>
 				                

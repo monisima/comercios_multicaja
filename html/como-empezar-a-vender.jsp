@@ -105,7 +105,7 @@ $(function() {
 				      	  	<div class="container">
 				      			<div class="enumerar-necesito-ser col-md-10 col-md-offset-1">
 				      				<p><img src="images/num_01.jpg" class="num-cf">Contáctanos al 600 363 20 20 o a través del <a href="#" class="rojo">formulario web.</a></p>
-				      				<p><img src="images/num_02.jpg" class="num-cf">Elige tu terminal:</p>				      				
+				      				<p><img src="images/num_02.jpg" class="num-cf">Elige tu terminal</p>				      				
 						      				<ul class="lista-acordeon">
 							      				<li><p1>Web de Multicaja o USSD (celular Movistar) con habilitación en minutos.</p1></li>
 												<li><p1>POS (instalación en 7 días hábiles).</p1></li>												

@@ -118,6 +118,10 @@ $(function() {
 							      		<div class="banc tarj-vent"><img src="images/cruzverde.jpg"></div>	
 							      		<div class="banc tarj-vent"><img src="images/chilquinta.jpg"></div>	
 
+							      		<div class="flecha_descubre col-md-12">
+						        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+						            	</div>
+
 				<span id="como-funciona"></span>	
 								
 				      	  </div>
@@ -140,7 +144,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
 				                  <img src="images/llamanos.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:mailcomercios@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a> y serás contactado por un ejecutivo.
+				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:contacto@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a> y serás contactado por un ejecutivo.
 </div>
 				                </div>
 				                

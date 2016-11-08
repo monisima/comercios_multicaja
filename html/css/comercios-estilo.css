@@ -777,7 +777,7 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
 	margin-bottom: 30px;
 }
 .tabl-comisi tr .gris-tabl{
-	padding: 15px 35px!important;
+	padding: 15px 27px!important;
 	background: #f2f2f2;
 	font-size: 17px!important;
 	font-weight: 600;
@@ -1289,18 +1289,24 @@ input.form-solic-cel{
 .bootstrap-select .dropdown-toggle:focus {
     outline: 0px auto -webkit-focus-ring-color!important;
     outline-offset: 0px!important;
-        background: #fff;
-       color: #a8a8a8!important;
-        border: 1px solid #d2d2d2;
-
+    background: #fff;
+    color: #a8a8a8!important;
+    border: 1px solid #d2d2d2;
 }
 .banner-ayuda{
     background: url(../images/banner-footer-1140.jpg) no-repeat center top ;
-text-align: center;
-min-height: 125px;
-width: 100%;
+	text-align: center;
+	min-height: 125px;
+	width: 100%;
 }
 /*servicios*/
+.buscar-rg-p{
+	margin-top: 15px!important;
+    margin-bottom: 10px!important;
+    max-width: 258px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
 .banner-servicios{
 background: url(../images/banner-servicio1.jpg) no-repeat center top ;
 margin-top: 0px;
@@ -1353,12 +1359,12 @@ a .ico-bot-4{background: url(../images/venta-tarjeta.svg) no-repeat center top ;
 a .ico-bot-5{background: url(../images/tarjeta-alim.svg) no-repeat center top ;}
 a .ico-bot-6{background: url(../images/jue-azar.svg) no-repeat center top ;}
 
-.acto a .ico-bot-1, a:hover .ico-bot-1{background: url(../images/recar-pin_hover.svg) no-repeat center top;}
-.acto a .ico-bot-2, a:hover .ico-bot-2{background: url(../images/pag-cuentas_hover.svg) no-repeat center top;}
-.acto a .ico-bot-3, a:hover .ico-bot-3{background: url(../images/corr-bancario_hover.svg) no-repeat center top;}
-.acto a .ico-bot-4, a:hover .ico-bot-4{background: url(../images/venta-tarjeta_hover.svg) no-repeat center top ;}
-.acto a .ico-bot-5, a:hover .ico-bot-5{background: url(../images/tarjeta-alim_hover.svg) no-repeat center top ;}
-.acto a .ico-bot-6, a:hover .ico-bot-6{background: url(../images/jue-azar_hover.svg) no-repeat center top ;}
+.acto a .ico-bot-1, a:hover .ico-bot-1, a:focus .ico-bot-1 {background: url(../images/recar-pin_hover.svg) no-repeat center top;}
+.acto a .ico-bot-2, a:hover .ico-bot-2, a:focus .ico-bot-2 {background: url(../images/pag-cuentas_hover.svg) no-repeat center top;}
+.acto a .ico-bot-3, a:hover .ico-bot-3, a:focus .ico-bot-3 {background: url(../images/corr-bancario_hover.svg) no-repeat center top;}
+.acto a .ico-bot-4, a:hover .ico-bot-4, a:focus .ico-bot-4 {background: url(../images/venta-tarjeta_hover.svg) no-repeat center top ;}
+.acto a .ico-bot-5, a:hover .ico-bot-5, a:focus .ico-bot-5 {background: url(../images/tarjeta-alim_hover.svg) no-repeat center top ;}
+.acto a .ico-bot-6, a:hover .ico-bot-6, a:focus .ico-bot-6 {background: url(../images/jue-azar_hover.svg) no-repeat center top ;}
 
 
 .lin-sep{
@@ -1635,8 +1641,22 @@ span.txt22{
 .step-img-cir3{width: 36px; display: flex; margin-top: 8px;}
 /*Fin - Step- como funciona*/
 .seccion-funciona{
-	padding-top: 90px;
-	padding-bottom: 85px;
+	padding-top: 80px;
+	padding-bottom: 90px;
+}
+.seccion-equip{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.txt-bajada-tbl{
+	margin-top: 40px;
+    color: #666;
+    font-size: 15px;
+}
+.txt-busca-reg{
+	font-size: 18px;
+	color: #333;
+	margin-top: 35px;
 }
 .seccion-comision p{
 	text-align: center;
@@ -1652,6 +1672,10 @@ span.txt22{
 	text-align: center;
 	margin-top: 46px;
 	max-width: 257px;
+	min-height: 272px;
+}
+.enmedio{
+	margin-top: 40px!important;
 }
 .mas-vendas{
 	text-align: center;
@@ -1794,7 +1818,6 @@ input.error:focus{
     margin: 0 auto;
     left: 0;
     right: 0;
-}
 }
 .caja-texto-descrip{
 	width: 100%;
@@ -1957,19 +1980,22 @@ input[type=text].buscador-{
 .seccion-giros-dep{
 	    padding: 40px 0px;
 }
-.banc img{
+.banc img, .alimen img{
 	    margin: 0 auto;
     display: inherit;
 }
 .banc{
-	padding:40px 0px 80px;
+	padding:40px 0px 40px;
+}
+.alimen{
+	padding:30px 0px;
 }
 .tabla-comi-pago{
-	margin-bottom: 0px!important;
+	margin-bottom: 20px!important;
 }
 .extras-txt{
     border-top: 1px solid #868787;
-    padding-top: 33px;
+    margin-top: 50px;
     text-align: center;
     color: #666666;
     font-size: 15px;
@@ -1977,6 +2003,25 @@ input[type=text].buscador-{
 .extras-txt span{
    font-weight: 600;
    color: #333333;
+}
+.restricc{
+    margin-top: -15px;
+    display: inherit;
+    background: #f8f8f8;
+    width: 45%;
+    font-size: 18px;
+    color: #cb2d2d;
+}
+.restricciones-txt{
+	text-align: center;
+	color: #666;
+	font-size: 15px;
+}
+.restricciones-txt p:first-child{
+	margin-top: 30px;
+}
+.txt-negro{
+	color: #333;
 }
 .tx-gris-bl{
 	color: #595959!important;
@@ -2184,6 +2229,7 @@ position: relative;
 img.pos-pago {
     width: 100%;
     max-width: 413px;
+    position: absolute;
 }
 .txt-pos-free {
     padding-top: 0px;

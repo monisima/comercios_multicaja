@@ -147,9 +147,13 @@ $(function() {
 								       <p>RETAIL Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
 								    </div>
 								  </div>
+								  <div class="flecha_descubre">
+				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				            	</div>
 					</div>
-					<div class="col-md-10 col-md-offset-1">
-		<span id="como-funciona"></span>	
+						<span id="como-funciona"></span>
+					<!--<div class="col-md-10 col-md-offset-1">
+		
 								<div id="consultar-convenio">
 								  <div class="consulta-convenio col-md-12"><p>Consulta el convenio que necesitas</p></div>	
 								  		<button class="btn-consultar">consulta aquí</button>
@@ -182,7 +186,7 @@ $(function() {
 
 
 								  
-						</div>	
+						</div>	-->
 	
 								
 				      	  </div>
@@ -247,39 +251,41 @@ $(function() {
 									    <td>$100</td>
 									  </tr>
 								</table>
-								<p class="letra-chica">(<span>*</span>) Comisión 0,00255 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
-								<p class="letra-chica">(<span>**</span>) Comisión 0,00132 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
+								<p class="letra-chica">(<span>*</span>) Comisión 0,00255 UF+ IVA en pesos calculado al 9 de Noviembre de 2016.</p>
+								<p class="letra-chica">(<span>**</span>) Comisión 0,00132 UF+ IVA en pesos calculado al 9 de Noviembre de 2016.</p>
+								<div class="row txt-bajada-tbl">										
+											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de pago de cuentas suman para el <a href="#" class="rojo">PREMIO MULTISERVICIO.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="#" class="rojo">aquí.</a></p>
+								</div> 
 							</div>
 							</div>
 							</div>
 				          </div>
 
-				      	  <div class="seccion-funciona" id="equipos">
+				      	  <div class="seccion-equip" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-							      <div class="col-md-10 col-md-offset-1">
-							      	<div class="col-md-4 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos1.jpg" class="pos-img" >
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-							      				<p><span>0,65 UF</span> + IVA / Mes</p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-							      	</div>
+							      <div class="col-md-10 col-md-offset-1">							      	
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos">
+							      			<div class="text-equipos enmedio">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-							      				<p><span>0,5 UF</span> + IVA / Mes</p>
 							      			</div>
 							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
+							      	</div>
+							      	<div class="col-md-4 col-sm-6">
+							      		<div class="polaroid">
+							      		<img src="images/pos1.jpg" class="pos-img" >
+							      			<div class="text-equipos enmedio">
+							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
+							      			</div>
+							      		</div>
+							      		<div class="letra-chica caja-texto-descrip"><span>*</span>El POS inalámbrico tiene un costo adicional de 0,15 UF+ IVA</div>
 							      	</div>
 							      	<div class="col-md-4 col-sm-6">
 							      		<div class="polaroid">
@@ -291,6 +297,13 @@ $(function() {
 							      		</div>
 							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Necesitas un computador con conexión a internet.</div>
 							      	</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="extras-txt col-md-8 col-md-offset-2">
+									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
+									<a href="#" target="_self"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>
 				      	  </div>
@@ -371,12 +384,6 @@ $(document).ready(function() {
 	});
 	
 });
-</script>
-<!-- Bootstrap TabCollapse-->
-<script type="text/javascript" src="js/bootstrap-tabcollapse.js"></script>
-
-<script type="text/javascript">
-    $('#myTab').tabCollapse();
 </script>
 </body>
 </html>

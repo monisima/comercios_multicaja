@@ -315,12 +315,18 @@ $(function() {
 									    <td>6,20%</td>
 									  </tr>
 									</table>
+										<div class="row txt-bajada-tbl">
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Para comercios nuevos</strong> que cuenten con POS Multicaja, la comisión mínima del primer mes de operación será de 3%.</p>
+											<p><img src="images/down.png" class="caret-como-fun">Recuerda que si vendes <strong>más de $1.000.000 en recargas</strong> por local puedes acceder al <a href="#" class="rojo">PREMIO MULTISERVICIO.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="#" class="rojo">aquí.</a></p>
+										</div>
 							</div>
 							</div>
 							</div>
 				          </div>
 
-				      	  <div class="seccion-funciona" id="equipos">
+				      	  <div class="seccion-equip" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
@@ -328,24 +334,21 @@ $(function() {
 						      <div class="row">
 						      	<div class="col-md-3 col-sm-6">
 						      		<div class="polaroid">
-						      		<img src="images/pos1.jpg" class="pos-img" >
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-						      				<p><span>0,65 UF</span> + IVA / Mes</p>
+						      		<img src="images/pos2.jpg" class="pos-img">
+						      			<div class="text-equipos enmedio">
+						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
 						      			</div>
 						      		</div>
-						      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
 						      	</div>
 						      	<div class="col-md-3 col-sm-6">
 						      		<div class="polaroid">
-						      		<img src="images/pos2.jpg" class="pos-img">
-						      			<div class="text-equipos">
-						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-						      				<p><span>0,5 UF</span> + IVA / Mes</p>
+						      		<img src="images/pos1.jpg" class="pos-img" >
+						      			<div class="text-equipos enmedio">
+						      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
 						      			</div>
 						      		</div>
-						      		<div class="letra-chica"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-						      	</div>
+						      		<div class="letra-chica"><span>*</span>El POS inalámbrico tiene un costo adicional de 0,15 UF+ IVA</div>
+						      	</div>						      	
 						      	<div class="col-md-3 col-sm-6">
 						      		<div class="polaroid">
 						      		<img src="images/pos3.jpg" class="pos-img">
@@ -366,8 +369,13 @@ $(function() {
 						      		</div>
 						      		<div class="letra-chica"><span>*</span>Necesitas un teléfono móvil con Sim Movistar</div>
 						      	</div>
-
-						      
+							</div>
+							<div class="row">
+								<div class="extras-txt col-md-8 col-md-offset-2">
+									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
+									<a href="#" target="_self"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<div class="letra-chica">Tarifas para POS Fijo </div>
+								</div>
 							</div>
 				      	  </div>
 
