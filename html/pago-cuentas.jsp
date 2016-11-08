@@ -118,7 +118,7 @@ $(function() {
 									    <li><a data-toggle="tab" href="#telefonia">Telefonía</a><span>•</span> </li>
 									    <li><a data-toggle="tab" href="#internet">Internet</a><span>•</span> </li>
 									    <li><a data-toggle="tab" href="#autopistas">Autopistas</a><span>•</span> </li>
-									    <li><a data-toggle="tab" href="#cosmeticos">Cosméticos</a><span>•</span> </li>
+									    <li><a data-toggle="tab" href="#cosmeticos" class="marg-mov">Cosméticos</a><span>•</span> </li>
 									    <li><a data-toggle="tab" href="#retail">Retail</a></li>
 									</ul>
 								  <div class="tab-content contenido-tab-cuenta"  id="myTabContent">
@@ -325,7 +325,7 @@ $(function() {
 				      	  </div>
 
 
-				      	  <div class="seccion-nuevos-clientes">
+				      	  <div class="seccion-nuevos-clientes h-clin">
 				      	  	<div class="container">
 				      	  	  <div class="row">
 				      	  	  <div class="col-md-3 col-sm-5">

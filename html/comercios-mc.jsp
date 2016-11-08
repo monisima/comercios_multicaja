@@ -120,23 +120,29 @@ $(function() {
 						      	<div class="titulo-serv">
 				      				<h2>¿Cómo operamos?</h2>
 				      			</div>
-				      			<div class="col-md-8 marg-operamos">
-				      				  	<p><img src="images/caret-fle.jpg" class="caret-como-fun">Nuestra forma de operación es <strong>Prepago.</strong> Es decir, para ofrecer los distintos servicios debes contar con dinero en tu <strong>Saldo Multicaja</strong></p>
+				      			<div class="col-md-7 marg-operamos">
+				      				  	<p class="p-tooltip"><img src="images/caret-fle.jpg" class="caret-como-fun">Nuestra forma de operación es <strong>Prepago.</strong> Es decir, para ofrecer los distintos servicios debes contar con dinero en tu <strong>Saldo Multicaja</strong></p>
+				      				  		<span class="tooltip-info"><img src="images/i-tool.png" class="i-tooltip">
+				                               <span class="tooltiptext"> <img class="flecha" src="images/flecha-white.png"/>
+				                                     Si la olvidas, puedes solicitarla enviando un correo a <strong>contacto@multicaja.cl</strong> o llamando al <strong>600 363 20 20</strong>
+				                               </span>
+				                        	</span>
+				      				  		
 								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Revisa como puedes aumentar tu saldo en la sección <a class="rojo" href="#">Ayuda</a></p>
 								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Entérate de los servicios  y comisiones que puedes ganar en la sección <a class="rojo" href="#">Servicios</a></p>
 								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Tus comisiones se pagan siempre dentro de los primeros 5 días hábiles del mes siguiente y son abonadas directamente a tu saldo Multicaja </p>
 				      			</div>
 				      			<div class="col-md-4">
-				      					<img src="images/cmo-operamos.jpg" >
+				      					<img src="images/cmo-operamos.jpg" class="operamos-img">
 				      			</div>
 				      			<div class="flecha_descubre col-md-12">
-				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				        			<a href="#redssc" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
 							</div>
 				      	  </div>
 
 				      	  
-				      		<div class="container" >
+				      		<div class="container seccion-atencion" >
 				      			<div class="titulo-serv">
 				      				<h2>Atención</h2>
 				      			</div>
@@ -158,13 +164,13 @@ $(function() {
 					                </div>
 				                
 				            	</div>
-				            	
+				            	 
 				      	  		<a href="#"><button data-toggle="collapse"  class="btn-lineal-negat">
 				      	  			Visitar
 				      	  		</button></a>
 				      	  </div>
 
-
+				      	  <span id="redssc"></span>
 				      	  <div class="gris-oscuro seccion-encuentranos-cmofun" >
 				      	  <div class="container">
 				      	  		<div class="col-md-5 col-md-offset-2">

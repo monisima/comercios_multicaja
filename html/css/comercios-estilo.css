@@ -48,14 +48,20 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
 a button.serv-btn{
     display: none;
   }
-    .affix ~ .container-fluid {
+/*    .affix ~ .container-fluid {
      position: relative;
      top: 85px;
   }
     .affix ~ .container {
      position: relative;
      top: 75px;
-  } 
+  } */
+
+    .affix ~ .seccion-atencion{
+    position: relative;
+     top: 60px;
+    }
+    
  .navbar-header .navbar-brand{
     display: none;
     height: 40px;
@@ -449,6 +455,12 @@ pre {
     border: 0px solid #ccc!important;
     border-radius: 0px!important;
 }
+.pos-pago{
+  position: absolute;
+}
+.h-clin{
+	min-height: 298px;
+}
 .tarj-sod-ede{
 	margin-right: 12px;
 }
@@ -491,6 +503,16 @@ pre {
     padding-top: 10px!important;
     padding-bottom: 10px!important;
     line-height: 20px!important;
+}
+.menu-medio-cmo-fcna .navbar-nav > li > a {
+    padding-top: 20px!important;
+    padding-bottom: 15px!important;
+    line-height: 20px!important;
+    font-size: 16px;
+    color: #646464;
+}
+.menu-medio-cmo-fcna {
+    height: 60px;
 }
  .nav-fix .navbar-brand {
 	border-bottom: 3px solid #971111!important;
@@ -597,6 +619,9 @@ text-decoration: none!important;
 .img-mpos-bnn{
 	float: right;
 	margin-right: -75px;
+}
+.flecha-pago-cuentas{
+	margin-top: 60px!important;
 }
 .mas-info{
 	width: 100%;
@@ -1455,6 +1480,12 @@ img.flecha_abajo {
 }
 /* End carousel */
 /*Step- como funciona*/
+.operamos-img{
+	padding-left: 40px;
+}
+.seccion-atencion{
+	margin-top: 50px;
+}
 /*banner como funciona*/
 .banner-cmo-funciona{
 background: url(../images/bnner-cmo-funciona.jpg) no-repeat center top ;
@@ -1645,7 +1676,7 @@ span.txt22{
 	padding-bottom: 90px;
 }
 .seccion-equip{
-	padding-top: 40px;
+	padding-top: 60px;
 	padding-bottom: 30px;
 }
 .txt-bajada-tbl{
@@ -1811,13 +1842,6 @@ input.error:focus{
  }
 .padding-buscador{
 	padding: 0 50px!important;
-}
-.flecha-pago-cuentas{
-	position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
 }
 .caja-texto-descrip{
 	width: 100%;
@@ -2012,6 +2036,12 @@ input[type=text].buscador-{
     font-size: 18px;
     color: #cb2d2d;
 }
+.restricc::after{
+ content: url(../images/down-restri.png)!important;
+}
+.collapsed.restricc::after{
+ content: url(../images/up.png)!important;
+}
 .restricciones-txt{
 	text-align: center;
 	color: #666;
@@ -2052,7 +2082,7 @@ input[type=text].buscador-{
 	max-width: 270px!important;
 }
 .seccion-equipos-venta-tar{
-	padding-top: 40px;
+	padding-top: 60px;
     padding-bottom: 50px;
 }
 /*Juegos de azar*/
@@ -2130,8 +2160,9 @@ input.simula {
 position: relative;
 }
 .collap-login.collapsed .chevron::after {
-    content: url(../images/login-up.jpg)!important;
-        float: none !important;
+    
+
+    float: none !important;
     display: inline;
     margin-left: 30px;
 }
@@ -2226,10 +2257,9 @@ position: relative;
     display: inherit;
     width: 75%;
 }
-img.pos-pago {
+.pos-pago {
     width: 100%;
     max-width: 413px;
-    position: absolute;
 }
 .txt-pos-free {
     padding-top: 0px;
@@ -2288,7 +2318,39 @@ img.pos-pago {
 }
 }
 @media only screen and (max-width: 767px) {
-
+.pos-pago {
+    width: 100%;
+    max-width: 413px;
+    margin-top: 130px;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+}
+.flecha-pago-cuentas {
+    margin-top: 280px !important;
+}
+.h-clin {
+    min-height: 410px;
+}
+.flecha-pago-cuentas {
+    margin-top: 280px !important;
+}
+.tab-cuentas > li > a{
+	padding: 0px 25px 3px!important;
+}
+.tab-cuentas > li.active > a, .tab-cuentas > li.active > a:hover, .tab-cuentas > li.active > a:focus, .tab-cuentas > li > a:hover {
+    padding: 0px 25px 3px!important;
+}
+.tab-cuentas > li{
+	margin-top: 30px;
+}
+.tab-cuentas > li:first-child{
+	margin-left: 50px;
+}
+.tab-cuentas {
+    width: 530px;
+}
 #myTab-accordion .panel {
     margin-bottom: 20px;
     background-color: #fff;
@@ -2719,6 +2781,24 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
 }
 }
 @media only screen and (max-width: 580px) {
+.tab-cuentas > li > a{
+	padding: 0px 10px 3px!important;
+}
+.tab-cuentas > li.active > a, .tab-cuentas > li.active > a:hover, .tab-cuentas > li.active > a:focus, .tab-cuentas > li > a:hover {
+    padding: 0px 10px 3px!important;
+}
+.tab-cuentas > li{
+	margin-top: 30px;
+}
+.tab-cuentas > li span{
+	display: none;
+}
+.tab-cuentas > li:first-child{
+	margin-left: 55px;
+}
+.tab-cuentas {
+    width:280px;
+}
 	.tabl-comisi tr .rojito {
     padding: 10px !important;
     font-size: 15px !important;
@@ -2733,13 +2813,18 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
     font-size: 14px;
     color: #808080;
 }
+.marg-mov{
+	margin-left: 50px;
+}
 }
 
 @media only screen and (max-width: 508px) {
 	.puntos {
     width: auto;
 }
-
+.pos-pago {
+    margin-top: 210px;
+}
 	}
 @media only screen and (max-width: 498px) {
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
@@ -2786,10 +2871,16 @@ input.simula {
 	.banner-ayuda{
     background: url(../images/banner-footer-400.jpg) no-repeat center top ;
 }
+.pos-pago {
+    margin-top: 260px;
+}
 .puntos {
     float: left;
     width: 80%;
     border-bottom: 0px dashed #ccc;
+}
+.contenido-tab-cuenta .tab-pane p {
+    padding: 0px;
 }
 .cmo-fun .panel-heading {
     height: 90px;
