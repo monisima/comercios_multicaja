@@ -27,6 +27,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/validaciones.sodexo.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
@@ -47,7 +49,15 @@
 		</div>
  		
 <!--header-->
-
+		<div id="alertaCorreo" class="container" style="display: none;" >
+			  <div class="alert alert-danger">
+				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<h2>Tu solicitud fue enviada correctamente. </h2>
+	      			<p>Te contacteremos en un plazo máximo de <span>24 horas hábiles.</span></p>
+	      			<p>Muchas gracias por tu interés en Multicaja.</p>   
+			  </div>
+		</div>
+		
       	<div class="container-fluid gris-claro seccion-simula">
       	  <div class="container">
 	      	<div class="row col-md-6 col-md-offset-3 col-sm-12">
@@ -68,42 +78,66 @@
 		  <div class="row">
 		  <div class="formulario-solicitud">
 		    <div class="form-solicitud"> Formulario de solicitud</div>
-		   	<form>	
-		    		 <div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">¿Qué servicio te gustaría contratar?</div></div>
-				    		<select class="selectpicker" data-width="100%">
-							  <option value="" disabled selected style="display: none;">Selecciona el servicio</option>
-							  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
-							  <option value="2">Ventas con tarjetas</option>
-							  <option value="3">Alimentación y MPOS</option>
-							  <option value="4">Comercio electrónico</option>
-							</select>	
-					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado</div></div>
-				    		<select class="selectpicker" data-width="100%">
-							  <option value="" disabled selected style="display: none;">Selecciona el horario</option>
-							  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
-							  <option value="2">Ventas con tarjetas</option>
-							  <option value="3">Alimentación y MPOS</option>
-							  <option value="4">Comercio electrónico</option>
-							</select>	
-					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Nombre *</div></div>    
-						<input type="text" class="form-solic" id="nombre" name="nombre" placeholder="Ingresa nombre" required>
-						<span class="error-tx">Ingresa un nombre</span>
-					<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">RUT *</div></div>					
-				        <input type="text" class="form-solic" id="rut" name="rut" placeholder="Ingresa RUT sin puntos ni guión" required>
-				    <div class="juntos-mail">    
-					    <div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Correo electrónico *</div></div>
-					        <input type="text" class="form-solic-mail" id="fono" name="fono" placeholder="Ej: correo@gmail.com" required>
-				    </div>
-				    <div class="juntos-cel"> 
-					    <div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png"> Teléfono de contacto * </div></div>
-					        <input type="text" class="form-solic-cel" id="mail" name="mail" placeholder="Ingresa 9 dígitos" required>
+				<form id="formQuieroSerComercioMulticaja" name="formQuieroSerComercioMulticaja">	
+						
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">¿Qué servicio te gustaría contratar?</div></div>
+						<select class="selectpicker" id="servicio" name="servicio" data-width="100%">
+						  <option value="0" disabled selected style="display: none;">Selecciona el servicio</option>
+						  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
+						  <option value="2">Ventas con tarjetas</option>
+						  <option value="3">Alimentación y MPOS</option>
+						  <option value="4">Comercio electrónico</option>
+						</select>
+						<!--	-->			
+						<span id="requiredServicio" name="requiredServicio" class="error-tx" style="display: none;"></span>
+						
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado</div></div>
+						<select class="selectpicker" id="horario" name="horario" data-width="100%">
+						  <option value="" disabled selected style="display: none;">Selecciona el horario</option>
+						  <option value="1">Entre 10:00 y 13:00</option>
+						  <option value="2">Entre 13:00 y 15:00</option>
+						  <option value="3">Entre 15:00 y 18:00</option>
+						</select>
+						<!--	-->	
+						<span id="requiredHorario" name="requiredHorario" class="error-tx" style="display: none;"></span>
+												
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Nombre *</div></div>    
+						<input type="text" class="form-solic" id="nombre" name="nombre" maxlength="60" placeholder="Ingresa nombre" required>
+						<!--	-->			
+						<span id="requiredNombre" name="requiredNombre" class="error-tx" style="display: none;"></span>
+								
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">RUT *</div></div>					
+						<input type="text" class="form-solic" id="rut" name="rut" maxlength="9" placeholder="Ingresa RUT sin puntos ni guión" required>
+						<!--	-->			
+						<span id="requiredRut" name="requiredRut" class="error-tx" style="display: none;"></span>
+						
+						<div class="juntos-mail">    
+							<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Correo electrónico *</div></div>
+							<input type="text" class="form-solic-mail" id="mail" name="mail" maxlength="50" placeholder="Ej: correo@gmail.com" required>
+							<!--	-->			
+							<span id="requiredMail" name="requiredMail" class="error-tx" style="display: none;"></span>
+						</div>
+						
+						<div class="juntos-cel"> 
+							<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png"> Teléfono de contacto * </div></div>
+							<input type="text" class="form-solic-cel" id="fono" name="fono" maxlength="9" onKeyPress="return checkIt(event)" placeholder="Ingresa 9 dígitos" required>
+							<!--	-->			
+							<span id="requiredFono" name="requiredFono" class="error-tx" style="display: none;"></span>	
+						</div>
+							
+				
+				
+					<p class="rig">* Campos obligatorios</p>
+					<div class="captcha-img"> 
+						<div class="g-recaptcha" data-sitekey="6LdrHRQTAAAAAMU6FXDenuOzeugxt8GMB_9bycu0"></div>
+						
+						<!--	-->			
+						<span id="requiredCaptcha" name="requiredCaptcha" class="error-tx" style="display: none;"></span>	
 					</div>
-				        
-		        </form>
-		        <p class="rig">* Campos obligatorios</p>
-		       	<div class="captcha-img"> <img src="images/nosoyrobot.jpg" class="imagen-captcha"></div>
-		        <p class="marg-p">Al completar este formulario, autorizo que Multicaja utilice mis datos y me contacte por vía telefónica o electrónica.</p>
-		    <button type="button" class="btn-rojo btn-block btn-simula btn">ENVIAR</button>
+					<p class="marg-p">Al completar este formulario, autorizo que Multicaja utilice mis datos y me contacte por vía telefónica o electrónica.</p>
+					<button type="button" class="btn-rojo btn-block btn-simula btn" onclick="validarFormQuieroSerComercio(this);">ENVIAR</button>
+					
+				</form>
 		    
 		</div>
 		  </div>
@@ -112,6 +146,144 @@
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
 <jsp:include page="footer.jsp" />
+
+<script language="javascript">
+	
+	function validaEmail(email) {
+		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+		if (reg.test(email) != true) {
+			return false;
+		}     
+		return true;
+	}
+	
+	function validarSiNumero(numero){ 
+		if (!/^([0-9])*$/.test(numero)){
+		return false;
+		}     
+		return true;
+	}
+	function checkIt(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
+	}
+	
+	function validarFormQuieroSerComercio(form) {  	
+		
+		$('#requiredServicio').hide();
+		$('#requiredHorario').hide();
+		$('#requiredNombre').hide();
+		$('#requiredRut').hide();
+		$('#requiredMail').hide();
+		$('#requiredFono').hide();
+		$('#requiredCaptcha').hide();
+		$('#alertaCorreo').hide();
+		
+		/*Obteniendo datos del formulario..*/
+		var validacion = true;
+		var servicio = $('#servicio option:selected').val();
+		var horario = $('#servicio option:selected').text();
+		var tipoServicio = $('#servicio option:selected').text();
+		var nombre = $('#nombre').val();
+		var rut = $('#rut').val();
+		var mail = $('#mail').val();
+		var fono = $('#fono').val();
+		var captcha = $('#g-recaptcha-response').val();
+		
+		if(servicio == '0'){
+			$("#requiredServicio").html('Debe Seleccionar un servicio');
+			$("#requiredServicio").show();
+			validacion = false;
+		}
+		
+		if(horario == '0'){
+			$("#requiredHorario").html('Debe Seleccionar un Horario');
+			$("#requiredHorario").show();
+			validacion = false;
+		}
+		
+		if (nombre.length < 1) {
+			$("#requiredNombre").html('No se ha ingresado el Nombre');
+			$('#requiredNombre').show();
+			validacion = false;
+		}
+		
+		if (rut.length < 1) {
+			$("#requiredRut").html('No se ha ingresado el Rut');
+			$('#requiredRut').show();
+			validacion = false;
+		}else{
+			var trueRut = esRut(rut.toLowerCase());
+			if (!trueRut) {
+				$("#requiredRut").html('No es Rut Valido');
+				$('#requiredRut').show();	
+			}
+		}
+		
+		if (mail.length < 1) {
+			$("#requiredMail").html('No se ha ingresado el Mail');
+			$('#requiredMail').show();
+			validacion = false;
+		}else{
+			if (/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/.test(mail)){
+			} else {
+				$("#requiredMail").html('Ingrese Email valido');
+				$('#requiredMail').show();
+				validacion = false;
+			}
+			<!--  if(validaEmail(mail)){ --> 
+			<!--	$("#requiredMail").html('No es Email Valido');--> 
+			<!--	$('#requiredMail').show();--> 
+			<!--	validacion = false;--> 
+			<!--} --> 
+		}
+		
+		if (fono.length < 1) {
+			$("#requiredFono").html('No se ha ingresado el Teléfono');
+			$('#requiredFono').show();
+			validacion = false;
+		}else{
+			if(!validarSiNumero(fono)){
+					$("#requiredFono").html('No es Teléfono Valido');
+					$('#requiredFono').show();
+					validacion = false;
+				}
+		}
+		
+		if (captcha.length < 1) {
+			$("#requiredCaptcha").html('Selecciona y comprueba que no eres un robot');
+			$('#requiredCaptcha').show();
+			validacion = false;
+		}
+		
+		
+					
+		if (validacion == true) {
+			$.post('http://l-pbeltran:8090/MulticajaComercioV3/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:horario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
+			function(data) {
+				var str="" + data;
+				  errorN = str.substring(0, 6);
+				  if(errorN.indexOf("error")!=-1){
+					  mensajeError = str.split("|");
+					  $("#requiredCaptcha").html(mensajeError[1]);
+					  $('#requiredCaptcha').show();
+					  return;
+				  }else{
+					  $('#alertaCorreo').show();
+					  return;
+				  }				
+			});
+			return true;
+			
+		} else {
+			return false;
+		}
+	}		
+</script>
 
 	<script>
 	$(document).ready( function() {
