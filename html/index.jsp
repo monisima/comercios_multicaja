@@ -25,6 +25,7 @@
 <!--javascript-->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/validaciones.sodexo.js"></script>
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="20">
@@ -36,36 +37,52 @@
 	 		<div class="row">
 			<ol class="breadcrumb">
 			
-			</ol>
-		  <div class="alert alert-danger"><!--ALERTAAAAAAAAAAAAAAAAAAAAAA-->
+		  <!-- 
+		  <div class="alert alert-danger">
 		    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-		   Si eres comercio Multicaja tenemos un mensaje que podría interesarte. <a href="" data-toggle="modal" data-target="#modal-avisoMC" class="alerta" ><strong>Ver aquí.</strong></a>
+		   Si qqeres comercio Multicaja tenemos un mensaje que podría interesarte. <a href="" data-toggle="modal" data-target="#modal-avisoMC" class="alerta" ><strong>Ver aquí.</strong></a>
 		  </div>
+		  -->
 </div>
 </div>
 </div>
 	
+	<!-- Formulario Login mobile-->
 	<div class="container caja-tx-banner">
-		
-		    
-		    			<div class="row col-md-12 visible-sm visible-xs">
-						    <button class="panel-heading collapsed collap-login" data-toggle="collapse" data-target="#preg1" href="#preg1">
-						    <h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea <i class="chevron fa fa-fw" ></i></h4> 
-						    </button>
-						    <div class="collapse login-bajada" id="preg1">
-						        <input type="text" id="rut" name="rut" placeholder="Ingresa Rut" class="error">
-						        <span class="error-tx">RUT incorrecto</span>
-						       	<input type="password" id="pass" name="pass" placeholder="Ingresa Clave" class="error">
-						       	<span class="error-tx">Clave incorrecta</span>
-						       	<a href="#" class="link-quiero"><p>Olvidé mi clave</p></a>
-						        <button type="button" class="btn-rojo btn-block btn-login">ENTRAR</button>
-						        <div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+		<div class="row col-md-12 visible-sm visible-xs">
+			<button class="panel-heading collapsed collap-login" data-toggle="collapse" data-target="#preg1" href="#preg1">
+			<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea <i class="chevron fa fa-fw" ></i></h4> 
+			</button>
+			
+			<div class="collapse login-bajada" id="preg1">
+				<form id="user-login-form-mobile" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
+					
+					<input type="text" id="rutInMobile" maxlength="12" size="10" name="rutInMobile" placeholder="Ingresa Rut" class="error">
+					<input type="hidden" name="rutMobile"> 
+					<input type="hidden" name="dvMobile"> 
+							
+					<!--	-->			
+					<span id="rutIncorrectoMobile" name="rutIncorrectoMobile" class="error-tx" style="display: none;"></span>
+							
+					
+					<input type="password" id="passNormalMobile" size="15" name="passNormalMobile"  placeholder="Ingresa Clave" class="error">
+					
+					<!--	-->	
+					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
+							
+					
+					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero"><p>Olvidé mi clave</p></a>
+					
+					<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form-mobile').submit();">ENTRAR</button>
 
-						    </div>
-						 </div>
-
-
-
+					<div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+					
+					<input type="hidden" id="j_username" name="j_username"/>
+					<input type="hidden" id="j_password" name="j_password"/>
+									
+				</form>
+			</div>
+		 </div>
 	</div>
 
 
@@ -77,16 +94,41 @@
       
         <div class="item active">
           <div class="banner-fondo-img bann-img">
+			  <!-- ----------------------------------------------- 	-->
+			  <!-- 	Formulario Login Navegador						-->
+			  <!-- ----------------------------------------------- 	-->
 		      <div class="container caja-tx-banner">
 		          <div class="login-user col-md-3 col-sm-4 hidden-sm hidden-xs">
-				        <h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
-				        <input type="text" id="rut" name="rut" placeholder="Ingresa Rut" class="error">
-				        <span class="error-tx">RUT incorrecto</span>
-				       	<input type="password" id="pass" name="pass" placeholder="Ingresa Clave" class="error">
-				       	<span class="error-tx">Clave incorrecta</span>
-				       	<a href="#" class="link-quiero"><p>Olvidé mi clave</p></a>
-				        <button type="button" class="btn-rojo btn-block btn-login">ENTRAR</button>
-				        <div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+				  
+						<form id="user-login-form" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
+							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
+							
+							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut" class="error">
+							<input type="hidden" name="rut"> 
+							<input type="hidden" name="dv"> 
+							<!--	-->			
+							<span id="rutIncorrecto" name="rutIncorrecto" class="error-tx" style="display: none;"></span>
+							
+							<input type="password" id="passNormal" size="15" name="passNormal"  placeholder="Ingresa Clave" class="error">
+							
+							<!--	-->	
+							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
+							
+							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero"><p style="margin-top: 15px;">Olvidé mi clave</p></a>
+							
+							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
+							
+							<!--
+							<input class="btn-rojo btn-block btn-login"  id="edit-submit" tabindex="7" type="submit" name="Submit" value="ENTRAR">
+							-->
+							
+							<div class="foot-login"><a href="quiero-ser-comercio.jsp" class="link-quiero"><p><strong>Quiero ser comercio</strong> Multicaja  ></p></a></div>
+							
+							<input type="hidden" id="j_username" name="j_username"/>
+							<input type="hidden" id="j_password" name="j_password"/>
+									
+						</form> 	
+						
 				  </div> 
 		          <div class="col-md-9 col-sm-12">
 		          <div class="row txt-banner-cont">
@@ -303,7 +345,7 @@
 
 <jsp:include page="footer.jsp" />
 
-      <!-- Modal -->
+<!-- Modal Aviso Multicaja :: Clave ha sido bloqueada -->
 <div class="modal fade" id="modal-avisoMC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content aviso-mc">
@@ -311,26 +353,261 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Aviso Multicaja</h4>
+        <h4 class="modal-title" id="myModalLabel">Clave ha sido Bloqueada</h4>
       </div>
       <div class="modal-body">
-      	<p>Estimados, existe una caída en el sistema que impide que los llamados entren a Call Center. Prefiere correo.</p>
-
-       <p> Estimados, existen interminencias en Chips Entel a lo largo de Chile. Informaremos novedades.</p>
-
-		<p>Se informa que se presentan problemas con los convenios de Santander mencionados en la siguiente lista:</p>
-			DUOC CFT<br>
-			DUOC IP<br>
-			DUOC INSTITUTO<br>
+      	<p>Tu clave ha sido bloqueada porque se han excedido los intentos de inicio de sesión.</p>
+       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1">haz clic aquí.</a></p>
       </div>
-     <!-- <div class="modal-footer">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>-->
+      </div>
     </div>
   </div>
 </div>
 
+<!-- Modal Aviso Multicaja :: RUT o CLAVE Incorrecto -->
+<div class="modal fade" id="modal-avisoMC2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content aviso-mc">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">RUT o Clave Incorrecto</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Estimado usuario, el RUT y/o clave de usuario ingresado es incorrecto.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+if (getURLParameter('login_error') == '1'){
+	$('#modal-avisoMC2').modal('show');
+}
+
+if (getURLParameter('login_error') == '2'){
+	$('#modal-avisoMC').modal('show');	
+}
+
+function getURLParameter(name) {
+	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||0;
+}
+
+$.urlParam = function(name){
+	var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+	return results[1] || 0;
+}
+			
+</script>
+
+<script language="javascript">	
+    		function validarFormLoginMobile(form) {  			
+				$('#rutIncorrectoMobile').hide()
+				$('#claveIncorrectaMobile').hide();
+				f=document.formLoginMobile;
+				var rutIn =  f.rutInMobile.value;		
+				var password = f.passNormalMobile.value;
+   				msgError = "";
+   				validacion = true;
+				
+				if (rutIn.length < 1) {
+					//msgError += "- No se ha ingresado el rut\n";
+					$("#rutIncorrectoMobile").html('No se ha ingresado el rut');
+					$('#rutIncorrectoMobile').show();
+					validacion = false;
+				}
+				if (password.length < 1) {
+					//msgError += "- No se ha ingresado la contraseña\n";
+					$("#claveIncorrectaMobile").html('No se ha ingresado la contraseña');
+					$('#claveIncorrectaMobile').show();
+				    validacion = false;
+				}
+				if (!validacion) {
+					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+				    return false;
+				}
+				var trueRut = esRut(rutIn.toLowerCase());
+				
+				//alert('ES RUT' + trueRut);
+				//alert('password.length' + password.length);
+				
+				if (trueRut) {
+						if (password.length < 4 || password.length > 4) {
+							$("#claveIncorrectaMobile").html('La Clave debe contener 4 caracteres');
+							$('#claveIncorrectaMobile').show();	
+							validacion = false;						
+							return false;
+						}
+						
+				
+				}else{ /* No es rut */
+						$("#rutIncorrectoMobile").html('No es Rut Valido');
+						$('#rutIncorrectoMobile').show();
+						if (password.length < 4 || password.length > 4) {
+							$("#claveIncorrectaMobile").html('La Clave debe contener 4 caracteres');
+							$('#claveIncorrectaMobile').show();	
+						}
+						
+						validacion = false;						
+						return false;
+				}
+				
+			
+				var rutTmp = "";   
+			    for ( i=0; i < rutIn.length ; i++ ){
+					 if ( rutIn.charAt(i) != ' ' && rutIn.charAt(i) != '.' && rutIn.charAt(i) != '-' )
+					   rutTmp = rutTmp + rutIn.charAt(i);  
+				}      
+				    
+					   
+				var dv = rutTmp.charAt(rutTmp.length-1);
+				rutTmp = rutTmp.substring(0, rutTmp.length-1);
+				
+				//alert('dv ok' + dv);
+				//alert('rutTmp ok' + rutTmp);
+				
+   				/*
+				if (dv.length < 1) {
+					msgError += "- No se ha ingresado el digito verificador\n";
+				    validacion = false;
+				}
+				*/
+
+				if (validacion == true) {
+					ingresar4(rutTmp, dv.toUpperCase(), password,f);
+				    return true;
+					
+				} else {
+					alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+				    return false;
+				}
+			}
+			
+			function ingresar4(rut, dv, password, f) {
+				f.rutMobile.value=rut;
+				f.dvMobile.value=dv;
+				f.j_username.value=rut+"-"+dv;
+				f.j_password.value=password;
+			}		
+</script>
+		
+<script language="javascript">	
+    		function validarFormLogin(form) {  
+				//alert('validarFormLogin2');
+				
+				$('#rutIncorrecto').hide()
+				$('#claveIncorrecta').hide();
+				
+				f=document.formLogin;
+				//var bajada = f.rutIn.value;
+				
+				//alert('ID ' + f.id);
+		
+    			//rut =  document.formLogin.rut.value;
+				var rutIn =  f.rutIn.value;
+				
+				//alert('rutIn' + rutIn);
+				
+				//dv = document.formLogin.dv.value;				
+				var password = f.passNormal.value;
+				
+				//alert('password' + password);
+				
+   				msgError = "";
+   				validacion = true;
+				
+				if (rutIn.length < 1) {
+					//msgError += "- No se ha ingresado el rut\n";
+					$("#rutIncorrecto").html('No se ha ingresado el rut');
+					$('#rutIncorrecto').show();
+					validacion = false;
+				}
+				if (password.length < 1) {
+					//msgError += "- No se ha ingresado la contraseña\n";
+					$("#claveIncorrecta").html('No se ha ingresado la contraseña');
+					$('#claveIncorrecta').show();
+				    validacion = false;
+				}
+				if (!validacion) {
+					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+				    return false;
+				}
+				var trueRut = esRut(rutIn.toLowerCase());
+				
+				//alert('ES RUT' + trueRut);
+				//alert('password.length' + password.length);
+				
+				if (trueRut) {
+						if (password.length < 4 || password.length > 4) {
+							$("#claveIncorrecta").html('La Clave debe contener 4 caracteres');
+							$('#claveIncorrecta').show();	
+							validacion = false;						
+							return false;
+						}
+						
+				
+				}else{ /* No es rut */
+						$("#rutIncorrecto").html('No es Rut Valido');
+						$('#rutIncorrecto').show();
+						if (password.length < 4 || password.length > 4) {
+							$("#claveIncorrecta").html('La Clave debe contener 4 caracteres');
+							$('#claveIncorrecta').show();	
+						}
+						
+						validacion = false;						
+						return false;
+				}
+				
+				//alert('antes del for');
+				
+				var rutTmp = "";   
+			    for ( i=0; i < rutIn.length ; i++ ){
+					 if ( rutIn.charAt(i) != ' ' && rutIn.charAt(i) != '.' && rutIn.charAt(i) != '-' )
+					   rutTmp = rutTmp + rutIn.charAt(i);  
+				}      
+				    
+					   
+				var dv = rutTmp.charAt(rutTmp.length-1);
+				rutTmp = rutTmp.substring(0, rutTmp.length-1);
+				
+				//alert('dv ok' + dv);
+				//alert('rutTmp ok' + rutTmp);
+				
+   				/*
+				if (dv.length < 1) {
+					msgError += "- No se ha ingresado el digito verificador\n";
+				    validacion = false;
+				}
+				*/
+
+				if (validacion == true) {
+					//ingresar();
+					ingresar3(rutTmp, dv.toUpperCase(), password,f);
+				    return true;
+					
+				} else {
+					alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+				    return false;
+				}
+			}
+			
+			function ingresar3(rut, dv, password, f) {
+				//alert('ingresar3');
+				f.rut.value=rut;
+				f.dv.value=dv;
+				f.j_username.value=rut+"-"+dv;
+				f.j_password.value=password;
+			}
+			
+
+			
+</script>
 
 
 
