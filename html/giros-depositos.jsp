@@ -101,55 +101,56 @@ $(function() {
 <!--header-->
 
 	
-      	<div id="sec1" class="container-fluid">
+      	<div id="sec1" class="container-fluid secciones-serv">
       	  
       			<div class="row">
 				      	  	<div class="container seccion-local-banc">
-				      			<div class="titulo-serv">
-				      				<h2>¡Convierte tu local en una sucursal bancaria!</h2>
-				      			</div>
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci.jpg"></div>
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci-nova.jpg"></div>	
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/tbanc.jpg"></div>	
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/banefe.jpg"></div>	
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/hites-pago.jpg"></div>	
-				      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/santander.jpg"></div>	
-	<span id="como-funciona"></span>	
-								
-				      	  </div>
-				      	  <div class="gris-claro seccion-giros-dep" >
-				
-				      		<div class="container" >
-						      		<div class="row bs-wizard" style="border-bottom:0;">
-				                
-						                <div class="col-sm-4 bs-wizard-step complete">
-						                 <img src="images/podras-ofrecer.jpg" class="img-tres-cir">
-						                  <div class="bs-wizard-info text-center"><strong>Podrás ofrecer:</strong> Giros, depósitos, pagos de créditos y avances en efectivo.</div>
-						                </div>
-						                
-						                <div class="col-sm-4 bs-wizard-step complete">
-						                <img src="images/serv-sin-costo.jpg" class="img-tres-cir">
-						                  <div class="bs-wizard-info text-center"><strong>Servicio sin costo</strong> para tus clientes o tu negocio.</div>
-						                </div>
-						                
-						                <div class="col-sm-4 bs-wizard-step active">
-						                <img src="images/prepago.jpg" class="img-tres-cir">
-						                  <div class="bs-wizard-info text-center"><strong>Prepago:</strong> debes cargar el saldo de tu terminal para operar.</div>
-						                </div>
-						                
-				            		</div>
-						      		<div class="extras-txt col-md-6 col-md-offset-3"><a data-toggle="collapse" data-target="#restricciones" class="restricc rojo">Ver restricciones del servicio  </a></div>
-						      				  	<div id="restricciones" class="collapse col-md-12 tx-center restricciones-txt">
-													<p><img src="images/down.png" class="caret-como-fun"><strong class="txt-negro">Giros:</strong> Máximo <strong>$100.000  diarios o 2 giros al día</strong> por cuenta bancaria. <strong>Santander</strong> máximo <strong>$400.00 al mes</strong> por cuenta bancaria.</p>
-								      				<p><img src="images/down.png" class="caret-como-fun"><strong class="txt-negro">Depósitos:</strong> Máximo <strong>Bci $150.000</strong> diarios, <strong>Santander $400.000</strong> diarios <strong>o 5 al día</strong> por cuenta.</p>
-												</div>
-						      		
-							</div>
-				      	  </div>
+						      			<div class="titulo-serv">
+						      				<h2>¡Convierte tu local en una sucursal bancaria!</h2>
+						      			</div>
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci.jpg"></div>
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/bci-nova.jpg"></div>	
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/tbanc.jpg"></div>	
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/banefe.jpg"></div>	
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/hites-pago.jpg"></div>	
+						      		<div class="col-md-2 col-sm-4 col-xs-6 banc"><img src="images/santander.jpg"></div>	
 
-				      	  <div class="gris-oscuro seccion-comision" >
+						      		<div class="flecha_descubre col-md-12">
+						        			<a href="#circulos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+						            </div>
+							</div>
+				      	  	<div class="gris-claro seccion-giros-dep" id="circulos">				
+							      		<div class="container" >
+									      		<div class="row bs-wizard" style="border-bottom:0;">
+							                
+									                <div class="col-sm-4 bs-wizard-step complete">
+									                 <img src="images/podras-ofrecer.jpg" class="img-tres-cir">
+									                  <div class="bs-wizard-info text-center"><strong>Podrás ofrecer:</strong> Giros, depósitos, pagos de créditos y avances en efectivo.</div>
+									                </div>
+									                
+									                <div class="col-sm-4 bs-wizard-step complete">
+									                <img src="images/serv-sin-costo.jpg" class="img-tres-cir">
+									                  <div class="bs-wizard-info text-center"><strong>Servicio sin costo</strong> para tus clientes o tu negocio.</div>
+									                </div>
+									                
+									                <div class="col-sm-4 bs-wizard-step active">
+									                <img src="images/prepago.jpg" class="img-tres-cir">
+									                  <div class="bs-wizard-info text-center"><strong>Prepago:</strong> debes cargar el saldo de tu terminal para operar.</div>
+									                </div>
+									                
+							            		</div>
+									      		<div class="extras-txt col-md-6 col-md-offset-3"><a data-toggle="collapse" data-target="#restricciones" class="restricc rojo">Ver restricciones del servicio  </a></div>
+									      				  	<div id="restricciones" class="collapse col-md-12 tx-center restricciones-txt">
+																<p><img src="images/down.png" class="caret-como-fun"><strong class="txt-negro">Giros:</strong> Máximo <strong>$100.000  diarios o 2 giros al día</strong> por cuenta bancaria. <strong>Santander</strong> máximo <strong>$400.00 al mes</strong> por cuenta bancaria.</p>
+											      				<p><img src="images/down.png" class="caret-como-fun"><strong class="txt-negro">Depósitos:</strong> Máximo <strong>Bci $150.000</strong> diarios, <strong>Santander $400.000</strong> diarios <strong>o 5 al día</strong> por cuenta.</p>
+															</div>
+									    </div>
+							</div>
+				
+
+				<div class="gris-oscuro seccion-comision" >
 				      	  		<div class="mas-clientes mas-vendas">
-				      	  		<h2>suma este servicio<img src="images/sticker-like.jpg" class="sticker-like">y aumenta tu comisión</h2>
+				      	  		<h2>suma este servicio y <img src="images/sticker-like.jpg" class="sticker-like"  id="comision-ancla">aumenta tu comisión</h2>
 				      	  		</div>
 				      	  		<p>Revisa las comisiones vigentes</p>
 				      	  		<a href="#comision-ancla"><button data-toggle="collapse" data-target="#comisiones" class="btn-lineal btn-comision">
@@ -159,11 +160,11 @@ $(function() {
 				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
 				            	
-				      	  </div>
-				      	  <div id="comisiones" class="collapse comisiones-escondido container-fluid">
-				      	  <div class="container">
-				      	  <div class="row">
-				      	  <div class="col-md-8 col-md-offset-2 row">
+				</div>
+				<div id="comisiones" class="collapse comisiones-escondido container-fluid">
+				    <div class="container">
+				      	<div class="row">
+				      	  	<div class="col-md-8 col-md-offset-2 row">
 				            	<table class="tabl-comisi tabla-comi-pago row" width="100%">
 									  <tr>
 									    <th class="rojito" width="50%">Servicio</th>
@@ -188,98 +189,63 @@ $(function() {
 								</table>
 								<p class="letra-chica">(<span>*</span>) Comisión 0,00255 UF + IVA. Valor en pesos calculado a Marzo de 2016.</p>
 								<div class="row txt-bajada-tbl">
-									<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de giros, depósitos y pago de cuotas de créditos suman para el <a href="#" class="rojo">PREMIO MULTISERVICIO.</a></p>
+									<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de giros, depósitos y pago de cuotas de créditos suman para el <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank">PREMIO MULTISERVICIO.</a></p>
 									<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
-									<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="#" class="rojo">aquí.</a></strong></p>
+									<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a></strong>--></p>
 								</div>
 							</div>
-							</div>
-							</div>
-				          </div>
+						</div>
+					</div>
+				</div>
 
 				      	  <div class="seccion-equip" id="equipos">
 				      	  	<div class="titulo">
 				      				<h2 >Equipos para tu comercio</h2>
 				      		</div>
 				      		<div class="container">
-						      <div class="row">
-							      <div class="col-md-10 col-md-offset-1">
-							      	<div class="col-md-4 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos enmedio">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-							      			
-							      			</div>
-							      		</div>
-							      		
-							      	</div>
-							      	<div class="col-md-4 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos1.jpg" class="pos-img" >
-							      			<div class="text-equipos enmedio">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-							      			
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>El POS inalámbrico tiene un costo adicional de 0,15 UF+ IVA</div>
-							      	</div>
-							      	<div class="col-md-4 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos3.jpg" class="pos-img">
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Web</h3>
-							      				<p><span>Sin costo</span></p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Necesitas un computador con conexión a internet.</div>
-							      	</div>
+
+					      		<div class="container">
+							      <div class="row">
+								      <div class="col-md-8 col-md-offset-2">								      	
+								      	<div class="col-md-6 col-sm-6">
+								      		<div class="polaroid">
+								      		<img src="images/pos2.jpg" class="pos-img">
+								      			<div class="text-equipos enmedio">
+								      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
+								      			</div>
+								      		</div>
+								      	</div>
+								      	<div class="col-md-6 col-sm-6">
+								      		<div class="polaroid">
+								      		<img src="images/pos1.jpg" class="pos-img" >
+								      			<div class="text-equipos enmedio">
+								      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
+								      			</div>
+								      		</div>
+								      		<div class="letra-chica caja-texto-descrip"><span>*</span>El POS inalámbrico tiene un costo adicional de 0,15 UF+ IVA</div>
+								      	</div>	
+									</div>
 								</div>
-							</div>
+					      	  </div>
 							<div class="row">
 								<div class="extras-txt col-md-8 col-md-offset-2">
 									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
-									<a href="#" target="_self"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<a href="https://www.multicaja.cl/comercio/comisionesVigentes" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
 									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>
 				      	  </div>
 
-				      		<!--<div class="container">
-						      <div class="row">
-							      <div class="col-md-8 col-md-offset-2">
-							      	<div class="col-md-6 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos1.jpg" class="pos-img" >
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
-							      				<p><span>0,65 UF</span> + IVA / Mes</p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-							      	</div>
-							      	<div class="col-md-6 col-sm-6">
-							      		<div class="polaroid">
-							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos">
-							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>
-							      				<p><span>0,5 UF</span> + IVA / Mes</p>
-							      			</div>
-							      		</div>
-							      		<div class="letra-chica caja-texto-descrip"><span>*</span>Si vendes más de 500.000 en recargas tu POS es gratis</div>
-							      	</div>	
-								</div>
-							</div>
-				      	  </div>-->
+
 
 				      	  </div>
 
-				      	  <div class="gris-claro">
+				      	  <div class="gris-claro hei-400">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left tx-giros-p">
-				      	  			<h2><span> ¡No pagues de más!</span><br><span class="tx-gris-bl">usa tu POS sin costos mensuales</span></h2>
-				      	  			<p>Si la suma del 10% del monto de otros servicios más la venta de recarga es mayor a 500.000</p>
+				      	  		<div class="col-md-8 col-sm-8 txt-pos-free txt-left">
+				      	  			<h2><span> tu pos es gratis</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
+				      	  			<p>(*) Se considera el monto de la venta de recarga más el 10% del monto de otros servicios (Loto, Loto3, Loto 4, pago de cuentas, giros, depósitos, pago de cuotas de créditos, pago de proveedores y SOAP)</p>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">
 				      	  			<img src="images/pos-free.jpg" class="pos-free">
@@ -292,8 +258,8 @@ $(function() {
 				      	  </div>
 
 				      	  </div>
-
-      	</div>
+	</div>
+</div>
 <!--content-->
 
 <!--Footerrrrrrrrrrrrr-->

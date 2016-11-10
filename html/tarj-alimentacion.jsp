@@ -101,7 +101,7 @@ $(function() {
 <!--header-->
 
 	
-      	<div id="sec1" class="container-fluid">
+      	<div id="sec1" class="container-fluid secciones-serv">
       	  
       			<div class="row">
 				      	  	<div class="container seccion-local-banc">
@@ -116,20 +116,18 @@ $(function() {
 				      				</div>
 				      			</div>
 				      			<div class="flecha_descubre col-md-12">
-				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				        			<a href="#puntos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
 				      		
-	<span id="como-funciona"></span>	
 								
 				      	  </div>
-				      	  <div class="gris-claro seccion-funciona">
+				      	  <div class="gris-claro seccion-funciona" id="puntos">
 				
 				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
 				                  <img src="images/alimentacion-empresa.jpg" class="img-tres-cir">
-				                   <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
 				                  <div class="bs-wizard-info text-center">Podrás recibir pagos con tarjetas de  <span>alimentación de Junaeb y Empresa.</span></div>
 				                </div>
 				                
@@ -140,7 +138,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
 				                  <img src="images/llamanos-mc.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:contacto@multicaja.cl" class="rojo">mailcomercios@multicaja.cl</a>
+				                  <div class="bs-wizard-info text-center"><span>Llámanos al 600 363 20 20</span> o escríbenos a <a href="mailto:contacto@multicaja.cl" class="rojo">contacto@multicaja.cl</a>
 </div>
 				                </div>
 				                

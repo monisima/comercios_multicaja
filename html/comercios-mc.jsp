@@ -84,7 +84,7 @@ $(function() {
 		  
 		  <div class="col-md-8 col-md-offset-2">  
 			  <div class="collapse navbar-collapse menu-xs-retiro menu-servicios row" id="superMenu" style="height: 1px;" aria-expanded="false">
-		            <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
+		            <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num tab-com">
 		              <li class="acto"><a href="#sec1" class="tablinks">Comercio Multicaja</a><div class="lin-sep"></div></li>
 		              <li><a href="requisitos.jsp" >Requisitos</a><div class="lin-sep"></div></li>
 		              <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
@@ -99,7 +99,7 @@ $(function() {
 <!--header-->
 
 	
-      	<div id="sec1" class="container-fluid">
+      	<div id="sec1" class="container-fluid  como-funciona">
       	  
       			<div class="row">
 				      	  	<div class="container seccion-como-fun-txt">
@@ -121,15 +121,16 @@ $(function() {
 				      				<h2>¿Cómo operamos?</h2>
 				      			</div>
 				      			<div class="col-md-7 marg-operamos">
-				      				  	<p class="p-tooltip"><img src="images/caret-fle.jpg" class="caret-como-fun">Nuestra forma de operación es <strong>Prepago.</strong> Es decir, para ofrecer los distintos servicios debes contar con dinero en tu <strong>Saldo Multicaja</strong></p>
-				      				  		<span class="tooltip-info"><img src="images/i-tool.png" class="i-tooltip">
+				      				  	<p class="p-tooltip"><img src="images/caret-fle.jpg" class="caret-como-fun">Nuestra forma de operación es <strong>Prepago.</strong> Es decir, para ofrecer los distintos servicios debes contar con dinero en tu <strong>Saldo Multicaja</strong>
+				      				  	<span class="tooltip-info-mc"><img src="images/i-tool.png" class="i-tooltip-mc">
 				                               <span class="tooltiptext"> <img class="flecha" src="images/flecha-white.png"/>
-				                                     Si la olvidas, puedes solicitarla enviando un correo a <strong>contacto@multicaja.cl</strong> o llamando al <strong>600 363 20 20</strong>
+				                                    <strong>Saldo Multicaja: </strong>Cuenta virtual  donde depositas tu capital de trabajo, que te permitirá vender los servicios Multicaja.
 				                               </span>
-				                        	</span>
+				                        </span></p>
 				      				  		
-								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Revisa como puedes aumentar tu saldo en la sección <a class="rojo" href="#">Ayuda</a></p>
-								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Entérate de los servicios  y comisiones que puedes ganar en la sección <a class="rojo" href="#">Servicios</a></p>
+				      				  		
+								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Revisa como puedes aumentar tu saldo en la sección <a class="rojo" href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank">Ayuda</a></p>
+								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Entérate de los servicios  y comisiones que puedes ganar en la sección <a class="rojo" href="recargas-pines.jsp" target="_blank">Servicios</a></p>
 								        <p><img src="images/caret-fle.jpg" class="caret-como-fun">Tus comisiones se pagan siempre dentro de los primeros 5 días hábiles del mes siguiente y son abonadas directamente a tu saldo Multicaja </p>
 				      			</div>
 				      			<div class="col-md-4">
@@ -165,7 +166,7 @@ $(function() {
 				                
 				            	</div>
 				            	 
-				      	  		<a href="#"><button data-toggle="collapse"  class="btn-lineal-negat">
+				      	  		<a href="https://www.multicaja.cl/comercio/" target="_blank"><button data-toggle="collapse"  class="btn-lineal-negat">
 				      	  			Visitar
 				      	  		</button></a>
 				      	  </div>
@@ -183,7 +184,7 @@ $(function() {
 				      	  </div>
 
 
-				      	    <div class="seccion-comercios-cmf">
+				      	    <div class="seccion-comercios-cmf hei-450">
 				      	  	<div class="container">
 				      	  	  <div class="row">
 				      	  	  <div class="col-md-6 ">

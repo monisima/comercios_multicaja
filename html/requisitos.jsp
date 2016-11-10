@@ -84,7 +84,7 @@ $(function() {
 		  
 		  <div class="col-md-8 col-md-offset-2">  
 			  <div class="collapse navbar-collapse menu-xs-retiro menu-servicios row" id="superMenu" style="height: 1px;" aria-expanded="false">
-		            <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num">
+		            <ul class="nav nav-tabs navbar-nav collapse-xs-menu nav-justified tab-num tab-com">
 		              <li><a href="comercios-mc.jsp">Comercio Multicaja</a><div class="lin-sep"></div></li>
 		              <li class="acto"><a href="#sec1" class="tablinks">Requisitos</a><div class="lin-sep"></div></li>
 		              <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
@@ -99,7 +99,7 @@ $(function() {
 <!--header-->
 
 	
-      	<div id="sec1" class="container-fluid">
+      	<div id="sec1" class="container-fluid como-funciona">
       	  
       			<div class="row">
 				      	  	<div class="container">
@@ -107,9 +107,9 @@ $(function() {
 				      				<h2>¿Qué necesito para ser un comercio Multicaja?</h2>
 				      			</div>
 				      			<div class="enumerar-necesito-ser col-md-10 col-md-offset-1">
-				      				<p><img src="images/num_01.jpg" class="num-cf">Ser un comercio establecido con patente comercial válida.</p>
-				      				<p><img src="images/num_02.jpg" class="num-cf">Si contratas los Servicios Multicaja a través del terminal web o USSD (usando tu celular) sólo nos debes entregar tus datos y podrás vender en minutos. </p>
-				      				<p><img src="images/num_03.jpg" class="num-cf">Si quieres vender los Servicios Multicaja a través de un POS, debes presentar la siguiente documentación: </p>
+				      				<p class="indent-cero"><img src="images/num_01.jpg" class="num-cf">Ser un comercio establecido con patente comercial válida.</p>
+				      				<p class="indent-cero"><img src="images/num_02.jpg" class="num-cf">Si contratas los Servicios Multicaja a través del terminal web o USSD (usando tu celular) sólo nos debes entregar tus datos y podrás vender en minutos. </p>
+				      				<p class="indent-cero"><img src="images/num_03.jpg" class="num-cf">Si quieres vender los Servicios Multicaja a través de un POS, debes presentar la siguiente documentación: </p>
 						      				<ul class="lista-acordeon">
 							      				<li><p1><strong>Boleta de tu comercio</strong> timbrada por el SII.</p1></li>
 												<li><p1><strong>Copia de Cédula de Identidad</strong> por ambos lados.</p1></li>
@@ -122,7 +122,7 @@ $(function() {
 									<span class="letra-chica marg-let-necesito-ser font-165"><span>*</span>Sin perjuicios de las condiciones establecidas en el contrato.</span>
 				      			</div>
 
-				      			<div class="col-md-3 col-md-offset-3">
+				      			<div class="col-md-3 col-md-offset-3 hei-350">
 				      				<img src="images/mujer.jpg" class="mujer-">
 				      			</div>
 				      			<div class="col-md-4">

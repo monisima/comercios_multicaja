@@ -66,7 +66,7 @@
 	      				<ul class="bullet">
 	      				<li><p>Completa el formulario y un ejecutivo te contactará dentro de <span>24 horas hábiles.</span></p></li>
 	      				<li><p>Visita la sección <a href="recargas-pines.jsp" class="rojo">Servicios</a> para conocer más detalles.</p></li>
-	      				<li><p>Conoce <a href="#" class="rojo">Cómo funciona</a> Multicaja.</p></li>
+	      				<li><p>Conoce <a href="comercios-mc.jsp" class="rojo">Cómo funciona</a> Multicaja.</p></li>
 	      				</ul>
 	      		</div>
 			</div>

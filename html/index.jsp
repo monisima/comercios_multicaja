@@ -88,18 +88,11 @@
 
 <div class="container-fluid">
     <div id="myCarousel" class="carousel slide row" data-ride="carousel">
-    
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-      
-        <div class="item active">
-          <div class="banner-fondo-img bann-img">
-			  <!-- ----------------------------------------------- 	-->
-			  <!-- 	Formulario Login Navegador						-->
-			  <!-- ----------------------------------------------- 	-->
-		      <div class="container caja-tx-banner">
+     		<div class="container caja-tx-banner">
 		          <div class="login-user col-md-3 col-sm-4 hidden-sm hidden-xs">
-				  
+				  	<!-- ----------------------------------------------- 	-->
+			  		<!-- 	Formulario Login Navegador						-->
+			  		<!-- ----------------------------------------------- 	-->
 						<form id="user-login-form" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
 							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
 							
@@ -114,7 +107,7 @@
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero"><p style="margin-top: 15px;">Olvidé mi clave</p></a>
+							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero"><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							
@@ -131,6 +124,20 @@
 						
 				  </div> 
 		          <div class="col-md-9 col-sm-12">
+		        
+				  </div>
+			  </div>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+      		
+        <div class="item active">
+          <div class="banner-fondo-img bann-img">
+		      <div class="container caja-tx-banner">
+		          <div class="col-md-3 col-sm-4 hidden-sm hidden-xs">
+						
+				  </div> 
+		          <div class="col-md-9 col-sm-12">
 		          <div class="row txt-banner-cont">
 				  <div class="texto-banner col-md-4 col-sm-4 col-xs-12">
 					<img src="images/mpos.png" class="img-mpos-bnn">
@@ -139,32 +146,28 @@
 				         <img src="images/mpos.svg" class="logo-mpos"> <h2>lo pagas por una <span>única vez</span>, <br>sin costos mensuales adicionales</h2>
 						              <img src="images/tarjeta_sodexo.png" class="tarj-sod-ede">
 						              <img src="images/tarjeta_edenred.png"  class="tarj-sod-ede">	
-						              <button type="button" class="btn btn-rojo border-btn-rojo mas-info">VER MÁS INFORMACIÓN</button>				           
+						              <a href="https://www.multicaja.cl/mpos/" target="_blank"><button type="button" class="btn btn-rojo border-btn-rojo mas-info">VER MÁS INFORMACIÓN</button></a>	           
 				  </div>
 				  </div>
 				  </div>
 			  </div>
 		   </div>
-		</div><!-- End Item -->
+		</div>
+		<!--<div class="item">
+		    <div class="banner-fondo-img bann-img"></div>
+		</div>
 		 <div class="item">
-		    <div class="banner-fondo-img bann-img">
-					      
-			</div>
-		</div><!-- End Item -->
-		 <div class="item">
-		    <div class="banner-fondo-img bann-img">
-					      
-			</div>
-		</div><!-- End Item -->
-      </div><!-- End Carousel Inner -->
+		    <div class="banner-fondo-img bann-img"></div>
+		</div>-->
+      </div>
 
 
       <div class="container carrusel-banner">
        
     	<ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		 <li data-target="#myCarousel" data-slide-to="1"></li>
-		 <li data-target="#myCarousel" data-slide-to="2"></li>
+		 <li data-target="#myCarousel" data-slide-to="2"></li>-->
         </ol>
         
       </div>
@@ -324,16 +327,16 @@
 	      	</div>
 	      	<div class="marg-top-40 banner-ayuda"></div>
 	      	<div class="marg-top-10 tabla-ayuda">
-	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf1.png" class="img-ayuda">Operación Multicaja</p>
 	      		</div></a>
-	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf2.png" class="img-ayuda">Alimentación</p>
 	      		</div></a>
-	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf3.png" class="img-ayuda">Tarjetas</p>
 	      		</div></a>
-	      		<a href="#"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
 	      			<p><img src="images/ayudapf4.png" class="img-ayuda">MPOS</p>
 	      		</div></a>
 	      	</div>
@@ -418,7 +421,7 @@ $.urlParam = function(name){
 				
 				if (rutIn.length < 1) {
 					//msgError += "- No se ha ingresado el rut\n";
-					$("#rutIncorrectoMobile").html('No se ha ingresado el rut');
+					$("#rutIncorrectoMobile").html('No se ha ingresado el Rut');
 					$('#rutIncorrectoMobile').show();
 					validacion = false;
 				}
@@ -439,7 +442,7 @@ $.urlParam = function(name){
 				
 				if (trueRut) {
 						if (password.length < 4 || password.length > 4) {
-							$("#claveIncorrectaMobile").html('La Clave debe contener 4 caracteres');
+							$("#claveIncorrectaMobile").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrectaMobile').show();	
 							validacion = false;						
 							return false;
@@ -447,10 +450,10 @@ $.urlParam = function(name){
 						
 				
 				}else{ /* No es rut */
-						$("#rutIncorrectoMobile").html('No es Rut Valido');
+						$("#rutIncorrectoMobile").html('No es Rut válido');
 						$('#rutIncorrectoMobile').show();
 						if (password.length < 4 || password.length > 4) {
-							$("#claveIncorrectaMobile").html('La Clave debe contener 4 caracteres');
+							$("#claveIncorrectaMobile").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrectaMobile').show();	
 						}
 						
@@ -524,7 +527,7 @@ $.urlParam = function(name){
 				
 				if (rutIn.length < 1) {
 					//msgError += "- No se ha ingresado el rut\n";
-					$("#rutIncorrecto").html('No se ha ingresado el rut');
+					$("#rutIncorrecto").html('No se ha ingresado el Rut');
 					$('#rutIncorrecto').show();
 					validacion = false;
 				}
@@ -545,7 +548,7 @@ $.urlParam = function(name){
 				
 				if (trueRut) {
 						if (password.length < 4 || password.length > 4) {
-							$("#claveIncorrecta").html('La Clave debe contener 4 caracteres');
+							$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrecta').show();	
 							validacion = false;						
 							return false;
@@ -556,7 +559,7 @@ $.urlParam = function(name){
 						$("#rutIncorrecto").html('No es Rut Valido');
 						$('#rutIncorrecto').show();
 						if (password.length < 4 || password.length > 4) {
-							$("#claveIncorrecta").html('La Clave debe contener 4 caracteres');
+							$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrecta').show();	
 						}
 						

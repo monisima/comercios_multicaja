@@ -56,7 +56,14 @@ a button.serv-btn{
      position: relative;
      top: 75px;
   } */
-
+  .affix ~ .secciones-serv{
+    position: relative;
+     top: 100px;
+    }
+   .affix ~ .como-funciona{
+    position: relative;
+     top: 60px;
+    }
     .affix ~ .seccion-atencion{
     position: relative;
      top: 60px;
@@ -223,8 +230,11 @@ ul.menu-principal li.activa{
 ul.menu-principal > li > a:hover, ul.menu-principal > li > a:focus {
     text-decoration: none!important;
     background-color: rgba(238, 238, 238, 0)!important;
-    border:0px!important;
+    border:1px solid rgba(255, 0, 0, 0)!important;
     outline: 0px!important;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    border-color: rgba(51, 122, 183, 0)!important;
 }
 /*header logo - menu - boton*/
 .logo-comercios{
@@ -272,6 +282,9 @@ color: #4a4a4a!important;
 }
 .marg-top-40{
 	margin-top: 40px;
+}
+.centrar-tx{
+	text-align: center!important;
 }
 .marg-top-10{
 	margin-top: 10px;
@@ -389,7 +402,7 @@ background: url(../images/banner_fondo1.jpg) no-repeat;
 	text-align:left;
 	padding: 30px 40px 0px!important;
     color:#333;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .login-user h4{
 	font-size: 17px;
@@ -416,7 +429,7 @@ input[type=text] {
 input[type=password] {
     width: 100%;
     padding: 5px 10px;
-    margin: 30px 0px 0px;
+    margin: 25px 0px 0px;
     box-sizing: border-box;
     font-size: 15px;
 }
@@ -427,8 +440,6 @@ input[type=password] {
 }
 .foot-login{
 	border-top: 1px solid #d8d8d8;
-	padding-top: 8px;
-	padding-bottom: 8px;
 	margin-top: 10px;
 }
 .foot-login p{
@@ -554,10 +565,14 @@ text-decoration: none!important;
 .redes-sociales:hover {
     opacity: 0.7;
 }
+.hei-400{
+	 height: 398px;
+}
 #footer{
 	color: #fff;
 	font-size: 14px;
 	font-weight: 300;
+	position: relative;
 }
 .caja-redes{
 	font-weight: 300;
@@ -792,10 +807,12 @@ a.servc, a.servc:hover, a.servc:link,  a.servc:visited {
     display: block;
     margin: 0 auto 20px;
 }
+.btn-comision:hover{
+	background: #252525;
+}
 .comisiones-escondido{
 	background: #fff;
 	border-bottom: 1px solid #c2c9c7;
-	padding-bottom: 30px;
 }
 .tabl-comisi{
 	margin-top: 55px;
@@ -1010,7 +1027,7 @@ padding-right: 20px;
 }
 .num-cf{
 	float: left;
-	margin-right: 20px;
+	margin-right: 8px;
 	margin-top: -3px;
 }
 /* fiN ACORDEON  */
@@ -1038,6 +1055,9 @@ padding-right: 20px;
 .nav-tabs.tab-num > li.acto > a {
     border-bottom: 3px solid #cc0000!important;
     border-radius: 0px!important;
+}
+.indent-cero{
+	text-indent: 0em!important;
 }
  /*Ayuda*/
  .dudas{
@@ -1133,8 +1153,42 @@ img.i-tooltip{
     top: 30px;
     left: -10px;
 }
-  /*Acordeon con cambio de estado con base de Bootstrap */
+/*tooooooltip info como-fun*/
+img.i-tooltip-mc{
+    display: inline;
+    margin-top: -5px;
 }
+.tooltip-info-mc {
+    position: relative;
+    display: inline;
+}
+.tooltip-info-mc .tooltiptext {
+    display: none;
+	width: 240px;
+	text-align: left;
+	border-radius: 3px;
+	padding: 15px 20px;
+	background: #FFF;
+	color: #666666;
+	font-size: 13px;
+	position: absolute;
+	z-index: 999;
+	border: 1px solid #dfdfdf;
+	margin-top: -28px;
+	margin-left: 13px;
+	color: #848484;
+	text-indent: 0;
+}
+
+.tooltip-info-mc:hover .tooltiptext {
+    display: inline-block;
+}
+.tooltip-info-mc .tooltiptext img.flecha{
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+  /*Acordeon con cambio de estado con base de Bootstrap */
 .simula .txt-simula3 p{
   padding: 20px 20px 30px;
 }
@@ -1246,8 +1300,8 @@ input.form-solic-cel{
 	width: 100%;
 }
 .captcha-img{
-	width: 100%;
 	display: inline-block;
+	    margin-top: 100px;
 }
 .juntos-mail{
 	float: left;
@@ -1346,8 +1400,6 @@ width: 100%;
 -o-background-size: cover;
 /* background-size: cover; */
 }
-/* Create an active/current tablink class */
-ul.tab-num li a:focus, .active { color: #3399cc!important;}
 /* Style the tab content */
 .tabcontent {
     display: none;
@@ -1601,10 +1653,7 @@ span.txt22{
 	padding-left: 40px;
 }
 .marg-let-necesito-ser{
-	padding-left: 45px;
-}
-.font-165{
-	font-size: 16.5!important;
+	padding-left: 37px;
 }
 .btn-lineal-quiero{
 	border: 2px solid #d32929;
@@ -1680,9 +1729,10 @@ span.txt22{
 	padding-bottom: 30px;
 }
 .txt-bajada-tbl{
-	margin-top: 40px;
+	margin-top: 20px;
     color: #666;
     font-size: 15px;
+    margin-bottom: 30px;
 }
 .txt-busca-reg{
 	font-size: 18px;
@@ -1728,9 +1778,10 @@ span.txt22{
 }
 .pos-img{
 	width: 100%;
-	max-width: 248px;
 }
-
+.sin-padd{
+	margin:0px!important;
+}
 .caret-fle{
 	margin-right: 4px;
 	margin-top: -3px;
@@ -1824,7 +1875,7 @@ span.txt22{
 }
 .error-tx{
 	color:#cc3333;
-	font-size: 14px;
+	font-size: 13px;
 	position: absolute;
 	 
 }
@@ -1836,6 +1887,12 @@ input.error:focus{
 	padding-top: 75px!important;
 }
 /*PAgo de cuentas*/
+.marg-txt-baja{
+	margin-left: 40px;
+}
+.tu-pos-gra-marg{
+	padding-bottom: 30px;
+}
  .fondo-blanco{
  	background: #fff;
  	z-index: 999;
@@ -2002,7 +2059,7 @@ input[type=text].buscador-{
 }
 /*Giros y depósitos*/
 .seccion-giros-dep{
-	    padding: 40px 0px;
+	    padding: 80px 0px;
 }
 .banc img, .alimen img{
 	    margin: 0 auto;
@@ -2018,7 +2075,7 @@ input[type=text].buscador-{
 	margin-bottom: 20px!important;
 }
 .extras-txt{
-    border-top: 1px solid #868787;
+    border-top: 1px solid #c9c9c9;
     margin-top: 50px;
     text-align: center;
     color: #666666;
@@ -2035,6 +2092,7 @@ input[type=text].buscador-{
     width: 45%;
     font-size: 18px;
     color: #cb2d2d;
+     cursor: pointer;
 }
 .restricc::after{
  content: url(../images/down-restri.png)!important;
@@ -2076,14 +2134,21 @@ input[type=text].buscador-{
 }
 .seccion-merch{
 	padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .btn-merch{
 	max-width: 270px!important;
 }
+.seccion-loto-gris{
+	padding-top: 80px;
+    padding-bottom: 40px;
+}
 .seccion-equipos-venta-tar{
 	padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
+}
+.navbar-default .tab-cmo > li > a:hover, .navbar-default .tab-cmo > li > a:focus{
+	    color: #cc0000!important;
 }
 /*Juegos de azar*/
 .txt-porcentaje-premio p{
@@ -2095,13 +2160,26 @@ input[type=text].buscador-{
     margin-top: 44px;
     margin-left: 9%;
 }
+.hei-450{
+	height: 450px;
+}
+.hei-350{
+	height: 350px;
+}
 .txt-porcentaje-premio img{
     float: left;
     margin-top: 20px;
 }
 @media only screen and (max-width: 1199px) {
-	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-    max-width: 400px !important;
+.menu-medio-cmo-fcna .navbar-nav > li > a {
+    padding-top: 20px !important;
+    padding-bottom: 15px !important;
+    line-height: 20px !important;
+    font-size: 14px;
+    color: #646464;
+}
+.juntos-mail{
+	max-width: 250px;
 }
 input.simula {
     max-width: 400px !important;
@@ -2152,6 +2230,26 @@ input.simula {
 }
 }
 @media only screen and (max-width: 991px) {
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    max-width: 800px !important;
+}
+.btn-group > .btn:first-child {
+    max-width: 800px !important;
+}
+.captcha-img {
+    display: inline-block;
+    margin-top: 70px;
+}
+input.form-solic-mail {
+
+    max-width: 500px;
+}
+input.form-solic {
+    max-width: 800px;
+}
+.juntos-mail {
+    max-width: 500px;
+}
 .login-user{
 	margin-top: 50px;
 	padding: 25px 25px 0px !important;
@@ -2727,6 +2825,20 @@ right: 0;
     border-color: #e7e7e7;
     background: #fff !important;
 }
+.menu-medio-cmo-fcna .navbar-collapse {
+    background: #fff !important;
+margin-top: 10px;
+border-bottom: 1px solid #e7e7e7;
+margin-left: -30px !important;
+margin-right: -30px !important;
+}
+.menu-medio-cmo-fcna .navbar-nav > li > a:hover, .menu-medio-cmo-fcna .navbar-nav > li > a:focus {
+    color: #cc0000 !important;
+    border-bottom: 3px solid #cc0000 !important;
+    border-top: 1px solid rgba(255, 0, 0, 0) !important;
+    border-left: 1px solid rgba(255, 0, 0, 0) !important;
+    border-right: 1px solid rgba(255, 0, 0, 0) !important;
+}
 .menu-medio {
     height: auto;
 }
@@ -2778,6 +2890,18 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 15px !important;
+}
+input.form-solic-mail {
+    max-width: 800px;
+}
+.juntos-mail {
+    max-width: 800px;
+}
+.juntos-cel {
+    max-width: 800px;
+}
+input.form-solic-cel {
+    max-width: 800px;
 }
 }
 @media only screen and (max-width: 580px) {

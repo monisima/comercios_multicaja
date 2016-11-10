@@ -92,7 +92,7 @@
 							            <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
 							         </ul>
 							        </li>
-							        <li><a href="#"> AYUDA</a></li>
+							        <li><a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"> AYUDA</a></li>
 							    </ul>
 					      	</div>
 					      	<div >
