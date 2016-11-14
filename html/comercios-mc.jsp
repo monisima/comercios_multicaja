@@ -166,7 +166,7 @@ $(function() {
 				                
 				            	</div>
 				            	 
-				      	  		<a href="https://www.multicaja.cl/comercio/" target="_blank"><button data-toggle="collapse"  class="btn-lineal-negat">
+				      	  		<a href="https://www.multicaja.cl/comercio/" target="_blank"><button class="btn-lineal-negat">
 				      	  			Visitar
 				      	  		</button></a>
 				      	  </div>
