@@ -47,7 +47,7 @@ $(function() {
      <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Requisitos</li>
@@ -123,7 +123,7 @@ $(function() {
 				      			</div>
 
 				      			<div class="col-md-6 col-md-offset-1 hei-350">
-				      				<img src="images/como-funciona.jpg">
+				      				<img src="images/como-funciona.jpg" class="img-cmo-funci">
 				      			</div>
 				      			<div class="col-md-4">
 				      				<a href="quiero-ser-comercio.jsp" target="_self"><button type="button" class="btn-lineal-quiero">quiero ser comercio multicaja</button></a>

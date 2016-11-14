@@ -23,6 +23,23 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
 }
 :focus {
     outline: -webkit-focus-ring-color auto 0px!important;
+    outline:none;
+}
+::-moz-focus-inner {
+	border:0;
+}
+a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
+a:focus, a:active, 
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline : 0;
 }
 .affix {
       top:0px;
@@ -37,10 +54,6 @@ a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
     border-top: 5px solid!important;
     border-right: 5px solid transparent!important;
     border-left: 5px solid transparent!important;
-}
-  
-  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    background-color: #990000!important;
 }
 .affix a button.serv-btn{
     display: block;
@@ -220,18 +233,15 @@ ul.menu-principal li.activa{
     border-radius: 0px;
         padding:0px;
         text-align: center;
+        background: none;
+
     }
-.menu-principal.nav-tabs.nav-justified > li > a :hover{
-    background-color: transparent;
+.menu-principal.nav-tabs.nav-justified > li > a:hover{
+    background: none!important;
+    border: 1px solid rgba(255, 0, 0, 0);
 }
 .menu-header li a{
     border-bottom: 3px solid rgba(204, 0, 0, 0);
-}
-ul.menu-principal > li > a:hover, ul.menu-principal > li > a:focus {
-    text-decoration: none!important;
-    background-color: rgba(238, 238, 238, 0)!important;
-    border:1px solid rgba(255, 0, 0, 0)!important;
-    outline: 0px!important;
 }
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     border-color: rgba(51, 122, 183, 0)!important;
@@ -1532,8 +1542,14 @@ img.flecha_abajo {
 }
 /* End carousel */
 /*Step- como funciona*/
+.img-cmo-funci{
+	width: 100%;
+	max-width: 510px;
+}
 .operamos-img{
 	padding-left: 40px;
+	width: 100%;
+	max-width: 396px;
 }
 .seccion-atencion{
 	margin-top: 50px;
@@ -1636,6 +1652,8 @@ span.txt22{
 }
 .local-comercio{
 	margin-bottom: -30px;
+	width: 100%;
+	max-width: 516px;
 }
 .enumerar-necesito-ser{
 	margin-top: 40px;
@@ -1842,6 +1860,8 @@ span.txt22{
 }
 .mujer-{
 	float: right;
+	width: 100%;
+		max-width: 242px;
 }
 .marg-funciona{
 	margin-top: 80px;
@@ -2070,6 +2090,7 @@ input[type=text].buscador-{
 }
 .alimen{
 	padding:30px 0px;
+	height: 150px;
 }
 .tabla-comi-pago{
 	margin-bottom: 20px!important;
@@ -2161,7 +2182,7 @@ input[type=text].buscador-{
     margin-left: 9%;
 }
 .hei-450{
-	height: 450px;
+	height: 470px;
 }
 .hei-350{
 	height: 350px;
@@ -2171,6 +2192,9 @@ input[type=text].buscador-{
     margin-top: 20px;
 }
 @media only screen and (max-width: 1199px) {
+	.seccion-como-fun-txt p {
+    padding: 8px 0px;
+}
 .menu-medio-cmo-fcna .navbar-nav > li > a {
     padding-top: 20px !important;
     padding-bottom: 15px !important;
@@ -2230,6 +2254,54 @@ input.simula {
 }
 }
 @media only screen and (max-width: 991px) {
+	.link-quiero p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+	.descubre-tarj{
+	margin:20px auto;
+	display: block;	
+}
+	.mujer- {
+    float: none;
+    width: 100%;
+    max-width: 242px;
+    display: block;
+    margin: 0 auto;
+}
+.img-cmo-funci {
+    width: 100%;
+    max-width: 510px;
+    display: block;
+    margin: 0 auto;
+}
+	.hei-350 {
+    height: 160px;
+}
+	.redes-encuentranos{
+		width: 100%;
+		max-width: 267px;
+		margin: 30px auto 0px;
+		display: block;
+	}
+	.seccion-como-fun-txt h5 {
+    padding: 25px 0px 8px;
+}
+	.local-comercio {
+    width: 100%;
+    max-width: 516px;
+    display: block;
+    margin: 20px auto;
+}
+	.operamos-img {
+    padding-left: 0px;
+    margin: 10px auto;
+    float: none;
+    display: block;
+}
+	.hei-450 {
+    height: 700px;
+}
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     max-width: 800px !important;
 }
@@ -2285,7 +2357,7 @@ position: relative;
 .login-bajada{
 	border:1px solid #ccc;
 	border-top:0px!important;
-	padding: 20px;
+	padding: 0px 20px;
 }
 .menu-header li a {
     margin-left: 0px !important;
@@ -2294,7 +2366,6 @@ position: relative;
     padding-right: 10px!important;
 }
 .btn.marg-btn-quiero{
-	width: 20%;
 	white-space: normal!important;
 	font-size: 12px;
 	float: right;
@@ -2317,7 +2388,7 @@ position: relative;
 	margin-right: 10px;
 }
 .bann-img {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .caj-ayuda {
     padding: 30px 20px 24px;
@@ -2358,6 +2429,7 @@ position: relative;
 .pos-pago {
     width: 100%;
     max-width: 413px;
+    top: 90px;
 }
 .txt-pos-free {
     padding-top: 0px;
@@ -2416,6 +2488,35 @@ position: relative;
 }
 }
 @media only screen and (max-width: 767px) {
+.menu-header	li {
+    width: 30%;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+.menu-header li ul li{
+    width: 100%;
+    margin-left: 15px;
+}
+	.seccion-funciona {
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+	.banc {
+    height: 110px;
+}
+	.mrg-mov-ali{
+		margin-left: 25%;
+	}
+	.ayuda {
+    margin-top: 20px;
+}
+	.hei-400 {
+    height: 590px;
+		}
+	.banner-cmo-funciona {
+    text-align: left;
+    background-position: 30% center;
+}
 .pos-pago {
     width: 100%;
     max-width: 413px;
@@ -2538,9 +2639,6 @@ a button.serv-btn {
     width: 0;
 	margin-left:5px;
 }
-.dropdown-menu > li > a:link, .dropdown-menu > li > a:focus {
-    background: #fff!important;
-}
 .right-caret:after{	border-top: 5px solid #737373;}
 .left-caret:after{	border-bottom: 5px solid #737373;}
 .menu-principal .navbar-collapse, .menu-principal .navbar-form {
@@ -2628,6 +2726,7 @@ ul.menu-prin-res li a.seg-sub{
 }
 .menu-primero .navbar-header{
 	height: 120px;
+	display: inline;
 }
 .menu-primero .navbar-header .navbar-brand{
 	height: 120px;
@@ -2666,7 +2765,6 @@ ul.menu-principal li.activa{
     float: left;
 }
 .breadcrumb {
-    margin-top: 70px;
     text-align: left!important;
 }
 .marg-menu-home{
@@ -2688,12 +2786,13 @@ ul.menu-principal li.activa{
 }
 .menu-header li ul li a:hover, 
 .menu-header li ul li a:visited{
-    width: 80%;
+    width: 100%;
 }
 .menu-header > .open > a, .menu-header > .open > a:hover, .menu-header > .open > a:focus {
     background-color: #ffffff !important;
     border-bottom: 3px solid #cc0000 !important;
     width: 30%;
+    white-space: nowrap;
 }
 .menu-header .dropdown-menu {
     -webkit-box-shadow: none !important;
@@ -2715,7 +2814,7 @@ position: relative;
     padding-right: 30px;
 }
 .bann-img {
-    margin-top: 60px;
+    margin-top: 20px;
     background-image: none;
     background: #ededed;
     min-height: 500px;
@@ -2941,7 +3040,11 @@ input.form-solic-cel {
 	margin-left: 50px;
 }
 }
-
+@media only screen and (max-width: 548px) {
+.hei-400 {
+    height: 630px;
+}
+}
 @media only screen and (max-width: 508px) {
 	.puntos {
     width: auto;
@@ -2992,6 +3095,15 @@ input.simula {
 }
 }
 @media only screen and (max-width: 400px) {
+	.alimen {
+    height: 110px;
+}
+	.hei-400 {
+    height: 730px
+}
+.restricc {
+    width: 100%;
+}
 	.banner-ayuda{
     background: url(../images/banner-footer-400.jpg) no-repeat center top ;
 }

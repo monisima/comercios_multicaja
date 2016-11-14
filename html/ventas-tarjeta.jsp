@@ -47,7 +47,7 @@ $(function() {
      <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Ventas con tarjetas</li>
@@ -152,10 +152,10 @@ $(function() {
 
 				      	  <div class="gris-oscuro seccion-comision container-fluid seccion-merch" >
 				      	  	<div class="container">	
-				      	  	<div class="col-md-2 col-md-offset-1"><img src="images/descubre-tarjetas.jpg"></div>
+				      	  	<div class="col-md-2 col-md-offset-1"><img src="images/descubre-tarjetas.jpg" class="descubre-tarj"></div>
 				      	  	<div class="col-md-6">
 				      	  		<p>Descubre qué comisión debes pagar según tu rubro</p>
-				      	  		<a href="#"><button class="btn-lineal btn-comision btn-merch">
+				      	  		<a href="https://www.multicaja.cl/iswitch/ " target="_blank"><button class="btn-lineal btn-comision btn-merch">
 				      	  			VER Merchant Discount
 				      	  		</button></a>
 				            </div>	
@@ -170,7 +170,7 @@ $(function() {
 				      		</div>
 				      		<div class="container">
 						      <div class="row">
-							       <div class="col-md-8 col-md-offset-2 row">
+							       <div class="col-md-8 col-md-offset-2">
 				            	<table class="tabl-comisi tabla-comi-pago row" width="100%">
 									  <tr>
 									    <th class="rojito" width="50%">Tipo tecnología</th>

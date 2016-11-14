@@ -47,7 +47,7 @@ $(function() {
      <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Juegos de azar</li>
@@ -113,7 +113,7 @@ $(function() {
 				      				<div class="row">
 				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto.jpg" class="loto-azar"></div>
 				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto3.jpg" class="loto3-azar"></div>
-				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto4.jpg" class="loto4-azar"></div>
+				      					<div class="col-md-4  col-sm-4 col-xs-6 banc mrg-mov-ali"><img src="images/loto4.jpg" class="loto4-azar"></div>
 				      				</div>
 				      				<div class="flecha_descubre col-md-12">
 						        			<a href="#circulos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
@@ -178,7 +178,7 @@ $(function() {
 								</table>
 								<div class="row txt-bajada-tbl">
 											<p><img src="images/down.png" class="caret-como-fun">Si algunos de tus clientes es el afortunado ganador de un premio superior a 3 millones, <strong>¡Ganas el 1% del premio!</strong></p>
-											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank">PREMIO MULTISERVICIO.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
 											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
 											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
 								</div>
@@ -216,7 +216,7 @@ $(function() {
 							<div class="row">
 								<div class="extras-txt col-md-8 col-md-offset-2">
 									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
-									<a href="https://www.multicaja.cl/comercio/comisionesVigentes" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
 									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>

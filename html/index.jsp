@@ -33,7 +33,7 @@
 		<jsp:include page="header.jsp" />
 
 <div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 	 		<div class="row">
 			<ol class="breadcrumb">
 			
@@ -194,7 +194,7 @@
       				<p>Únete a la red de comercios Multicaja</p>
       		</div>
       		<div class="row marg-top-50">
-				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
+				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
 				  <a href="recargas-pines.jsp" class="servc" target="_blank">
 					<div class="borde-serv servicios">
 						<img src="images/pago-cuentas.png" class="serv1">
@@ -203,7 +203,7 @@
 				   </a>
 				</div>
 
-				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
+				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
 				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/giros-depos.png" class="serv2">
@@ -212,7 +212,7 @@
 				  </a>
 				</div>
 
-				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
+				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
 				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pagos-tarjetas.png" class="serv1">
@@ -221,7 +221,7 @@
 				  </a>
 				</div>
 
-				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
+				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
 				  <a href="#" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/alimentacion.png" class="serv1">
@@ -230,7 +230,7 @@
 				  </a>
 				</div>
 
-				<div class="col-md-5ths col-lg-5ths col-xs-6 col-sm-4">
+				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
 				  <a href="#" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/e-commerce.png" class="serv1">

@@ -47,7 +47,7 @@ $(function() {
      <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Comercio Multicaja</li>
@@ -178,7 +178,7 @@ $(function() {
 				      	  			<img src="images/redes-face.jpg" class="flo-left"><div class="txt-cmo-fnc-oscr">encuéntranos en las <span>redes sociales</span></div>
 				      	  		</div>
 				      	  		<div class="col-md-3">
-				      	  			<img src="images/redes-encuentranos.jpg">
+				      	  			<img src="images/redes-encuentranos.jpg" class="redes-encuentranos">
 				      	  		</div>
 				      	  </div>
 				      	  </div>

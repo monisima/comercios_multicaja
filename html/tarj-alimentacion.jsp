@@ -47,7 +47,7 @@ $(function() {
       <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Tarjetas de alimentación</li>
@@ -112,7 +112,7 @@ $(function() {
 				      				<div class="row">
 				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/sodexo.jpg" class="sodexo-banc"></div>
 				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/edenred.jpg" class="edenred-banc"></div>
-				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen"><img src="images/amipass.jpg" class="amipass-banc"></div>
+				      					<div class="col-md-4 col-sm-4 col-xs-6 alimen mrg-mov-ali"><img src="images/amipass.jpg" class="amipass-banc"></div>
 				      				</div>
 				      			</div>
 				      			<div class="flecha_descubre col-md-12">
