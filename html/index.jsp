@@ -6,10 +6,10 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+	<title>Bienvenido a comercios Multicaja</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="¡Únete a la red de Comercios Multicaja! Ofrece pago de cuentas, recargas, giros, depósitos, loto, pago con tarjetas y el seguro obligatorio SOAP.">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -195,7 +195,7 @@
       		</div>
       		<div class="row marg-top-50">
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="recargas-pines.jsp" class="servc" target="_blank">
+				  <a href="recargas-pines.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pago-cuentas.png" class="serv1">
 						<p>Ofrece Pago de Cuentas, Recargas, Pines y Loto</p>
@@ -204,7 +204,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/giros-depos.png" class="serv2">
 						<p>Ofrece Transacciones Bancarias: Giros y depósitos</p>
@@ -213,7 +213,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pagos-tarjetas.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas bancarias y de casas comerciales</p>
@@ -222,7 +222,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="#" class="servc">
+				  <a href="tarj-alimentacion.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/alimentacion.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas de alimentación</p>
@@ -231,12 +231,12 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="#" class="servc">
+				  <!--<a href="#" class="servc">-->
 					<div class="borde-serv servicios">
 						<img src="images/e-commerce.png" class="serv1">
 						<p>E-Commerce: Recibe Pagos en tu Sitio Web</p>
 					</div>
-				  </a>
+				<!--  </a>-->
 				</div>
 			</div>	
 			</div>
@@ -327,16 +327,16 @@
 	      	</div>
 	      	<div class="marg-top-40 banner-ayuda"></div>
 	      	<div class="marg-top-10 tabla-ayuda">
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf1.png" class="img-ayuda">Operación Multicaja</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf2.png" class="img-ayuda">Alimentación</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf3.png" class="img-ayuda">Tarjetas</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
 	      			<p><img src="images/ayudapf4.png" class="img-ayuda">MPOS</p>
 	      		</div></a>
 	      	</div>

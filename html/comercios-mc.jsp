@@ -6,10 +6,10 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+	<title>¿Cómo funciona Multicaja?</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="Conoce más sobre nosotros. Miles de personas utilizan la red Multicaja para recargar sus prepagos, loto, pagar cuentas o servicios bancarios.">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -108,7 +108,7 @@ $(function() {
 				      			</div>
 				      			<h5>Te invitamos a pertenecer a una de las redes de comercios más grandes del país. Con Multicaja podrás aumentar tus ventas ofreciendo servicios que atraerán a más clientes.</h5>
 				      			<p>Nuestra red cuenta con <strong>más de 15.000 comercios ubicados en el 95% de las comunas del país.</strong></p>
-								<p>Miles de personas utilizan la red Multicaja para recargar sus prepagos, comprar juegos de azar, pagar sus cuentas o acceder a servicios bancarios como giros o depósitos.</p>
+								<p>Miles de personas utilizan la red Multicaja para recargar sus prepagos, comprar loto, pagar sus cuentas o acceder a servicios bancarios como giros o depósitos.</p>
 
 	<span id="como-funciona"></span>	
 								
