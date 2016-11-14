@@ -27,38 +27,38 @@
 			        <div id="navbarCollapse" class="collapse navbar-collapse navbar-primero-header">
 			         <div class="row">   
 				            <ul class="nav nav-tabs menu-principal nav-justified hidden-xs">
-				                <li ><a href="https://www.multicaja.cl/personas/">PERSONAS</a></li>
-				      			<li class="activa"><a href="#">COMERCIOS</a></li>
-				      			<li ><a href="#">EMISORES</a></li>
+				                <li ><a href="https://www.multicaja.cl/personas/" target="_blank">PERSONAS</a></li>
+				      			<li class="activa"><a href="index.jsp">COMERCIOS</a></li>
+				      			<li ><a href="https://www.multicaja.cl/emisores/ingresar " target="_blank">EMISORES</a></li>
 				      			<li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FILIALES<span class="caret"></span></a>
 				      				<ul class="dropdown-menu">
-							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Iswitch</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Pincenter</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Multitarjeta</a></li>
-							            <li><a href="https://www.multicaja.cl/personas/filiales.jsp">Red Fácil</a></li>
+							            <li><a href="https://www.multicaja.cl/iswitch/ " target="_blank">Iswitch</a></li>
+							            <li><a href="https://www.pincenter.cl/ " target="_blank">Pincenter</a></li>
+							            <li><a href="https://www.multicaja.cl/personas/filiales.php" target="_blank">Multitarjeta</a></li>
+							            <li><a href="http://www.redfacil.com/ " target="_blank">Red Fácil</a></li>
 							        </ul>
 				      			</li>
-				      			<li ><a href="#">CORPORATIVO</a></li>
-				      			<li ><a href="#">CONTACTO</a></li>
+				      			<li ><a href="https://www.multicaja.cl/personas/multicaja.php" target="_blank">CORPORATIVO</a></li>
+				      			<li ><a href="https://www.multicaja.cl/personas/contacto.php">CONTACTO</a></li>
 					        </ul>
 					        
 					        <ul class="nav menu-principal menu-prin-res visible-xs">
 				                <li class="dropdown"><a href="#" class="dropdown-toggle multi" data-toggle="dropdown" >Multicaja<span clas s="caret flecha-drop"></span></a>
 				      					<ul class="dropdown-menu">
-				      						<li><a href="https://www.multicaja.cl/personas/" class="pri-sub">PERSONAS</a></li>
-				      						<li><a href="#" class="pri-sub">COMERCIOS</a></li>
-				      						<li><a href="#" class="pri-sub">EMISORES</a></li>
+				      						<li><a href="https://www.multicaja.cl/personas/" target="_blank" class="pri-sub">PERSONAS</a></li>
+				      						<li><a href="index.jsp" class="pri-sub">COMERCIOS</a></li>
+				      						<li><a ref="https://www.multicaja.cl/emisores/ingresar " target="_blank" class="pri-sub">EMISORES</a></li>
 											<li>
 												<a class="trigger right-caret pri-sub">FILIALES</a>
 												<ul class="dropdown-menu sub-menu">
-													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Iswitch</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Pincenter</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Multitarjeta</a></li>
-													<li><a href="https://www.multicaja.cl/personas/filiales.jsp" class="seg-sub">Red Fácil</a></li>
+													<li><a href="https://www.multicaja.cl/iswitch/ " target="_blank" class="seg-sub">Iswitch</a></li>
+													<li><a href="https://www.pincenter.cl/ " target="_blank" class="seg-sub">Pincenter</a></li>
+													<li><a href="https://www.multicaja.cl/personas/filiales.php" target="_blank class="seg-sub">Multitarjeta</a></li>
+													<li><a href="http://www.redfacil.com/ " target="_blank" class="seg-sub">Red Fácil</a></li>
 												</ul>
 											</li>
-											<li><a href="#" class="pri-sub">CORPORATIVO</a></li>
-											<li><a href="#" class="pri-sub">CONTACTO</a></li>
+											<li><a href="https://www.multicaja.cl/personas/multicaja.php" target="_blank" class="pri-sub">CORPORATIVO</a></li>
+											<li><a href="https://www.multicaja.cl/personas/contacto.php" class="pri-sub">CONTACTO</a></li>
 										</ul>
 				      			</li>
 					        </ul>
@@ -75,7 +75,7 @@
 					      	<div class="col-md-7 col-sm-7 marg-menu-home">
 					      		<ul class="nav navbar-nav menu-header">
 							         <li class="active"><a href="index.jsp">HOME</a></li>
-							        <li><a href="servicios.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
+							        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
 							            <li><a href="recargas-pines.jsp">Recargas y Pines</a></li>
 							            <li><a href="pago-cuentas.jsp">Pago de cuentas</a></li>
@@ -85,14 +85,14 @@
 							            <li><a href="loto.jsp">Loto</a></li>
 							        </ul>
 							        </li>
-							        <li><a href="como-funciona.jsp" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿CÓMO FUNCIONA?<span class="caret"></span></a>
+							        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿CÓMO FUNCIONA?<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
 							            <li><a href="comercios-mc.jsp">Comercios Multicaja</a></li>
 							            <li><a href="requisitos.jsp">Requisitos</a></li>
 							            <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
 							         </ul>
 							        </li>
-							        <li><a href="#"> AYUDA</a></li>
+							        <li><a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"> AYUDA</a></li>
 							    </ul>
 					      	</div>
 					      	<div >

@@ -47,7 +47,7 @@ $(function() {
      <jsp:include page="header.jsp" />
 
 	<div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Juegos de azar</li>
@@ -101,7 +101,7 @@ $(function() {
 <!--header-->
 
 	
-      	<div id="sec1" class="container-fluid">
+      	<div id="sec1" class="container-fluid secciones-serv">
       	  
       			<div class="row">
 				      	  	<div class="container">
@@ -113,11 +113,14 @@ $(function() {
 				      				<div class="row">
 				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto.jpg" class="loto-azar"></div>
 				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto3.jpg" class="loto3-azar"></div>
-				      					<div class="col-md-4  col-sm-4 col-xs-6 banc"><img src="images/loto4.jpg" class="loto4-azar"></div>
+				      					<div class="col-md-4  col-sm-4 col-xs-6 banc mrg-mov-ali"><img src="images/loto4.jpg" class="loto4-azar"></div>
 				      				</div>
+				      				<div class="flecha_descubre col-md-12">
+						        			<a href="#circulos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+						            </div>
 				      			</div>				      		
 				      	  </div>
-				      	  <div class="gris-claro seccion-funciona" >
+				      	  <div class="gris-claro seccion-loto-gris" id="circulos">
 				      		<div class="container" >
 						      		<div class="row bs-wizard" style="border-bottom:0;">
 				                
@@ -130,7 +133,7 @@ $(function() {
 				                
 				                <div class="col-sm-4 bs-wizard-step complete">
 				                <img src="images/apuestas-al-azar.jpg" class="img-tres-cir">
-				                  <div class="bs-wizard-info text-center"><span>Las  apuestas pueden ser al azar</span> o con elección de números</div>
+				                  <div class="bs-wizard-info text-center"><span>Las  apuestas pueden ser al azar</span> o con elección de números.</div>
 				                </div>
 				                
 				                <div class="col-sm-4 bs-wizard-step active">
@@ -143,13 +146,12 @@ $(function() {
 				               	 <img src="images/copa.png">
 				               	</div>
 				            </div>
-				            <span id="comision-ancla"></span><!-- Anclaaaaaaaaaaaaaa comisiones -->
+				           
 							</div>
 				      	  </div>
-
 				      	  <div class="gris-oscuro seccion-comision" >
 				      	  		<div class="mas-clientes mas-vendas">
-				      	  		<h2>mientras más vendas<img src="images/sticker-like.jpg" class="sticker-like">más comisión ganas</h2>
+				      	  		<h2>mientras más vendas<img src="images/sticker-like.jpg" class="sticker-like"  id="comision-ancla">más comisión ganas</h2> 
 				      	  		</div>
 				      	  		<p>Revisa las comisiones vigentes</p>
 				      	  		<a href="#comision-ancla"><button data-toggle="collapse" data-target="#comisiones" class="btn-lineal btn-comision">
@@ -173,7 +175,13 @@ $(function() {
 									    <td class="gris-tabl">Loto, Loto3 y Loto4</td>
 									    <td>4,50%</td>
 									  </tr>									 
-									</table>
+								</table>
+								<div class="row txt-bajada-tbl">
+											<p><img src="images/down.png" class="caret-como-fun">Si algunos de tus clientes es el afortunado ganador de un premio superior a 3 millones, <strong>¡Ganas el 1% del premio!</strong></p>
+											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
+								</div>
 							</div>
 							</div>
 							</div>
@@ -189,7 +197,7 @@ $(function() {
 							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos2.jpg" class="pos-img">
-							      			<div class="text-equipos">
+							      			<div class="text-equipos enmedio">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos Fijo</h3>							      				
 							      			</div>
 							      		</div>
@@ -197,7 +205,7 @@ $(function() {
 							      	<div class="col-md-6 col-sm-6">
 							      		<div class="polaroid">
 							      		<img src="images/pos1.jpg" class="pos-img" >
-							      			<div class="text-equipos">
+							      			<div class="text-equipos enmedio">
 							      				<h3><img src="images/caret-flecha.jpg" class="caret-fle">Pos inalámbrico</h3>
 							      			</div>
 							      		</div>
@@ -208,7 +216,7 @@ $(function() {
 							<div class="row">
 								<div class="extras-txt col-md-8 col-md-offset-2">
 									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
-									<a href="#" target="_self"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
 									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>
@@ -216,12 +224,12 @@ $(function() {
 
 				      	  </div>
 
-				      	  <div class="gris-claro">
+				      	  <div class="gris-claro hei-400">
 				      	  	<div class="container">
 				      	  	  <div class="row">
-				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-left">
-				      	  			<h2><span> tu pos es gratis!</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
-				      	  			<p>(*) Se considera el monto de la venta de recarga y azar más el 10% del monto de otros servicios (pago de cuentas, corresponsalía bancaria, pago proveedores y SOAP)</p>
+				      	  		<div class="col-md-8 col-sm-8 txt-pos-free txt-left">
+				      	  			<h2><span> tu pos es gratis</span><br>Si vendes más de $500.000(*) con Multicaja.</h2>
+				      	  			<p>(*) Se considera el monto de la venta de recarga más el 10% del monto de otros servicios (Loto, Loto3, Loto 4, pago de cuentas, giros, depósitos, pago de cuotas de créditos, pago de proveedores y SOAP)</p>
 				      	  		</div>
 				      	  		<div class="col-md-3 col-sm-3">
 				      	  			<img src="images/pos-free.jpg" class="pos-free">

@@ -33,7 +33,7 @@
      <jsp:include page="header.jsp" />
 
 	   <div class="container">
-	 		<div class="col-md-12">
+	 		<div class="col-md-12 col-xs-12">
 	 		<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
 				<li class="active">Simula tus comisiones</li>

@@ -15,9 +15,9 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 caja-redes">
 		      	<div class="txt-redes">
 			      	<p>Encuéntranos en: </p>
-			      	<a href=""><img src="images/f.svg" class="redes-sociales"></a>
-			      	<a href=""><img src="images/yt.svg" class="redes-sociales"></a>
-			      	<a href=""><img src="images/twt.svg" class="redes-sociales"></a>
+			      	<a href="https://www.facebook.com/MulticajaCL/" target="_blank"><img src="images/f.svg" class="redes-sociales"></a>
+			      	<a href="https://www.youtube.com/user/multicajaCL" target="_blank"><img src="images/yt.svg" class="redes-sociales"></a>
+			      	<a href="https://twitter.com/MulticajaCL" target="_blank"><img src="images/twt.svg" class="redes-sociales"></a>
 			    </div> 	
 		      	<div class="linea-footer rig"></div>
 		      </div>
@@ -33,7 +33,7 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 ayuda">
 		      <div class="linea-footer"></div>
 			      <div class="txt-ayuda">
-			      	<a href="#"><span>¿Necesitas ayuda?</span></a>
+			      	<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><span>¿Necesitas ayuda?</span></a>
 			      	
 			      </div>
 		      </div>
@@ -43,7 +43,7 @@
 		  	 <div class="linea-footer">Multicaja S.A.</div>  
 		  	 <div class="linea-footer">Todos los derechos reservados.</div>  
 		  	 <div class="linea-footer"> Dirección: Calle Phillips 84  - Piso 5, Santiago de Chile</div>  
-		  	 <a href="#"><span>Contáctanos</span></a>
+		  	 <a href="https://www.multicaja.cl/comercios/contacto_multicaja.jsp"><span>Contáctanos</span></a>
 		  	</div>
 		  </div>
 	      </div>
