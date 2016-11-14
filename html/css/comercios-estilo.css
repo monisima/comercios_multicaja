@@ -1903,6 +1903,9 @@ input.error:focus{
     border: 1px solid #cc0000;
         padding: 6px 10px;
 }
+.red-border{
+    border: 1px solid #cc0000;
+}
 .padding-titulo-casi{
 	padding-top: 75px!important;
 }

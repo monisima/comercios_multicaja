@@ -96,13 +96,13 @@
 						<form id="user-login-form" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
 							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
 							
-							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut" class="error">
+							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut">
 							<input type="hidden" name="rut"> 
 							<input type="hidden" name="dv"> 
 							<!--	-->			
 							<span id="rutIncorrecto" name="rutIncorrecto" class="error-tx" style="display: none;"></span>
 							
-							<input type="password" id="passNormal" size="15" name="passNormal"  placeholder="Ingresa Clave" class="error">
+							<input type="password" id="passNormal" size="15" name="passNormal"  placeholder="Ingresa Clave">
 							
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
@@ -423,6 +423,11 @@ $.urlParam = function(name){
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrectoMobile").html('No se ha ingresado el Rut');
 					$('#rutIncorrectoMobile').show();
+					document.getElementById('rutIn').style.border="#990000";
+					
+					var elementosObtenidos = document.getElementsByTagName(input);
+					elementosObtenidos[0].style.border = '#990000';
+					
 					validacion = false;
 				}
 				if (password.length < 1) {
@@ -529,12 +534,20 @@ $.urlParam = function(name){
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrecto").html('No se ha ingresado el Rut');
 					$('#rutIncorrecto').show();
+					var f = document.getElementById('rutIn').value;
+					if (f=="") {
+						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
+					}
 					validacion = false;
 				}
 				if (password.length < 1) {
 					//msgError += "- No se ha ingresado la contraseña\n";
 					$("#claveIncorrecta").html('No se ha ingresado la contraseña');
 					$('#claveIncorrecta').show();
+					var f = document.getElementById('passNormal').value;
+					if (f=="") {
+						document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
+					}
 				    validacion = false;
 				}
 				if (!validacion) {
