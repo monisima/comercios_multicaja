@@ -420,6 +420,11 @@ $.urlParam = function(name){
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrectoMobile").html('No se ha ingresado el rut');
 					$('#rutIncorrectoMobile').show();
+					document.getElementById('rutIn').style.border="#990000";
+					
+					var elementosObtenidos = document.getElementsByTagName(input);
+					elementosObtenidos[0].style.border = '#990000';
+					
 					validacion = false;
 				}
 				if (password.length < 1) {
@@ -526,12 +531,20 @@ $.urlParam = function(name){
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrecto").html('No se ha ingresado el rut');
 					$('#rutIncorrecto').show();
+					var f = document.getElementById('rutIn').value;
+					if (f=="") {
+						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
+					}
 					validacion = false;
 				}
 				if (password.length < 1) {
 					//msgError += "- No se ha ingresado la contraseña\n";
 					$("#claveIncorrecta").html('No se ha ingresado la contraseña');
 					$('#claveIncorrecta').show();
+					var f = document.getElementById('passNormal').value;
+					if (f=="") {
+						document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
+					}
 				    validacion = false;
 				}
 				if (!validacion) {
