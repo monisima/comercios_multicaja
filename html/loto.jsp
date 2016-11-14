@@ -6,6 +6,14 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
   <title>Conoce todos los servicios para tu comercio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,6 +51,11 @@ $(function() {
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="inicio"></div>
      <jsp:include page="header.jsp" />
 
@@ -178,7 +191,7 @@ $(function() {
 								</table>
 								<div class="row txt-bajada-tbl">
 											<p><img src="images/down.png" class="caret-como-fun">Si algunos de tus clientes es el afortunado ganador de un premio superior a 3 millones, <strong>¡Ganas el 1% del premio!</strong></p>
-											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#premio_multiservicio" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
 											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
 											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
 								</div>
@@ -216,7 +229,7 @@ $(function() {
 							<div class="row">
 								<div class="extras-txt col-md-8 col-md-offset-2">
 									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
-									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#buscar-region-comuna" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
 									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>

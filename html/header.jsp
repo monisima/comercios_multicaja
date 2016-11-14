@@ -39,7 +39,7 @@
 							        </ul>
 				      			</li>
 				      			<li ><a href="https://www.multicaja.cl/personas/multicaja.php" target="_blank">CORPORATIVO</a></li>
-				      			<li ><a href="https://www.multicaja.cl/personas/contacto.php">CONTACTO</a></li>
+				      			<li ><a href="https://www.multicaja.cl/personas/contacto.php" target="_blank">CONTACTO</a></li>
 					        </ul>
 					        
 					        <ul class="nav menu-principal menu-prin-res visible-xs">
@@ -58,7 +58,7 @@
 												</ul>
 											</li>
 											<li><a href="https://www.multicaja.cl/personas/multicaja.php" target="_blank" class="pri-sub">CORPORATIVO</a></li>
-											<li><a href="https://www.multicaja.cl/personas/contacto.php" class="pri-sub">CONTACTO</a></li>
+											<li><a href="https://www.multicaja.cl/personas/contacto.php" target="_blank" class="pri-sub">CONTACTO</a></li>
 										</ul>
 				      			</li>
 					        </ul>
@@ -92,7 +92,7 @@
 							            <li><a href="como-empezar-a-vender.jsp">¿Cómo empezar a vender?</a></li>
 							         </ul>
 							        </li>
-							        <li><a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"> AYUDA</a></li>
+							        <li><a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank" > AYUDA</a></li>
 							    </ul>
 					      	</div>
 					      	<div >

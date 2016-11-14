@@ -6,6 +6,14 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
 	<title>Bienvenido a comercios Multicaja</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,6 +37,11 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="20">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="inicio"></div>
 		<jsp:include page="header.jsp" />
 
@@ -71,7 +84,7 @@
 					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
 							
 					
-					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero"><p>Olvidé mi clave</p></a>
+					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
 					
 					<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form-mobile').submit();">ENTRAR</button>
 
@@ -107,7 +120,7 @@
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero"><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
+							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							
@@ -360,7 +373,7 @@
       </div>
       <div class="modal-body">
       	<p>Tu clave ha sido bloqueada porque se han excedido los intentos de inicio de sesión.</p>
-       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1">haz clic aquí.</a></p>
+       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1" target="_blank" >haz clic aquí.</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

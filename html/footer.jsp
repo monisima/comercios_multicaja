@@ -33,7 +33,7 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 ayuda">
 		      <div class="linea-footer"></div>
 			      <div class="txt-ayuda">
-			      	<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><span>¿Necesitas ayuda?</span></a>
+			      	<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank" ><span>¿Necesitas ayuda?</span></a>
 			      	
 			      </div>
 		      </div>
@@ -43,7 +43,7 @@
 		  	 <div class="linea-footer">Multicaja S.A.</div>  
 		  	 <div class="linea-footer">Todos los derechos reservados.</div>  
 		  	 <div class="linea-footer"> Dirección: Calle Phillips 84  - Piso 5, Santiago de Chile</div>  
-		  	 <a href="https://www.multicaja.cl/comercios/contacto_multicaja.jsp"><span>Contáctanos</span></a>
+		  	 <a href="https://www.multicaja.cl/comercios/contacto_multicaja.jsp" target="_blank" ><span>Contáctanos</span></a>
 		  	</div>
 		  </div>
 	      </div>
