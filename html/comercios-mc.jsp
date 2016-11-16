@@ -179,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				                
 				            	</div>
 				            	 
-				      	  		<a href="https://www.multicaja.cl/comercio/" target="_blank"><button class="btn-lineal-negat">
+				      	  		<a href="https://www.multicaja.cl/comercios/" target="_blank"><button class="btn-lineal-negat">
 				      	  			Visitar
 				      	  		</button></a>
 				      	  </div>

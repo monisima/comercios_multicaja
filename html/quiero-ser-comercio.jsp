@@ -298,31 +298,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	}		
 </script>
 
-	<script>
-	$(document).ready( function() {
-    $('#myCarousel').carousel({
-    	interval:   40000
-	});
-	
-	var clickEvent = false;
-	$('#myCarousel').on('click', '.nav a', function() {
-			clickEvent = true;
-			$('.nav li').removeClass('active');
-			$(this).parent().addClass('active');		
-	}).on('slid.bs.carousel', function(e) {
-		if(!clickEvent) {
-			var count = $('.nav').children().length -1;
-			var current = $('.nav li.active');
-			current.removeClass('active').next().addClass('active');
-			var id = parseInt(current.data('slide-to'));
-			if(count == id) {
-				$('.nav li').first().addClass('active');	
-			}
-		}
-		clickEvent = false;
-	});
-});
-</script>
 <script type="text/javascript">
 
   $(document).ready(function(){
@@ -349,21 +324,6 @@ $(document).ready(function() {
     $('#myNavbar2').collapse('hide');
   });
  });
-</script>
-<script type="text/javascript">
-	$(function(){
-	$(".dropdown-menu > li > a.trigger").on("click",function(e){
-		var current=$(this).next();
-		var grandparent=$(this).parent().parent();
-		if($(this).hasClass('backgris')||$(this).hasClass('backblanc'))
-			$(this).toggleClass('backgris backblanc');
-		grandparent.find('.backgris').not(this).toggleClass('backblanc backgris');
-		grandparent.find(".sub-menu:visible").not(current).hide();
-		current.toggle();
-		e.stopPropagation();
-	});
-	
-});
 </script>
 </body>
 </html>
