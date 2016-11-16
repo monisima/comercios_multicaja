@@ -1847,6 +1847,9 @@ span.txt22{
 .txt-left{
 	text-align: left!important;
 }
+.padd-45-lr{
+	padding: 0px 45px!important;
+}
 .txt-center{
 	text-align: center;
 }
@@ -2205,6 +2208,27 @@ input[type=text].buscador-{
 .txt-porcentaje-premio img{
     float: left;
     margin-top: 20px;
+}
+/*Comisiones*/
+.titulo-comisiones{
+	text-align: center;
+    padding: 0px 80px;
+    border-bottom: 1px solid #acacac;
+    margin-bottom: 30px;
+    height: 19px;
+    margin-top: 50px;
+    width: 630px;
+}
+.titulo-comisiones p{
+    font-size: 21px;
+    color: #3c3c3c;
+    background: #fff;
+    display: inline;
+    padding: 0 5px;
+    font-weight: 600;
+}
+.tabl-comisi.comisiones-table-top{
+	margin-top: 0px!important;
 }
 @media only screen and (max-width: 1199px) {
 	.seccion-como-fun-txt p {

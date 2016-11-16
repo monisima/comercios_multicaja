@@ -6,10 +6,18 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
+	<title>¿Cómo funciona Multicaja?</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="Conoce más sobre nosotros. Miles de personas utilizan la red Multicaja para recargar sus prepagos, loto, pagar cuentas o servicios bancarios.">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -43,6 +51,11 @@ $(function() {
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="inicio"></div>
      <jsp:include page="header.jsp" />
 
@@ -108,7 +121,7 @@ $(function() {
 				      			</div>
 				      			<h5>Te invitamos a pertenecer a una de las redes de comercios más grandes del país. Con Multicaja podrás aumentar tus ventas ofreciendo servicios que atraerán a más clientes.</h5>
 				      			<p>Nuestra red cuenta con <strong>más de 15.000 comercios ubicados en el 95% de las comunas del país.</strong></p>
-								<p>Miles de personas utilizan la red Multicaja para recargar sus prepagos, comprar juegos de azar, pagar sus cuentas o acceder a servicios bancarios como giros o depósitos.</p>
+								<p>Miles de personas utilizan la red Multicaja para recargar sus prepagos, comprar loto, pagar sus cuentas o acceder a servicios bancarios como giros o depósitos.</p>
 
 	<span id="como-funciona"></span>	
 								
@@ -166,7 +179,7 @@ $(function() {
 				                
 				            	</div>
 				            	 
-				      	  		<a href="https://www.multicaja.cl/comercio/" target="_blank"><button class="btn-lineal-negat">
+				      	  		<a href="https://www.multicaja.cl/comercios/" target="_blank"><button class="btn-lineal-negat">
 				      	  			Visitar
 				      	  		</button></a>
 				      	  </div>

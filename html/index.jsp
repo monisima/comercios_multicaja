@@ -6,10 +6,18 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
+	<title>Bienvenido a comercios Multicaja</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="¡Únete a la red de Comercios Multicaja! Ofrece pago de cuentas, recargas, giros, depósitos, loto, pago con tarjetas y el seguro obligatorio SOAP.">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -29,6 +37,11 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="20">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="inicio"></div>
 		<jsp:include page="header.jsp" />
 
@@ -71,7 +84,7 @@
 					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
 							
 					
-					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero"><p>Olvidé mi clave</p></a>
+					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
 					
 					<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form-mobile').submit();">ENTRAR</button>
 
@@ -107,7 +120,7 @@
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero"><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
+							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							
@@ -195,7 +208,7 @@
       		</div>
       		<div class="row marg-top-50">
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="recargas-pines.jsp" class="servc" target="_blank">
+				  <a href="recargas-pines.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pago-cuentas.png" class="serv1">
 						<p>Ofrece Pago de Cuentas, Recargas, Pines y Loto</p>
@@ -204,7 +217,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/giros-depos.png" class="serv2">
 						<p>Ofrece Transacciones Bancarias: Giros y depósitos</p>
@@ -213,7 +226,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="ventas-tarjeta.jsp" target="_blank" class="servc">
+				  <a href="ventas-tarjeta.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/pagos-tarjetas.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas bancarias y de casas comerciales</p>
@@ -222,7 +235,7 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="#" class="servc">
+				  <a href="tarj-alimentacion.jsp" class="servc">
 					<div class="borde-serv servicios">
 						<img src="images/alimentacion.png" class="serv1">
 						<p>Acepta Pagos con Tarjetas de alimentación</p>
@@ -231,12 +244,12 @@
 				</div>
 
 				<div class="col-md-5ths col-lg-5ths col-xs-12 col-sm-4">
-				  <a href="#" class="servc">
+				  <!--<a href="#" class="servc">-->
 					<div class="borde-serv servicios">
 						<img src="images/e-commerce.png" class="serv1">
 						<p>E-Commerce: Recibe Pagos en tu Sitio Web</p>
 					</div>
-				  </a>
+				<!--  </a>-->
 				</div>
 			</div>	
 			</div>
@@ -327,16 +340,16 @@
 	      	</div>
 	      	<div class="marg-top-40 banner-ayuda"></div>
 	      	<div class="marg-top-10 tabla-ayuda">
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf1.png" class="img-ayuda">Operación Multicaja</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf2.png" class="img-ayuda">Alimentación</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda suprimir-linea-rig hover-li">	      			
 	      			<p><img src="images/ayudapf3.png" class="img-ayuda">Tarjetas</p>
 	      		</div></a>
-	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
+	      		<a href="https://www.multicaja.cl/comercios/ayuda/ayuda.jsp" target="_blank"><div class="col-md-3  col-sm-3 col-xs-12 borde-serv caj-ayuda hover-li">	      			
 	      			<p><img src="images/ayudapf4.png" class="img-ayuda">MPOS</p>
 	      		</div></a>
 	      	</div>
@@ -360,7 +373,7 @@
       </div>
       <div class="modal-body">
       	<p>Tu clave ha sido bloqueada porque se han excedido los intentos de inicio de sesión.</p>
-       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1">haz clic aquí.</a></p>
+       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1" target="_blank" >haz clic aquí.</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

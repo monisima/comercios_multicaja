@@ -6,10 +6,18 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
+	<title>¿Quieres ser comercio Multicaja?</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="Te invitamos a pertenecer a una de las redes de comercios más grandes del país. Con Multicaja podrás aumentar tus ventas y atraer más clientes.">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -32,6 +40,11 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <jsp:include page="header.jsp" />
 
 	   <div class="container">
@@ -314,31 +327,6 @@
 	}		
 </script>
 
-	<script>
-	$(document).ready( function() {
-    $('#myCarousel').carousel({
-    	interval:   40000
-	});
-	
-	var clickEvent = false;
-	$('#myCarousel').on('click', '.nav a', function() {
-			clickEvent = true;
-			$('.nav li').removeClass('active');
-			$(this).parent().addClass('active');		
-	}).on('slid.bs.carousel', function(e) {
-		if(!clickEvent) {
-			var count = $('.nav').children().length -1;
-			var current = $('.nav li.active');
-			current.removeClass('active').next().addClass('active');
-			var id = parseInt(current.data('slide-to'));
-			if(count == id) {
-				$('.nav li').first().addClass('active');	
-			}
-		}
-		clickEvent = false;
-	});
-});
-</script>
 <script type="text/javascript">
 
   $(document).ready(function(){
@@ -365,21 +353,6 @@ $(document).ready(function() {
     $('#myNavbar2').collapse('hide');
   });
  });
-</script>
-<script type="text/javascript">
-	$(function(){
-	$(".dropdown-menu > li > a.trigger").on("click",function(e){
-		var current=$(this).next();
-		var grandparent=$(this).parent().parent();
-		if($(this).hasClass('backgris')||$(this).hasClass('backblanc'))
-			$(this).toggleClass('backgris backblanc');
-		grandparent.find('.backgris').not(this).toggleClass('backblanc backgris');
-		grandparent.find(".sub-menu:visible").not(current).hide();
-		current.toggle();
-		e.stopPropagation();
-	});
-	
-});
 </script>
 </body>
 </html>

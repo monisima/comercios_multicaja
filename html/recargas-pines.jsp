@@ -6,10 +6,18 @@
 	<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-	<title>Multicaja Comercios</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
+<!-- End Google Tag Manager -->
+
+	<title>Conoce todos los servicios para tu comercio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Multicaja Comercios">
+  <meta name="description" content="Detalle de los servicios que puedes ofrecer, pago de cuentas, recargas, giros, depósitos, loto, pago con tarjetas y el seguro obligatorio SOAP. ">
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
@@ -43,6 +51,11 @@ $(function() {
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="inicio"></div>
       <jsp:include page="header.jsp" />
 
@@ -140,44 +153,23 @@ $(function() {
 									          <div class="item">
 									            <div class="row">
 									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_03.jpg"></a>
+									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
 									              </div>          
 									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_05.jpg"></a>
+									                <a class="thumbnail row" href="#"><img alt="" src="images/gtel-re.jpg"></a>
 									              </div>
 									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_07.jpg"></a>
+									                <a class="thumbnail row" href="#"><img alt="" src="images/vtr-re.jpg"></a>
 									              </div>
 									                <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_09.jpg"></a>
+									                <a class="thumbnail row" href="#"><img alt="" src="images/movil-re.jpg"></a>
 									              </div>          
 									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_11.jpg"></a>
+									               <a class="thumbnail row" href="#"><img alt="" src="images/tel-sur-re.jpg"></a>
+									                
 									              </div>
 									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
-									              </div>  
-									            </div>
-									          </div>  
-									           <div class="item">
-									            <div class="row">
-									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_03.jpg"></a>
-									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_05.jpg"></a>
-									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_07.jpg"></a>
-									              </div>
-									                <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_09.jpg"></a>
-									              </div>          
-									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_11.jpg"></a>
-									              </div>
-									              <div class="col-md-2 col-sm-2 col-xs-6">
-									                <a class="thumbnail row" href="#"><img alt="" src="images/marcas_13.jpg"></a>
+									                <a class="thumbnail row" href="#"><img alt="" src="images/gtd-re.jpg"></a>
 									              </div>  
 									            </div>
 									          </div>  
@@ -233,96 +225,96 @@ $(function() {
 				            	
 				      	  </div>
 				      	  <div id="comisiones" class="collapse comisiones-escondido container-fluid">
-				      	  <div class="container">
-				      	  <div class="row">
-				      	  <div class="col-md-8 col-md-offset-2 row col-sm-12">
-				            	<table class="tabl-comisi row" width="100%">
-									  <tr>
-									    <th colspan="2" class="rojito">Venta Mensual de Recarga por Terminal</th>
-									    <th colspan="2" class="rojito">% Comisión</th>
-									  </tr>
-									  <tr>
-									    <td class="gris-tabl centrar-tx">Desde</td>
-									    <td class="gris-tabl centrar-tx">Hasta</td>
-									    <td class="gris-tabl centrar-tx">POS</td>
-									    <td class="gris-tabl centrar-tx">Web / Celular</td>
-									  </tr>
-									  <tr>
-									    <td>0</td>
-									    <td>$199.999</td>
-									    <td>0,00%</td>
-									    <td>0,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$200.000</td>
-									    <td>$299.999</td>
-									    <td>0,00%</td>
-									    <td>4,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$300.000</td>
-									    <td>$499.999</td>
-									    <td>3,00%</td>
-									    <td>4,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$500.000</td>
-									    <td>$999.999</td>
-									    <td>4,20%</td>
-									    <td>4,62%</td>
-									  </tr>
-									  <tr>
-									    <td>$1.000.000</td>
-									    <td>$2.499.999</td>
-									    <td>4,62%</td>
-									    <td>4,80%</td>
-									  </tr>
-									  <tr>
-									    <td>$2.500.000</td>
-									    <td>$3.999.999</td>
-									    <td>4,80%</td>
-									    <td>5,00%</td>
-									  </tr>
-									  <tr>
-									    <td>$4.000.000</td>
-									    <td>$5.999.999</td>
-									    <td>5,00%</td>
-									    <td>5,20%</td>
-									  </tr>
-									  <tr>
-									    <td>$6.000.000</td>
-									    <td>$7.999.999</td>
-									    <td>5,20%</td>
-									    <td>5,40%</td>
-									  </tr>
-									  <tr>
-									    <td>$8.000.000</td>
-									    <td>$11.999.999</td>
-									    <td>5,40%</td>
-									    <td>5,60%</td>
-									  </tr>
-									  <tr>
-									    <td>$12.000.000</td>
-									    <td>$16.999.999</td>
-									    <td>5,80%</td>
-									    <td>5,80%</td>
-									  </tr>
-									  <tr>
-									    <td>$17.000.000</td>
-									    <td>Más</td>
-									    <td>6,00%</td>
-									    <td>6,20%</td>
-									  </tr>
-									</table>
-										<div class="row txt-bajada-tbl">
-											<p><img src="images/down.png" class="caret-como-fun"><strong>Para comercios nuevos</strong> que cuenten con POS Multicaja, la comisión mínima del primer mes de operación será de 3%.</p>
-											<p><img src="images/down.png" class="caret-como-fun">Recuerda que si vendes <strong>más de $1.000.000 en recargas</strong> por local puedes acceder al <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
-											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
-											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
+					      	  <div class="container">
+						      	  <div class="row">
+							      	  <div class="col-md-8 col-md-offset-2 row col-sm-12">
+							            	<table class="tabl-comisi row" width="100%">
+												  <tr>
+												    <th colspan="2" class="rojito">Venta Mensual de Recarga por Terminal</th>
+												    <th colspan="2" class="rojito">% Comisión</th>
+												  </tr>
+												  <tr>
+												    <td class="gris-tabl centrar-tx">Desde</td>
+												    <td class="gris-tabl centrar-tx">Hasta</td>
+												    <td class="gris-tabl centrar-tx">POS</td>
+												    <td class="gris-tabl centrar-tx">Web / Celular</td>
+												  </tr>
+												  <tr>
+												    <td>0</td>
+												    <td>$199.999</td>
+												    <td>0,00%</td>
+												    <td>0,00%</td>
+												  </tr>
+												  <tr>
+												    <td>$200.000</td>
+												    <td>$299.999</td>
+												    <td>0,00%</td>
+												    <td>4,00%</td>
+												  </tr>
+												  <tr>
+												    <td>$300.000</td>
+												    <td>$499.999</td>
+												    <td>3,00%</td>
+												    <td>4,00%</td>
+												  </tr>
+												  <tr>
+												    <td>$500.000</td>
+												    <td>$999.999</td>
+												    <td>4,20%</td>
+												    <td>4,62%</td>
+												  </tr>
+												  <tr>
+												    <td>$1.000.000</td>
+												    <td>$2.499.999</td>
+												    <td>4,62%</td>
+												    <td>4,80%</td>
+												  </tr>
+												  <tr>
+												    <td>$2.500.000</td>
+												    <td>$3.999.999</td>
+												    <td>4,80%</td>
+												    <td>5,00%</td>
+												  </tr>
+												  <tr>
+												    <td>$4.000.000</td>
+												    <td>$5.999.999</td>
+												    <td>5,00%</td>
+												    <td>5,20%</td>
+												  </tr>
+												  <tr>
+												    <td>$6.000.000</td>
+												    <td>$7.999.999</td>
+												    <td>5,20%</td>
+												    <td>5,40%</td>
+												  </tr>
+												  <tr>
+												    <td>$8.000.000</td>
+												    <td>$11.999.999</td>
+												    <td>5,40%</td>
+												    <td>5,60%</td>
+												  </tr>
+												  <tr>
+												    <td>$12.000.000</td>
+												    <td>$16.999.999</td>
+												    <td>5,80%</td>
+												    <td>5,80%</td>
+												  </tr>
+												  <tr>
+												    <td>$17.000.000</td>
+												    <td>Más</td>
+												    <td>6,00%</td>
+												    <td>6,20%</td>
+												  </tr>
+												</table>
+													<div class="row txt-bajada-tbl">
+														<p><img src="images/down.png" class="caret-como-fun"><strong>Para comercios nuevos</strong> que cuenten con POS Multicaja, la comisión mínima del primer mes de operación será de 3%.</p>
+														<p><img src="images/down.png" class="caret-como-fun">Recuerda que si vendes <strong>más de $1.000.000 en recargas</strong> por local puedes acceder al <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#premio_multiservicio" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
+														<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
+														<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
+													</div>
 										</div>
-							</div>
-							</div>
-							</div>
+									</div>
+								</div>
 				          </div>
 
 				      	  <div class="seccion-equip" id="equipos">
@@ -372,7 +364,7 @@ $(function() {
 							<div class="row">
 								<div class="extras-txt col-md-8 col-md-offset-2">
 									<p class="txt-busca-reg">Busca tu tarifa POS según tu región y comuna</p>
-									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
+									<a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#buscar-region-comuna" target="_target"><button type="button" class="btn-lineal-quiero buscar-rg-p">BUSCAR</button></a>
 									<div class="letra-chica">Tarifas para POS Fijo </div>
 								</div>
 							</div>
