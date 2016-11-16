@@ -74,7 +74,7 @@
 
 					      	<div class="col-md-7 col-sm-7 marg-menu-home">
 					      		<ul class="nav navbar-nav menu-header">
-							         <li class="active"><a href="index.jsp">HOME</a></li>
+							        <li class="active"><a href="index.jsp">HOME</a></li>
 							        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
 							            <li><a href="recargas-pines.jsp">Recargas y Pines</a></li>

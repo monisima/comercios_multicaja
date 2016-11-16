@@ -57,7 +57,7 @@
 			<div class="collapse login-bajada" id="preg1">
 				<form id="user-login-form-mobile" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
 					
-					<input type="text" id="rutInMobile" maxlength="12" size="10" name="rutInMobile" placeholder="Ingresa Rut" class="error">
+					<input type="text" id="rutInMobile" maxlength="12" size="10" name="rutInMobile" placeholder="Ingresa Rut" >
 					<input type="hidden" name="rutMobile"> 
 					<input type="hidden" name="dvMobile"> 
 							
@@ -65,7 +65,7 @@
 					<span id="rutIncorrectoMobile" name="rutIncorrectoMobile" class="error-tx" style="display: none;"></span>
 							
 					
-					<input type="password" id="passNormalMobile" size="15" name="passNormalMobile"  placeholder="Ingresa Clave" class="error">
+					<input type="password" id="passNormalMobile" size="15" name="passNormalMobile"  placeholder="Ingresa Clave" >
 					
 					<!--	-->	
 					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
@@ -410,7 +410,9 @@ $.urlParam = function(name){
 </script>
 
 <script language="javascript">	
-    		function validarFormLoginMobile(form) {  			
+    		function validarFormLoginMobile(form) { 
+				document.getElementById("rutInMobile").className = document.getElementById("rutInMobile").className.replace("red-border", "");
+				document.getElementById("passNormalMobile").className = document.getElementById("passNormalMobile").className.replace("red-border", "");
 				$('#rutIncorrectoMobile').hide()
 				$('#claveIncorrectaMobile').hide();
 				f=document.formLoginMobile;
@@ -420,48 +422,49 @@ $.urlParam = function(name){
    				validacion = true;
 				
 				if (rutIn.length < 1) {
-					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrectoMobile").html('No se ha ingresado el Rut');
 					$('#rutIncorrectoMobile').show();
-					document.getElementById('rutIn').style.border="#990000";
-					
-					var elementosObtenidos = document.getElementsByTagName(input);
-					elementosObtenidos[0].style.border = '#990000';
-					
+					document.getElementById('rutInMobile').className = document.getElementById('rutInMobile').className + "red-border";
 					validacion = false;
+				}else{
+					if(!esRut(rutIn.toLowerCase())){
+						$("#rutIncorrectoMobile").html('No es Rut Valido');
+						$('#rutIncorrectoMobile').show();
+						document.getElementById('rutInMobile').className = document.getElementById('rutInMobile').className + "red-border";
+						validacion = false;
+					}
 				}
-				if (password.length < 1) {
-					//msgError += "- No se ha ingresado la contraseña\n";
-					$("#claveIncorrectaMobile").html('No se ha ingresado la contraseña');
+				
+				if (password.length < 4 || password.length > 4) {
+					$("#claveIncorrectaMobile").html('La clave debe contener 4 caracteres');
 					$('#claveIncorrectaMobile').show();
+					document.getElementById('passNormalMobile').className = document.getElementById('passNormalMobile').className + "red-border";
 				    validacion = false;
 				}
+				
 				if (!validacion) {
-					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
 				    return false;
 				}
 				var trueRut = esRut(rutIn.toLowerCase());
-				
-				//alert('ES RUT' + trueRut);
-				//alert('password.length' + password.length);
-				
 				if (trueRut) {
 						if (password.length < 4 || password.length > 4) {
 							$("#claveIncorrectaMobile").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrectaMobile').show();	
+							document.getElementById('passNormalMobile').className = document.getElementById('passNormalMobile').className + "red-border";
 							validacion = false;						
 							return false;
 						}
 						
 				
-				}else{ /* No es rut */
+				}else{
 						$("#rutIncorrectoMobile").html('No es Rut válido');
 						$('#rutIncorrectoMobile').show();
+						document.getElementById('rutInMobile').className = document.getElementById('rutInMobile').className + "red-border";
 						if (password.length < 4 || password.length > 4) {
 							$("#claveIncorrectaMobile").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrectaMobile').show();	
-						}
-						
+							document.getElementById('passNormalMobile').className = document.getElementById('passNormalMobile').className + "red-border";
+						}						
 						validacion = false;						
 						return false;
 				}
@@ -476,23 +479,12 @@ $.urlParam = function(name){
 					   
 				var dv = rutTmp.charAt(rutTmp.length-1);
 				rutTmp = rutTmp.substring(0, rutTmp.length-1);
-				
-				//alert('dv ok' + dv);
-				//alert('rutTmp ok' + rutTmp);
-				
-   				/*
-				if (dv.length < 1) {
-					msgError += "- No se ha ingresado el digito verificador\n";
-				    validacion = false;
-				}
-				*/
-
 				if (validacion == true) {
 					ingresar4(rutTmp, dv.toUpperCase(), password,f);
 				    return true;
 					
 				} else {
-					alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
 				    return false;
 				}
 			}
@@ -504,10 +496,11 @@ $.urlParam = function(name){
 				f.j_password.value=password;
 			}		
 </script>
-		
+
 <script language="javascript">	
-    		function validarFormLogin(form) {  
-				//alert('validarFormLogin2');
+    		function validarFormLogin(form) {  			
+				document.getElementById("rutIn").className = document.getElementById("rutIn").className.replace("red-border", "");
+				document.getElementById("passNormal").className = document.getElementById("passNormal").className.replace("red-border", "");
 				
 				$('#rutIncorrecto').hide()
 				$('#claveIncorrecta').hide();
@@ -534,20 +527,25 @@ $.urlParam = function(name){
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrecto").html('No se ha ingresado el Rut');
 					$('#rutIncorrecto').show();
-					var f = document.getElementById('rutIn').value;
-					if (f=="") {
-						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
-					}
+					//checkField('rutIn');
+					document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
 					validacion = false;
-				}
-				if (password.length < 1) {
-					//msgError += "- No se ha ingresado la contraseña\n";
-					$("#claveIncorrecta").html('No se ha ingresado la contraseña');
-					$('#claveIncorrecta').show();
-					var f = document.getElementById('passNormal').value;
-					if (f=="") {
-						document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
+				}else{
+					if(!esRut(rutIn.toLowerCase())){
+						/* No es rut */
+						$("#rutIncorrecto").html('No es Rut Valido1');
+						$('#rutIncorrecto').show();
+						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
+						//checkField('rutIn');
+						validacion = false;
 					}
+				}
+				if (password.length < 4 || password.length > 4) {
+					//msgError += "- No se ha ingresado la contraseña\n";
+					$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
+					$('#claveIncorrecta').show();
+					document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
+					//checkField('passNormal');
 				    validacion = false;
 				}
 				if (!validacion) {
@@ -560,20 +558,24 @@ $.urlParam = function(name){
 				//alert('password.length' + password.length);
 				
 				if (trueRut) {
+						checkFieldRut();
 						if (password.length < 4 || password.length > 4) {
 							$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
-							$('#claveIncorrecta').show();	
+							$('#claveIncorrecta').show();
+							document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
 							validacion = false;						
 							return false;
 						}
 						
 				
 				}else{ /* No es rut */
-						$("#rutIncorrecto").html('No es Rut Valido');
+						$("#rutIncorrecto").html('No es Rut Valido2');
 						$('#rutIncorrecto').show();
+						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
 						if (password.length < 4 || password.length > 4) {
 							$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
-							$('#claveIncorrecta').show();	
+							$('#claveIncorrecta').show();			
+							document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
 						}
 						
 						validacion = false;						

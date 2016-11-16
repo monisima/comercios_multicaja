@@ -77,27 +77,32 @@
 	  <div class="col-md-6 col-md-offset-3 ">
 		  <div class="row">
 		  <div class="formulario-solicitud">
-		    <div class="form-solicitud"> Formulario de solicitud</div>
+		    <div class="form-solicitud"> Formulario de solicitud </div>
 				<form id="formQuieroSerComercioMulticaja" name="formQuieroSerComercioMulticaja">	
 						
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">¿Qué servicio te gustaría contratar?</div></div>
-						<select class="selectpicker" id="servicio" name="servicio" data-width="100%">
-						  <option value="0" disabled selected style="display: none;">Selecciona el servicio</option>
-						  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
-						  <option value="2">Ventas con tarjetas</option>
-						  <option value="3">Alimentación y MPOS</option>
-						  <option value="4">Comercio electrónico</option>
-						</select>
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">¿Qué servicio te gustaría contratar? *</div></div>
+						<div id="selectDiv">
+							<select class="selectpicker" id="servicio" name="servicio" data-width="100%">
+							  <option value="0" disabled selected style="display: none;">Selecciona el servicio</option>
+							  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
+							  <option value="2">Ventas con tarjetas</option>
+							  <option value="3">Alimentación y MPOS</option>
+							  <option value="4">Comercio electrónico</option>
+							</select>
+						</div>
+						
 						<!--	-->			
 						<span id="requiredServicio" name="requiredServicio" class="error-tx" style="display: none;"></span>
 						
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado</div></div>
-						<select class="selectpicker" id="horario" name="horario" data-width="100%">
-						  <option value="" disabled selected style="display: none;">Selecciona el horario</option>
-						  <option value="1">Entre 10:00 y 13:00</option>
-						  <option value="2">Entre 13:00 y 15:00</option>
-						  <option value="3">Entre 15:00 y 18:00</option>
-						</select>
+						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado *</div></div>
+						<div id="selectDiv2">
+							<select class="selectpicker" id="horario" name="horario" data-width="100%">
+							  <option value="0" disabled selected style="display: none;">Selecciona el horario</option>
+							  <option value="1">Entre 10:00 y 13:00</option>
+							  <option value="2">Entre 13:00 y 15:00</option>
+							  <option value="3">Entre 15:00 y 18:00</option>
+							</select>
+						</div>
 						<!--	-->	
 						<span id="requiredHorario" name="requiredHorario" class="error-tx" style="display: none;"></span>
 												
@@ -173,7 +178,13 @@
 	}
 	
 	function validarFormQuieroSerComercio(form) {  	
-		
+		document.getElementById("selectDiv").className = document.getElementById("selectDiv").className.replace("red-border-comercio2", "");
+		document.getElementById("selectDiv2").className = document.getElementById("selectDiv2").className.replace("red-border-comercio2", "");
+		document.getElementById("nombre").className = document.getElementById("nombre").className.replace("red-border-comercio", "");
+		document.getElementById("rut").className = document.getElementById("rut").className.replace("red-border-comercio", "");
+		document.getElementById("mail").className = document.getElementById("mail").className.replace("red-border-comercio", "");
+		document.getElementById("fono").className = document.getElementById("fono").className.replace("red-border-comercio", "");
+			
 		$('#requiredServicio').hide();
 		$('#requiredHorario').hide();
 		$('#requiredNombre').hide();
@@ -186,8 +197,9 @@
 		/*Obteniendo datos del formulario..*/
 		var validacion = true;
 		var servicio = $('#servicio option:selected').val();
-		var horario = $('#servicio option:selected').text();
+		var horario = $('#horario option:selected').val();
 		var tipoServicio = $('#servicio option:selected').text();
+		var tipoHorario = $('#horario option:selected').text();
 		var nombre = $('#nombre').val();
 		var rut = $('#rut').val();
 		var mail = $('#mail').val();
@@ -197,30 +209,39 @@
 		if(servicio == '0'){
 			$("#requiredServicio").html('Debe Seleccionar un servicio');
 			$("#requiredServicio").show();
+			document.getElementById('selectDiv').className = document.getElementById('selectDiv').className + "red-border-comercio2";
 			validacion = false;
 		}
 		
 		if(horario == '0'){
 			$("#requiredHorario").html('Debe Seleccionar un Horario');
 			$("#requiredHorario").show();
+			document.getElementById('selectDiv2').className = document.getElementById('selectDiv2').className + "red-border-comercio2";
 			validacion = false;
 		}
 		
 		if (nombre.length < 1) {
 			$("#requiredNombre").html('No se ha ingresado el Nombre');
 			$('#requiredNombre').show();
+			document.getElementById("nombre").className = document.getElementById("nombre").className.replace("form-solic", "");
+			document.getElementById('nombre').className = document.getElementById('nombre').className + "red-border-comercio";
 			validacion = false;
 		}
 		
 		if (rut.length < 1) {
 			$("#requiredRut").html('No se ha ingresado el Rut');
 			$('#requiredRut').show();
+			document.getElementById("rut").className = document.getElementById("rut").className.replace("form-solic", "");
+			document.getElementById('rut').className = document.getElementById('rut').className + "red-border-comercio";
 			validacion = false;
 		}else{
 			var trueRut = esRut(rut.toLowerCase());
 			if (!trueRut) {
 				$("#requiredRut").html('No es Rut Valido');
-				$('#requiredRut').show();	
+				$('#requiredRut').show();
+				document.getElementById("rut").className = document.getElementById("rut").className.replace("form-solic", "");
+				document.getElementById('rut').className = document.getElementById('rut').className + "red-border-comercio";				
+				validacion = false;
 			}
 		}
 		
@@ -228,11 +249,15 @@
 			$("#requiredMail").html('No se ha ingresado el Mail');
 			$('#requiredMail').show();
 			validacion = false;
+			document.getElementById("mail").className = document.getElementById("mail").className.replace("form-solic-mail", "");
+			document.getElementById('mail').className = document.getElementById('mail').className + "red-border-comercio";
 		}else{
 			if (/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/.test(mail)){
 			} else {
 				$("#requiredMail").html('Ingrese Email valido');
 				$('#requiredMail').show();
+				document.getElementById("mail").className = document.getElementById("mail").className.replace("form-solic-mail", "");
+				document.getElementById('mail').className = document.getElementById('mail').className + "red-border-comercio";
 				validacion = false;
 			}
 			<!--  if(validaEmail(mail)){ --> 
@@ -245,11 +270,15 @@
 		if (fono.length < 1) {
 			$("#requiredFono").html('No se ha ingresado el Teléfono');
 			$('#requiredFono').show();
+			document.getElementById("fono").className = document.getElementById("fono").className.replace("form-solic-cel", "");
+			document.getElementById('fono').className = document.getElementById('fono').className + "red-border-comercio";
 			validacion = false;
 		}else{
 			if(!validarSiNumero(fono)){
 					$("#requiredFono").html('No es Teléfono Valido');
 					$('#requiredFono').show();
+					document.getElementById("fono").className = document.getElementById("fono").className.replace("form-solic-cel", "");
+					document.getElementById('fono').className = document.getElementById('fono').className + "red-border-comercio";
 					validacion = false;
 				}
 		}
@@ -263,7 +292,7 @@
 		
 					
 		if (validacion == true) {
-			$.post('http://l-pbeltran:8090/MulticajaComercioV3/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:horario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
+			$.post('http://l-pbeltran:8090/MulticajaComercioV3/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:tipoHorario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
 			function(data) {
 				var str="" + data;
 				  errorN = str.substring(0, 6);

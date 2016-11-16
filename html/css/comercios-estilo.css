@@ -1906,6 +1906,18 @@ input.error:focus{
 .red-border{
     border: 1px solid #cc0000;
 }
+.red-border-comercio{
+    border: 1px solid #cc0000;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: 17px!important;
+	margin-top: 0px;
+	max-width: 570px;
+}
+
+.red-border-comercio2{
+    border: 1px solid #cc0000;
+}
 .padding-titulo-casi{
 	padding-top: 75px!important;
 }
