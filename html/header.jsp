@@ -47,7 +47,7 @@
 				      					<ul class="dropdown-menu">
 				      						<li><a href="https://www.multicaja.cl/personas/" target="_blank" class="pri-sub">PERSONAS</a></li>
 				      						<li><a href="index.jsp" class="pri-sub">COMERCIOS</a></li>
-				      						<li><a ref="https://www.multicaja.cl/emisores/ingresar " target="_blank" class="pri-sub">EMISORES</a></li>
+				      						<li><a href="https://www.multicaja.cl/emisores/ingresar " target="_blank" class="pri-sub">EMISORES</a></li>
 											<li>
 												<a class="trigger right-caret pri-sub">FILIALES</a>
 												<ul class="dropdown-menu sub-menu">
@@ -114,9 +114,12 @@
 	<script language="javascript">
 	
 	$(document).ready(function () {
-		document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
+		
         var url = window.location;
 		//alert('url  ' + url);
+		if(!(url=='http://localhost:8090/mc-comercios/html/')){
+			document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
+		}
 		//Sólo funcionará si string en href coincide con la ubicación
         $('ul.nav a[href="' + url + '"]').parent().addClass('active');
 
@@ -128,20 +131,5 @@
 		document.getElementById("idComercios").className = document.getElementById("idComercios").className.replace("active", "");
     });
 	
-	
-		$('#idSerLi').click(function(){
-			alert('idSerLi');
-			
-			
-		});
 
-		function my_function(){
-			alert();
-			//document.getElementById("fono").className = document.getElementById("fono").className.replace("red-border-comercio", "");
-			document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
-			document.getElementById("idSer").className = document.getElementById("idSer").className.replace("openactive", "");
-			document.getElementById('idSer').className = document.getElementById('idSer').className + "active";
-				
-		}
-		
 	</script>	

@@ -46,122 +46,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <jsp:include page="header.jsp" />
-	   <a name="R_02"></a>
+
 	   <div class="container">
 	 		<div class="col-md-12 col-xs-12">
 	 	 	<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
-				<li class="active">Quiero ser comercio Multicaja</li>
+				<li class="active">Recuperar Clave</li>
 			</ol>
 		</div>				        
 		</div>
 
-		<div class="container-fluid">
-	
-		    <!-- End Carousel -->
-		</div>
- 		
+
 <!--header-->
-		
-		<div id="alertaCorreo" class="container" style="display: none;" >
-			  <div class="alert alert-danger">
-				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-					<p><strong>Tu solicitud fue enviada correctamente.</strong> 
-	      			Te contacteremos en un plazo máximo de <strong>24 horas hábiles.</strong>
-	      			Muchas gracias por tu interés en Multicaja.</p>   
-			  </div>
-		</div>
-		
-      	<div class="container-fluid gris-claro seccion-simula">
-      	  <div class="container">
-	      	<div class="row col-md-6 col-md-offset-3 col-sm-12">
-	      		<div class="titulo quiero-ser row">
-	      				<h2>Únete a la red de comercios Multicaja</h2>
-	      				<ul class="bullet">
-	      				<li><p>Completa el formulario y un ejecutivo te contactará dentro de <span>24 horas hábiles.</span></p></li>
-	      				<li><p>Visita la sección <a href="recargas-pines.jsp" class="rojo">Servicios</a> para conocer más detalles.</p></li>
-	      				<li><p>Conoce <a href="comercios-mc.jsp" class="rojo">Cómo funciona</a> Multicaja.</p></li>
-	      				</ul>
-	      		</div>
-			</div>
-		  </div>
-      	</div>
+
+
 
 <div class="container">
-	<a name="R_03"></a>
-	  <div class="col-md-6 col-md-offset-3 ">
+	  <div class="col-md-12 col-xs-12">
 		  <div class="row">
-		  <div class="formulario-solicitud">
-		    <div class="form-solicitud"> Formulario de solicitud </div>
-				<form id="formQuieroSerComercioMulticaja" name="formQuieroSerComercioMulticaja">	
-						
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">¿Qué servicio te gustaría contratar? *</div></div>
-						<div id="selectDiv">
-							<select class="selectpicker" id="servicio" name="servicio" data-width="100%">
-							  <option value="0" disabled selected style="display: none;">Selecciona el servicio</option>
-							  <option value="1">Recargas, pagos de cuentas, servicios bancarios</option>
-							  <option value="2">Ventas con tarjetas</option>
-							  <option value="3">Alimentación y MPOS</option>
-							  <option value="4">Comercio electrónico</option>
-							</select>
-						</div>
-						
-						<!--	-->			
-						<span id="requiredServicio" name="requiredServicio" class="error-tx" style="display: none;"></span>
-						
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Horario en que te gustaría ser contactado *</div></div>
-						<div id="selectDiv2">
-							<select class="selectpicker" id="horario" name="horario" data-width="100%">
-							  <option value="0" disabled selected style="display: none;">Selecciona el horario</option>
-							  <option value="1">Entre 10:00 y 13:00</option>
-							  <option value="2">Entre 13:00 y 15:00</option>
-							  <option value="3">Entre 15:00 y 18:00</option>
-							</select>
-						</div>
-						<!--	-->	
-						<span id="requiredHorario" name="requiredHorario" class="error-tx" style="display: none;"></span>
-												
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Nombre *</div></div>    
-						<input type="text" class="form-solic" id="nombre" name="nombre" maxlength="60" placeholder="Ingresa nombre" required>
-						<!--	-->			
-						<span id="requiredNombre" name="requiredNombre" class="error-tx" style="display: none;"></span>
-								
-						<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">RUT *</div></div>					
-						<input type="text" class="form-solic" id="rut" name="rut" maxlength="9" placeholder="Ingresa RUT sin puntos ni guión" required>
-						<!--	-->			
-						<span id="requiredRut" name="requiredRut" class="error-tx" style="display: none;"></span>
-						
-						<div class="juntos-mail">    
-							<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png">Correo electrónico *</div></div>
-							<input type="text" class="form-solic-mail" id="mail" name="mail" maxlength="50" placeholder="Ej: correo@gmail.com" required>
-							<!--	-->			
-							<span id="requiredMail" name="requiredMail" class="error-tx" style="display: none;"></span>
-						</div>
-						
-						<div class="juntos-cel"> 
-							<div class="form-pregunta"> <div class="txt-simula-marg"><img src="images/down.png"> Teléfono de contacto * </div></div>
-							<input type="text" class="form-solic-cel" id="fono" name="fono" maxlength="9" onKeyPress="return checkIt(event)" placeholder="Ingresa 9 dígitos" required>
-							<!--	-->			
-							<span id="requiredFono" name="requiredFono" class="error-tx" style="display: none;"></span>	
-						</div>
-							
-				
-				
-					<p class="rig">* Campos obligatorios</p>
-					<div class="captcha-img"> 
-						<div class="g-recaptcha" data-sitekey="6LdrHRQTAAAAAMU6FXDenuOzeugxt8GMB_9bycu0"></div>
-						
-						<!--	-->			
-						<span id="requiredCaptcha" name="requiredCaptcha" class="error-tx" style="display: none;"></span>	
-					</div>
-					<p class="marg-p">Al completar este formulario, autorizo que Multicaja utilice mis datos y me contacte por vía telefónica o electrónica.</p>
-					<button type="button" class="btn-rojo btn-block btn-simula btn" onclick="validarFormQuieroSerComercio(this);">ENVIAR</button>
-					
-				</form>
-		    
-		</div>
+		  
+		  	<iframe src="	http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" 
+				width="100%" 
+				height="600"
+				seamless=""
+				noresize="noresize"
+				frameborder="0"
+				scrolling="no"
+				align="right">
+			</iframe>
+			
 		  </div>
-	</div>
+		</div>
 </div>
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
@@ -320,16 +235,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					  return;
 				  }else{
 					  $('#alertaCorreo').show();
-					  location.href = "#R_02";
 					  return;
 				  }				
 			});
 			return true;
 			
 		} else {
-			location.href = "#R_03";
 			return false;
-			
 		}
 	}		
 </script>

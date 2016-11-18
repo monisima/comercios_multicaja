@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
 							
 					
-					<a href="http://l-pbeltran:8090/MulticajaComercioV3/recuperarClavePaso1" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
+					<a href="recuperarClave.jsp" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
 					
 					<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form-mobile').submit();">ENTRAR</button>
 
@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
+							<a href="recuperarClave.jsp" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							

@@ -43,7 +43,7 @@
 		  	 <div class="linea-footer">Multicaja S.A.</div>  
 		  	 <div class="linea-footer">Todos los derechos reservados.</div>  
 		  	 <div class="linea-footer"> Dirección: Calle Phillips 84  - Piso 5, Santiago de Chile</div>  
-		  	 <a href="https://www.multicaja.cl/comercios/contacto_multicaja.jsp" target="_blank" ><span>Contáctanos</span></a>
+		  	 <a href="contacto_multicaja.jsp" target="_blank" ><span>Contáctanos</span></a>
 		  	</div>
 		  </div>
 	      </div>
