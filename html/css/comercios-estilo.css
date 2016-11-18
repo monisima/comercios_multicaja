@@ -435,6 +435,7 @@ input[type=text] {
     margin: 8px 0px 0px;
     box-sizing: border-box;
     font-size: 15px;
+    height: 35px;
 }
 input[type=password] {
     width: 100%;
@@ -442,6 +443,7 @@ input[type=password] {
     margin: 25px 0px 0px;
     box-sizing: border-box;
     font-size: 15px;
+        height: 35px;
 }
 .btn-login{
 	padding-top: 8px;
@@ -1290,6 +1292,7 @@ input.form-solic{
 	font-size: 17px!important;
 	margin-top: 0px;
 	max-width: 570px;
+	height: 38px;
 }
 input.form-solic-mail{
 	padding-top:10px;
@@ -1299,6 +1302,7 @@ input.form-solic-mail{
 	margin-top: 0px;
 	max-width: 344px;
 	width: 100%;
+	height: 38px;
 }
 input.form-solic-cel{
 	padding-top:10px;
@@ -1308,6 +1312,7 @@ input.form-solic-cel{
 	margin-top: 0px;
 	max-width: 210px;
 	width: 100%;
+	height: 38px;
 }
 .captcha-img{
 	display: inline-block;
@@ -1329,9 +1334,17 @@ input.form-solic-cel{
 	font-size: 17px!important;
 	color: #a8a8a8;
 }
-.bootstrap-select>.dropdown-toggle {
-    padding-top: 10px;
-    padding-bottom: 10px;
+#selectDiv {
+	border:1px solid #d2d2d2;
+}
+#selectDiv2{
+	border:1px solid #d2d2d2;
+}
+#selectDiv .bootstrap-select>.dropdown-toggle{
+	border:0px!important;
+}
+#selectDiv2 .bootstrap-select>.dropdown-toggle{
+	border:0px!important;
 }
 .btn-group > .btn:first-child {
     border-radius: 0px;
@@ -1908,18 +1921,19 @@ input.error:focus{
 }
 .red-border{
     border: 1px solid #cc0000;
+    padding: 5px 11px!important;
 }
 .red-border-comercio{
     border: 1px solid #cc0000;
-	padding-top:10px;
-	padding-bottom:10px;
 	font-size: 17px!important;
-	margin-top: 0px;
 	max-width: 570px;
+	height: 46px!important;
+	margin-top: 0px!important;
 }
 
 .red-border-comercio2{
-    border: 1px solid #cc0000;
+    border: 1px solid #cc0000!important;
+
 }
 .padding-titulo-casi{
 	padding-top: 75px!important;
@@ -2356,6 +2370,13 @@ input.form-solic-mail {
     max-width: 500px;
 }
 input.form-solic {
+    max-width: 800px;
+}
+input.red-border-comercio {
+
+    max-width: 500px;
+}
+input.red-border-comercio{
     max-width: 800px;
 }
 .juntos-mail {
@@ -3023,23 +3044,28 @@ a .ico-bot-6{vertical-align: middle; margin-right: 5px;}
     padding-top: 20px;
 }
 }
+@media only screen and (max-width: 758px) {
+	input.form-solic-mail {
+    max-width: 800px;
+	}
+	input.red-border-comercio{
+	    max-width: 800px;
+	}
+	.juntos-mail {
+	    max-width: 800px;
+	}
+	.juntos-cel {
+	    max-width: 800px;
+	}
+	input.form-solic-cel {
+	    max-width: 800px;
+	}
+	}
 @media only screen and (max-width: 679px) {
 .caj-comenzar {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 15px !important;
-}
-input.form-solic-mail {
-    max-width: 800px;
-}
-.juntos-mail {
-    max-width: 800px;
-}
-.juntos-cel {
-    max-width: 800px;
-}
-input.form-solic-cel {
-    max-width: 800px;
 }
 }
 @media only screen and (max-width: 580px) {
