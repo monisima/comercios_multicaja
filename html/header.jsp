@@ -28,7 +28,7 @@
 			         <div class="row">   
 				            <ul class="nav nav-tabs menu-principal nav-justified hidden-xs">
 				                <li ><a href="https://www.multicaja.cl/personas/" target="_blank">PERSONAS</a></li>
-				      			<li class="activa"><a href="index.jsp">COMERCIOS</a></li>
+				      			<li class="activa" id="idComercios"><a href="index.jsp">COMERCIOS</a></li>
 				      			<li ><a href="https://www.multicaja.cl/emisores/ingresar " target="_blank">EMISORES</a></li>
 				      			<li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FILIALES<span class="caret"></span></a>
 				      				<ul class="dropdown-menu">
@@ -74,8 +74,8 @@
 
 					      	<div class="col-md-7 col-sm-7 marg-menu-home">
 					      		<ul class="nav navbar-nav menu-header">
-							        <li class="active"><a href="index.jsp">HOME</a></li>
-							        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
+							        <li class="active" id="idHome"><a href="index.jsp">HOME</a></li>
+							        <li ><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICIOS<span class="caret"></span></a>
 							        <ul class="dropdown-menu">
 							            <li><a href="recargas-pines.jsp">Recargas y Pines</a></li>
 							            <li><a href="pago-cuentas.jsp">Pago de cuentas</a></li>
@@ -110,3 +110,38 @@
 	    </div><!--cont-fluid-->   
 	    </body>
 	    </html>
+		
+	<script language="javascript">
+	
+	$(document).ready(function () {
+		document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
+        var url = window.location;
+		//alert('url  ' + url);
+		//Sólo funcionará si string en href coincide con la ubicación
+        $('ul.nav a[href="' + url + '"]').parent().addClass('active');
+
+		// También funcionará para los hrefs relativos y absolutos
+        $('ul.nav a').filter(function () {
+            return this.href == url;
+        }).parent().addClass('active').parent().parent().addClass('active');
+		
+		document.getElementById("idComercios").className = document.getElementById("idComercios").className.replace("active", "");
+    });
+	
+	
+		$('#idSerLi').click(function(){
+			alert('idSerLi');
+			
+			
+		});
+
+		function my_function(){
+			alert();
+			//document.getElementById("fono").className = document.getElementById("fono").className.replace("red-border-comercio", "");
+			document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
+			document.getElementById("idSer").className = document.getElementById("idSer").className.replace("openactive", "");
+			document.getElementById('idSer').className = document.getElementById('idSer').className + "active";
+				
+		}
+		
+	</script>	

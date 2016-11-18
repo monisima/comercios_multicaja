@@ -167,6 +167,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script language="javascript">
 	
+
+
 	function validaEmail(email) {
 		var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
 		if (reg.test(email) != true) {
@@ -328,6 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <script type="text/javascript">
+
 
   $(document).ready(function(){
     // Para moverse a los anchors
