@@ -68,7 +68,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</button>
 			
 			<div class="collapse login-bajada" id="preg1">
-				<form id="user-login-form-mobile" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
+				<form id="user-login-form-mobile" action="http://L-PBELTRAN:8090/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
 					
 					<input type="text" id="rutInMobile" maxlength="12" size="10" name="rutInMobile" placeholder="Ingresa Rut" >
 					<input type="hidden" name="rutMobile"> 
@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  	<!-- ----------------------------------------------- 	-->
 			  		<!-- 	Formulario Login Navegador						-->
 			  		<!-- ----------------------------------------------- 	-->
-						<form id="user-login-form" action="http://L-PBELTRAN:8090/MulticajaComercioV3/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
+						<form id="user-login-form" action="http://L-PBELTRAN:8090/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
 							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
 							
 							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut">
@@ -373,7 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="modal-body">
       	<p>Tu clave ha sido bloqueada porque se han excedido los intentos de inicio de sesión.</p>
-       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1" target="_blank" >haz clic aquí.</a></p>
+       <p> Si deseas recuperar tu clave, <a  href="recuperarClave.jsp" target="_blank" >haz clic aquí.</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -571,7 +571,6 @@ $.urlParam = function(name){
 				//alert('password.length' + password.length);
 				
 				if (trueRut) {
-						checkFieldRut();
 						if (password.length < 4 || password.length > 4) {
 							$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
 							$('#claveIncorrecta').show();

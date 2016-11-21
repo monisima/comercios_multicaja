@@ -111,25 +111,20 @@
 	    </body>
 	    </html>
 		
-	<script language="javascript">
-	
-	$(document).ready(function () {
-		
-        var url = window.location;
-		//alert('url  ' + url);
-		if(!(url=='http://localhost:8090/mc-comercios/html/')){
-			document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
-		}
-		//Sólo funcionará si string en href coincide con la ubicación
-        $('ul.nav a[href="' + url + '"]').parent().addClass('active');
-
-		// También funcionará para los hrefs relativos y absolutos
-        $('ul.nav a').filter(function () {
-            return this.href == url;
-        }).parent().addClass('active').parent().parent().addClass('active');
-		
-		document.getElementById("idComercios").className = document.getElementById("idComercios").className.replace("active", "");
-    });
-	
-
+	<script language="javascript">	
+		$(document).ready(function () {
+			var url = window.location;
+			//alert('url  ' + url);
+			if(!(url=='https://www.multicaja.cl/comercios/')){
+				document.getElementById("idHome").className = document.getElementById("idHome").className.replace("active", "");
+			}
+			//Sólo funcionará si string en href coincide con la ubicación
+			$('ul.nav a[href="' + url + '"]').parent().addClass('active');
+			// También funcionará para los hrefs relativos y absolutos
+			$('ul.nav a').filter(function () {
+				return this.href == url;
+			}).parent().addClass('active').parent().parent().addClass('active');
+			
+			document.getElementById("idComercios").className = document.getElementById("idComercios").className.replace("active", "");
+		});
 	</script>	

@@ -309,7 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 					
 		if (validacion == true) {
-			$.post('http://l-pbeltran:8090/MulticajaComercioV3/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:tipoHorario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
+			$.post('http://l-pbeltran:8090/comercio/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:tipoHorario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
 			function(data) {
 				var str="" + data;
 				  errorN = str.substring(0, 6);
