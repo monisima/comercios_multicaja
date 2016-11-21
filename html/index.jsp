@@ -513,34 +513,18 @@ $.urlParam = function(name){
 <script language="javascript">	
     		function validarFormLogin(form) {  			
 				document.getElementById("rutIn").className = document.getElementById("rutIn").className.replace("red-border", "");
-				document.getElementById("passNormal").className = document.getElementById("passNormal").className.replace("red-border", "");
-				
+				document.getElementById("passNormal").className = document.getElementById("passNormal").className.replace("red-border", "");				
 				$('#rutIncorrecto').hide()
 				$('#claveIncorrecta').hide();
-				
 				f=document.formLogin;
-				//var bajada = f.rutIn.value;
-				
-				//alert('ID ' + f.id);
-		
-    			//rut =  document.formLogin.rut.value;
 				var rutIn =  f.rutIn.value;
-				
-				//alert('rutIn' + rutIn);
-				
-				//dv = document.formLogin.dv.value;				
 				var password = f.passNormal.value;
-				
-				//alert('password' + password);
-				
    				msgError = "";
    				validacion = true;
-				
 				if (rutIn.length < 1) {
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrecto").html('No se ha ingresado el Rut');
 					$('#rutIncorrecto').show();
-					//checkField('rutIn');
 					document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
 					validacion = false;
 				}else{
@@ -549,7 +533,6 @@ $.urlParam = function(name){
 						$("#rutIncorrecto").html('No es Rut Valido');
 						$('#rutIncorrecto').show();
 						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
-						//checkField('rutIn');
 						validacion = false;
 					}
 				}
@@ -558,7 +541,6 @@ $.urlParam = function(name){
 					$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
 					$('#claveIncorrecta').show();
 					document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
-					//checkField('passNormal');
 				    validacion = false;
 				}
 				if (!validacion) {
@@ -566,9 +548,6 @@ $.urlParam = function(name){
 				    return false;
 				}
 				var trueRut = esRut(rutIn.toLowerCase());
-				
-				//alert('ES RUT' + trueRut);
-				//alert('password.length' + password.length);
 				
 				if (trueRut) {
 						if (password.length < 4 || password.length > 4) {
@@ -594,7 +573,6 @@ $.urlParam = function(name){
 						return false;
 				}
 				
-				//alert('antes del for');
 				
 				var rutTmp = "";   
 			    for ( i=0; i < rutIn.length ; i++ ){
@@ -606,8 +584,6 @@ $.urlParam = function(name){
 				var dv = rutTmp.charAt(rutTmp.length-1);
 				rutTmp = rutTmp.substring(0, rutTmp.length-1);
 				
-				//alert('dv ok' + dv);
-				//alert('rutTmp ok' + rutTmp);
 				
    				/*
 				if (dv.length < 1) {
@@ -617,18 +593,15 @@ $.urlParam = function(name){
 				*/
 
 				if (validacion == true) {
-					//ingresar();
 					ingresar3(rutTmp, dv.toUpperCase(), password,f);
 				    return true;
-					
 				} else {
-					alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
 				    return false;
 				}
 			}
 			
 			function ingresar3(rut, dv, password, f) {
-				//alert('ingresar3');
 				f.rut.value=rut;
 				f.dv.value=dv;
 				f.j_username.value=rut+"-"+dv;
