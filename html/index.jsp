@@ -546,7 +546,7 @@ $.urlParam = function(name){
 				}else{
 					if(!esRut(rutIn.toLowerCase())){
 						/* No es rut */
-						$("#rutIncorrecto").html('No es Rut Valido1');
+						$("#rutIncorrecto").html('No es Rut Valido');
 						$('#rutIncorrecto').show();
 						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
 						//checkField('rutIn');
