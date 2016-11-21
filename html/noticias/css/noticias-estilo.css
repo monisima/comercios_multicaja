@@ -1,0 +1,10 @@
+.caja-noticias-contenido{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.caja-noticias-contenido p{
+	font-size: 16px;
+    color: #666;
+    line-height: 20px;
+}
