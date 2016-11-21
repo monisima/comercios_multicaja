@@ -15,9 +15,9 @@
 		      <div class="col-md-4 col-sm-4 col-xs-12 caja-redes">
 		      	<div class="txt-redes">
 			      	<p>Encuéntranos en: </p>
-			      	<a href="https://www.facebook.com/MulticajaCL/" target="_blank"><img src="images/f.svg" class="redes-sociales"></a>
-			      	<a href="https://www.youtube.com/user/multicajaCL" target="_blank"><img src="images/yt.svg" class="redes-sociales"></a>
-			      	<a href="https://twitter.com/MulticajaCL" target="_blank"><img src="images/twt.svg" class="redes-sociales"></a>
+			      	<a href="https://www.facebook.com/MulticajaCL/" target="_blank"><img src="../images/f.svg" class="redes-sociales"></a>
+			      	<a href="https://www.youtube.com/user/multicajaCL" target="_blank"><img src="../images/yt.svg" class="redes-sociales"></a>
+			      	<a href="https://twitter.com/MulticajaCL" target="_blank"><img src="../images/twt.svg" class="redes-sociales"></a>
 			    </div> 	
 		      	<div class="linea-footer rig"></div>
 		      </div>
