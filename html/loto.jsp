@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container">
 	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
-				<li><a href="index.jsp">Inicio</a></li>
+				<li><a href="/comercios">Inicio</a></li>
 				<li class="active">Juegos de azar</li>
 			</ol>
 		</div>
@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<p><img src="images/down.png" class="caret-como-fun">Si algunos de tus clientes es el afortunado ganador de un premio superior a 3 millones, <strong>¡Ganas el 1% del premio!</strong></p>
 											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de la venta de Loto, Loto3 y Loto4 suman para el  <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#premio_multiservicio" target="_blank" class="rojo">PREMIO MULTISERVICIO.</a></p>
 											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
-											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <!--<a href="#" class="rojo">aquí.</a>--></p>
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="documentos/comisiones-multicaja-2017.jsp" target="_blank" class="rojo">aquí.</a></p>
 								</div>
 							</div>
 							</div>

@@ -14,7 +14,7 @@
            <div class="row">
 	      	<nav role="navigation" class="navbar navbar-default menu-primero">
 			        <div class="navbar-header">
-			        <a href="index.jsp" class="navbar-brand"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
+			        <a href="/comercios" class="navbar-brand"><img src="images/logo-MC-comercios.svg" class="logo-comercios"></a>
 
 			            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
 			                <span class="sr-only">Toggle navigation</span>

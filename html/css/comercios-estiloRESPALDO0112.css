@@ -12,10 +12,10 @@ a, a:hover, a:link, a:visited{
 }
 a.rojo, a.rojo:hover, a.rojo:link, a.rojo:visited{
 text-decoration: none;
-color: #cc0000;
+color: #cc0000!important;
 }
 .rojo{
-color: #cc0000;
+color: #cc0000!important;
 }
 a.link-quiero, a.link-quiero:hover, a.link-quiero:focus, a.link-quiero:link {
 	text-decoration: none!important;
@@ -478,6 +478,14 @@ pre {
     border: 0px solid #ccc!important;
     border-radius: 0px!important;
 }
+
+.pdf {
+
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+
 .pos-pago{
   position: absolute;
 }
@@ -580,6 +588,14 @@ text-decoration: none!important;
 .hei-400{
 	 height: 398px;
 }
+
+.hei-150 {
+	 height: 150px;
+}
+
+.titulo-ayuda {
+	padding-top: 50px}
+
 #footer{
 	color: #fff;
 	font-size: 14px;
@@ -3232,9 +3248,6 @@ input.simula {
     font-size: 13px !important;
 }
 }
-
-
-
 @media only screen and (max-width: 336px) {
 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
     max-width: 200px !important;
@@ -3256,10 +3269,9 @@ input.simula {
 	.polaroid {
     width: 200px;
 }
-	.bann-img {
-    min-height: 700px;
 }
-}
+
+
 
 
 .banner-carrusel2{
@@ -3293,3 +3305,4 @@ input.simula {
 }
 
 }
+

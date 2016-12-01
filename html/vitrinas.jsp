@@ -68,7 +68,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</button>
 			
 			<div class="collapse login-bajada" id="preg1">
-				<form id="user-login-form-mobile" action="https://www.multicaja.cl/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
+				<form id="user-login-form-mobile" action="http://L-PBELTRAN:8090/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLoginMobile(this)" name="formLoginMobile">
 					
 					<input type="text" id="rutInMobile" maxlength="12" size="10" name="rutInMobile" placeholder="Ingresa Rut" >
 					<input type="hidden" name="rutMobile"> 
@@ -84,7 +84,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<span id="claveIncorrectaMobile" name="claveIncorrectaMobile"  class="error-tx" style="display: none;"></span>
 							
 					
-					<a href="https://www.multicaja.cl/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
+					<a href="recuperarClave.jsp" class="link-quiero" target="_blank" ><p>Olvidé mi clave</p></a>
 					
 					<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form-mobile').submit();">ENTRAR</button>
 
@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  	<!-- ----------------------------------------------- 	-->
 			  		<!-- 	Formulario Login Navegador						-->
 			  		<!-- ----------------------------------------------- 	-->
-						<form id="user-login-form" action="https://www.multicaja.cl/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
+						<form id="user-login-form" action="http://L-PBELTRAN:8090/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
 							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
 							
 							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut">
@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="https://www.multicaja.cl/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
+							<a href="recuperarClave.jsp" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							
@@ -143,17 +143,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-      	
-      	 <div class="item active">
-		    <a href="noticias/nueva-oferta-de-comisiones-2017.jsp" target="_blank"><div class="banner-fondo-img bann-img banner-carrusel3"></div></a>
-		</div>	
-      
-		<div class="item">
-		    <a href="noticias/conoce-nuestro-nuevo-sitio-web.jsp" target="_blank"><div class="banner-fondo-img bann-img banner-carrusel2"></div></a>
-		</div>
-		
-
-		  <div class="item ">
+      		
+        <div class="item active">
           <div class="banner-fondo-img bann-img">
 		      <div class="container caja-tx-banner">
 		          <div class="col-md-3 col-sm-4 hidden-sm hidden-xs">
@@ -174,6 +165,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  </div>
 			  </div>
 		   </div>
+		</div>
+		<div class="item">
+		    <div class="banner-fondo-img bann-img banner-carrusel2"></div>
+		</div>
+		 <div class="item">
+		    <div class="banner-fondo-img bann-img banner-carrusel3"></div>
 		</div>
       </div>
 
@@ -376,7 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="modal-body">
       	<p>Tu clave ha sido bloqueada porque se han excedido los intentos de inicio de sesión.</p>
-       <p> Si deseas recuperar tu clave, <a  href="https://www.multicaja.cl/comercio/recuperarClavePaso1" target="_blank" >haz clic aquí.</a></p>
+       <p> Si deseas recuperar tu clave, <a  href="recuperarClave.jsp" target="_blank" >haz clic aquí.</a></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -516,18 +513,34 @@ $.urlParam = function(name){
 <script language="javascript">	
     		function validarFormLogin(form) {  			
 				document.getElementById("rutIn").className = document.getElementById("rutIn").className.replace("red-border", "");
-				document.getElementById("passNormal").className = document.getElementById("passNormal").className.replace("red-border", "");				
+				document.getElementById("passNormal").className = document.getElementById("passNormal").className.replace("red-border", "");
+				
 				$('#rutIncorrecto').hide()
 				$('#claveIncorrecta').hide();
+				
 				f=document.formLogin;
+				//var bajada = f.rutIn.value;
+				
+				//alert('ID ' + f.id);
+		
+    			//rut =  document.formLogin.rut.value;
 				var rutIn =  f.rutIn.value;
+				
+				//alert('rutIn' + rutIn);
+				
+				//dv = document.formLogin.dv.value;				
 				var password = f.passNormal.value;
+				
+				//alert('password' + password);
+				
    				msgError = "";
    				validacion = true;
+				
 				if (rutIn.length < 1) {
 					//msgError += "- No se ha ingresado el rut\n";
 					$("#rutIncorrecto").html('No se ha ingresado el Rut');
 					$('#rutIncorrecto').show();
+					//checkField('rutIn');
 					document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
 					validacion = false;
 				}else{
@@ -536,6 +549,7 @@ $.urlParam = function(name){
 						$("#rutIncorrecto").html('No es Rut Valido');
 						$('#rutIncorrecto').show();
 						document.getElementById('rutIn').className = document.getElementById('rutIn').className + "red-border";
+						//checkField('rutIn');
 						validacion = false;
 					}
 				}
@@ -544,6 +558,7 @@ $.urlParam = function(name){
 					$("#claveIncorrecta").html('La clave debe contener 4 caracteres');
 					$('#claveIncorrecta').show();
 					document.getElementById('passNormal').className = document.getElementById('passNormal').className + "red-border";
+					//checkField('passNormal');
 				    validacion = false;
 				}
 				if (!validacion) {
@@ -551,6 +566,9 @@ $.urlParam = function(name){
 				    return false;
 				}
 				var trueRut = esRut(rutIn.toLowerCase());
+				
+				//alert('ES RUT' + trueRut);
+				//alert('password.length' + password.length);
 				
 				if (trueRut) {
 						if (password.length < 4 || password.length > 4) {
@@ -576,6 +594,7 @@ $.urlParam = function(name){
 						return false;
 				}
 				
+				//alert('antes del for');
 				
 				var rutTmp = "";   
 			    for ( i=0; i < rutIn.length ; i++ ){
@@ -587,6 +606,8 @@ $.urlParam = function(name){
 				var dv = rutTmp.charAt(rutTmp.length-1);
 				rutTmp = rutTmp.substring(0, rutTmp.length-1);
 				
+				//alert('dv ok' + dv);
+				//alert('rutTmp ok' + rutTmp);
 				
    				/*
 				if (dv.length < 1) {
@@ -596,15 +617,18 @@ $.urlParam = function(name){
 				*/
 
 				if (validacion == true) {
+					//ingresar();
 					ingresar3(rutTmp, dv.toUpperCase(), password,f);
 				    return true;
+					
 				} else {
-					//alert("Han ocurrido los siguientes errores: \n\n" + msgError);
+					alert("Han ocurrido los siguientes errores: \n\n" + msgError);
 				    return false;
 				}
 			}
 			
 			function ingresar3(rut, dv, password, f) {
+				//alert('ingresar3');
 				f.rut.value=rut;
 				f.dv.value=dv;
 				f.j_username.value=rut+"-"+dv;
