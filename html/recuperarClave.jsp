@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
 <!-- End Google Tag Manager -->
 
-	<title>¿Quieres ser comercio Multicaja?</title>
+  <title>Recuperar Clave</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Te invitamos a pertenecer a una de las redes de comercios más grandes del país. Con Multicaja podrás aumentar tus ventas y atraer más clientes.">
@@ -64,17 +64,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container">
 	  <div class="col-md-12 col-xs-12">
 		  <div class="row">
-		  
-		  	<iframe src="	http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" 
+		  	<iframe src="http://L-PBELTRAN:8090/comercio/recuperarClavePaso1" 
 				width="100%" 
-				height="600"
+				height="1000"
 				seamless=""
 				noresize="noresize"
 				frameborder="0"
-				scrolling="no"
+				scrolling="si"
 				align="right">
 			</iframe>
-			
 		  </div>
 		</div>
 </div>

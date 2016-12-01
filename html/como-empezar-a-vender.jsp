@@ -63,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
-				<li class="active">Requisitos</li>
+				<li class="active">¿Cómo empezar a vender?</li>
 			</ol>
 		</div>
 		</div>

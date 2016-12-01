@@ -139,25 +139,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								      <p>Aguas Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
 								    </div>
 								    <div id="gas" class="tab-pane fade">
-								       <p>GAS Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p>Metrogas / Gas Valpo / Abastible / GASCO </p>
 								    </div>
 								    <div id="luz" class="tab-pane fade">
-								      <p>LUZ Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								      <p>Chilectra / Saesa / Frontel/ Luz Osorno / Edelaysen / CONAFE / Emetal / Emelectric / Emelat / Emelari / Eliqsa / Elecda / Litoral / Casablanca / Luz Parral / Luz Linares / Chilquinta</p>
 								    </div>
 								    <div id="telefonia" class="tab-pane fade">
-								       <p>TELEFONIA Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p>Claro / Movistar /  Entel  /  WOM </p>
 								    </div>
 								    <div id="internet" class="tab-pane fade">
-								       <p>INTERNET Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p> Movistar / Entel / Claro / WOM / GTD / VTR / Telefónica del Sur / DirecTV  </p>
 								    </div>
 								    <div id="autopistas" class="tab-pane fade">
-								       <p>AUTOPISTA Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p> Autopista Central / Vespucio Norte / Vespucio Sur / Costanera Norte</p>
 								    </div>
 								    <div id="cosmeticos" class="tab-pane fade">
-								       <p>TCOSMETICOS Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p> Natura / Avon / L’Bel / Cy – Zone / Esika</p>
 								    </div>
 								    <div id="retail" class="tab-pane fade">
-								       <p>RETAIL Altiplano / Aguas Andinas / Aguas Antofagasta / Aguas Araucanía / Aguas Cordillera / Aguas Del Valle / Aguas magallanes / Aguas Manquehue / Aguas San Pedro / Aguas Santiago Poniente / Essal / Essbio / Esval / Smapa </p>
+								       <p>Hites / Abcdin / Ripley</p>
 								    </div>
 								  </div>
 								  <div class="flecha_descubre">
