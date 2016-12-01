@@ -21,10 +21,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="../css/comercios-estilo.css">
-<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/css/bootstrap.css">
 <link rel="stylesheet" href="css/documentos.css">
 
-<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../css/css/bootstrap-select.min.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">

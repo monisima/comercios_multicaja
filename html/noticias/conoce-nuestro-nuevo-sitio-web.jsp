@@ -21,9 +21,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="../css/comercios-estilo.css">
-<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/css/bootstrap.css">
 <link rel="stylesheet" href="css/noticias-estilo.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../css/css/bootstrap-select.min.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-     <jsp:include page="/../header.jsp" />
+     <jsp:include page="header.jsp" />
 
 	   <div class="container">
 	 		<div class="col-md-12 col-xs-12">
@@ -123,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
-<jsp:include page="//footer.jsp" />
+<jsp:include page="footer.jsp" />
 
      
 

@@ -21,8 +21,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+<link rel="stylesheet" href="css/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/css/bootstrap-select.min.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
@@ -149,9 +149,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				
 					<p class="rig">* Campos obligatorios</p>
 					<div class="captcha-img"> 
+						<!-- KEY version Desa	-->
 						<div class="g-recaptcha" data-sitekey="6LdrHRQTAAAAAMU6FXDenuOzeugxt8GMB_9bycu0"></div>
-						
-						<!--	-->			
+						<!-- KEY version Prod	-->	
+						<!--<div class="g-recaptcha" data-sitekey="6Le3hBsTAAAAAOPnMe4nT1B8s7Lg-CsjGwUbpc2A"></div>-->
 						<span id="requiredCaptcha" name="requiredCaptcha" class="error-tx" style="display: none;"></span>	
 					</div>
 					<p class="marg-p">Al completar este formulario, autorizo que Multicaja utilice mis datos y me contacte por vía telefónica o electrónica.</p>

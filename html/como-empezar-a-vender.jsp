@@ -21,7 +21,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!--CSS-->  
 <link rel="stylesheet" type="text/css" href="css/comercios-estilo.css">
-<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/css/bootstrap.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
@@ -63,7 +63,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	 		<div class="col-md-12 col-xs-12">
 			<ol class="breadcrumb">
 				<li><a href="index.jsp">Inicio</a></li>
-				<li class="active">Requisitos</li>
+				<li class="active">¿Cómo empezar a vender?</li>
 			</ol>
 		</div>
 		</div>
