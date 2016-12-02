@@ -106,7 +106,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				  	<!-- ----------------------------------------------- 	-->
 			  		<!-- 	Formulario Login Navegador						-->
 			  		<!-- ----------------------------------------------- 	-->
-						<form id="user-login-form" action="http://l-pbeltran:8090/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
+						<form id="user-login-form" action="https://www.multicaja.cl/comercio/j_spring_security_check" method="post" onSubmit="return validarFormLogin(this)" name="formLogin">
 							<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea</h4>
 							
 							<input type="text" id="rutIn" maxlength="12" size="10" name="rutIn" placeholder="Ingresa Rut">
@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<!--	-->	
 							<span id="claveIncorrecta" name="claveIncorrecta"  class="error-tx" style="display: none;"></span>
 							
-							<a href="http://l-pbeltran:8090/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
+							<a href="https://www.multicaja.cl/comercio/recuperarClavePaso1" class="link-quiero" target="_blank" ><p style="margin-top: 20px; margin-bottom:20px!important">Olvidé mi clave</p></a>
 							
 							<button type="button" class="btn-rojo btn-block btn-login" onClick="$('#user-login-form').submit();">ENTRAR</button>
 							

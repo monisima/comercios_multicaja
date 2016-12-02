@@ -150,9 +150,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<p class="rig">* Campos obligatorios</p>
 					<div class="captcha-img"> 
 						<!-- KEY version Desa	-->
-						<div class="g-recaptcha" data-sitekey="6LdrHRQTAAAAAMU6FXDenuOzeugxt8GMB_9bycu0"></div>
+						<!-- <div class="g-recaptcha" data-sitekey="6LdrHRQTAAAAAMU6FXDenuOzeugxt8GMB_9bycu0"></div> -->
 						<!-- KEY version Prod	-->	
-						<!--<div class="g-recaptcha" data-sitekey="6Le3hBsTAAAAAOPnMe4nT1B8s7Lg-CsjGwUbpc2A"></div>-->
+						<div class="g-recaptcha" data-sitekey="6Le3hBsTAAAAAOPnMe4nT1B8s7Lg-CsjGwUbpc2A"></div>
 						<span id="requiredCaptcha" name="requiredCaptcha" class="error-tx" style="display: none;"></span>	
 					</div>
 					<p class="marg-p">Al completar este formulario, autorizo que Multicaja utilice mis datos y me contacte por vía telefónica o electrónica.</p>
@@ -310,7 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		
 					
 		if (validacion == true) {
-			$.post('http://l-pbeltran:8090/comercio/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:tipoHorario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
+			$.post('https://www.multicaja.cl/comercio/quieroSerComercioMulticaja' ,{servicio:servicio, tipoServicio:tipoServicio,horario:tipoHorario,nombre:nombre,rut:rut,mail:mail,fono:fono,captcha:captcha}, 
 			function(data) {
 				var str="" + data;
 				  errorN = str.substring(0, 6);
