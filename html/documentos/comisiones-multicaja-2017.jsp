@@ -7,14 +7,14 @@
 	<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <!-- Google Tag Manager -->
-<!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>-->
+})(window,document,'script','dataLayer','GTM-KST3ZT9');</script>
 <!-- End Google Tag Manager -->
 
-	<title>Comisiones Multicaja 2017</title>
+<title>Comisiones Multicaja 2017</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A partir del 1 de enero de 2017, las comisiones Multicaja se ajustarán a las nuevas condiciones del mercado. Los comercios ganarán más a medida que crezcan sus ventas.">
@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="../css/css/bootstrap.css">
 <link rel="stylesheet" href="css/documentos.css">
 
-<link rel="stylesheet" type="text/css" href="../css/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.min.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
@@ -41,16 +41,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
 <!-- Google Tag Manager (noscript) -->
-<!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KST3ZT9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-     <jsp:include page="../header.jsp" />
+     <jsp:include page="header.jsp" />
 
 	   <div class="container">
 	 		<div class="col-md-12 col-xs-12">
 	 		<ol class="breadcrumb">
-				<li><a href="index.jsp">Inicio</a></li>
+				<li><a href="/comercios">Inicio</a></li>
 				<li class="active">Nuevas Comisiones y Tarifas Multicaja 2017</li>
 			</ol>
 		</div>				        
@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="row col-md-10 col-md-offset-1  pdf">
 
-<iframe src="comercios2017.pdf" width="100%" height="750px" style="border:none;border-bottom: 4px solid #404040; background-color: #404040;"></iframe>
+<iframe src="comisiones-multicaja-2017.pdf" width="100%" height="1000" style="border:none;border-bottom: 4px solid #404040; background-color: #404040;"></iframe>
 
 
 
@@ -75,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
-<jsp:include page="../footer.jsp" />
+<jsp:include page="footer.jsp" />
 
      
 

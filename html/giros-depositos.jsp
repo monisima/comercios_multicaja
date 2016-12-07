@@ -204,7 +204,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="row txt-bajada-tbl">
 									<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de giros, depósitos y pago de cuotas de créditos suman para el <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#premio_multiservicio" target="_blank"  class="rojo">PREMIO MULTISERVICIO.</a></p>
 									<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
-									<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="documentos/comisiones-multicaja-2017.jsp" target="_blank" class="rojo">aquí.</a></p>
+									<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="documentos/comisiones-multicaja-2017.pdf" target="_blank" class="rojo">aquí.</a></p>
 								</div>
 							</div>
 						</div>

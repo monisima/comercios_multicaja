@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="container caja-tx-banner">
 		<div class="row col-md-12 visible-sm visible-xs">
 			<button class="panel-heading collapsed collap-login" data-toggle="collapse" data-target="#preg1" href="#preg1">
-			<h4><img src="images/login-linea.svg" class="img-login">Multicaja en línea <i class="chevron fa fa-fw" ></i></h4> 
+			<h4><img src="images/login-linea.svg"  data-fallback-image="images/login-linea.png"  class="img-login">Multicaja en línea <i class="chevron fa fa-fw" ></i></h4> 
 			</button>
 			
 			<div class="collapse login-bajada" id="preg1">
@@ -147,12 +147,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       	 <div class="item active">
 		    <a href="noticias/nueva-oferta-de-comisiones-2017.jsp" target="_blank"><div class="banner-fondo-img bann-img banner-carrusel3"></div></a>
 		</div>	
-      
+        
+        <!-- conoce 
 		<div class="item">
 		    <a href="noticias/conoce-nuestro-nuevo-sitio-web.jsp" target="_blank"><div class="banner-fondo-img bann-img banner-carrusel2"></div></a>
 		</div>
-		
-
+		-->
+		  <!-- vitrina mpos 	
 		  <div class="item ">
           <div class="banner-fondo-img bann-img">
 		      <div class="container caja-tx-banner">
@@ -165,7 +166,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<img src="images/mpos.png" class="img-mpos-bnn">
 				  </div>
 				  <div class="texto-banner col-md-8 col-sm-8 col-xs-12 txt-bann">
-				         <img src="images/mpos.svg" class="logo-mpos"> <h2>lo pagas por una <span>única vez</span>, <br>sin costos mensuales adicionales</h2>
+				         <img src="images/logo-mpos.svg"  data-fallback-image="images/logo-mpos.png" class="logo-mpos"> <h2>lo pagas por una <span>única vez</span>, <br>sin costos mensuales adicionales</h2>
 						              <img src="images/tarjeta_sodexo.png" class="tarj-sod-ede">
 						              <img src="images/tarjeta_edenred.png"  class="tarj-sod-ede">	
 						              <a href="https://www.multicaja.cl/mpos/" target="_blank"><button type="button" class="btn btn-rojo border-btn-rojo mas-info">VER MÁS INFORMACIÓN</button></a>	           
@@ -175,9 +176,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			  </div>
 		   </div>
 		</div>
+        -->
       </div>
 
-
+<!--
       <div class="container carrusel-banner">
        
     	<ol class="carousel-indicators">
@@ -187,7 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ol>
         
       </div>
-
+-->
 
 </div><!-- End Carousel -->
 </div>
@@ -258,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		<div class="col-md-12 col-sm-12 flecha_descubre flecha-home-serv">
 		  <div class="row">
-			<a href="#section-mas-ventas" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+			<a href="#section-mas-ventas" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg"  data-fallback-image="images/flecha_gris_abajo.png" alt="Abajo" class="flecha_abajo"></a>
 		</div>
 		</div>
       	</div>
@@ -286,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       		<div class="gris-oscuro cte-comercio">
       			<div class="container" id="section-mas-ventas">
 	      			<div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
-	      				<img src="images/comercio-clientes.svg" class="comercio-cliente">
+	      				<img src="images/comercio-clientes.svg"  data-fallback-image="images/comercio-clientes.png" class="comercio-cliente">
 	      			</div>
 	      			<div class="col-md-4 col-sm-6 col-xs-12 mas-clientes">
 	      				<h2 >Más clientes, Más ventas,<br><span> Mejor comisión</span></h2>
@@ -357,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	      		</div></a>
 	      	</div>
 	      	<div class="flecha_descubre flecha-retor-ini">
-						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg"  data-fallback-image="images/flecha_gris_arriba.png" alt="Abajo" class="flecha_abajo"></a>
 			</div>
       	</div>
 <!--content-->
@@ -404,6 +406,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script>
+  if (!Modernizr.svg) {
+    $('img[src$=".svg"]').each(function() {
+      $(this).attr('src', $(this).data('fallbackImage'));
+    });
+  }
+</script>
+
+
+
+
 
 <script>
 if (getURLParameter('login_error') == '1'){

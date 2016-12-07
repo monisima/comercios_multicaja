@@ -161,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								    </div>
 								  </div>
 								  <div class="flecha_descubre">
-				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg"  data-fallback-image="images/flecha_gris_abajo.png" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
 					</div>
 						<span id="como-funciona"></span>
@@ -233,7 +233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				      	  			comisiones
 				      	  		</button></a>
 				      	  		<div class="flecha_descubre">
-				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg" alt="Abajo" class="flecha_abajo"></a>
+				        			<a href="#equipos" class="flecha_ancla"><img src="images/flecha_gris_abajo.svg"  data-fallback-image="images/flecha_gris_abajo.png" alt="Abajo" class="flecha_abajo"></a>
 				            	</div>
 				            	
 				      	  </div>
@@ -268,7 +268,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								<div class="row txt-bajada-tbl marg-txt-baja">										
 											<p><img src="images/down.png" class="caret-como-fun">Recuerda que los montos mensuales de pago de cuentas suman para el <a href="https://www.multicaja.cl/comercios/ComisionesyTarifas.jsp#premio_multiservicio" target="_blank"  class="rojo">PREMIO MULTISERVICIO.</a></p>
 											<p><img src="images/down.png" class="caret-como-fun">Comisiones válidas <strong>hasta el 31 de diciembre de 2016.</strong></p>
-											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="documentos/comisiones-multicaja-2017.jsp" target="_blank" class="rojo">aquí.</a></p>
+											<p><img src="images/down.png" class="caret-como-fun"><strong>Conoce las nuevas comisiones</strong> que rigen desde el 1 de enero de 2017 <a href="documentos/comisiones-multicaja-2017.pdf" target="_blank" class="rojo">aquí.</a></p>
 								</div> 
 							</div>
 							</div>
@@ -344,13 +344,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				      	  			<img src="images/cupon-de-pago-cel.png" class="pos-pago">
 				      	  		</div>
 				      	  		<div class="col-md-8 col-md-offset-1 col-sm-8 txt-pos-free txt-center col-sm-7">
-				      	  			<h2><img src="images/star.svg" class="st1"><img src="images/star.svg"  class="st2"><span>atrae nuevos</span><span class="tx-negro"> clientes</span><img src="images/star.svg"  class="st2"><img src="images/star.svg"  class="st1"> <br>con el cupón de pago de multicaja</h2>
+				      	  			<h2><img src="images/star.svg"  data-fallback-image="images/star.png"  class="st1"><img src="images/star.svg" data-fallback-image="images/star.png" class="st2"><span>atrae nuevos</span><span class="tx-negro"> clientes</span><img src="images/star.svg"  data-fallback-image="images/star.png" class="st2"><img src="images/star.svg"  data-fallback-image="images/star.png" class="st1"> <br>con el cupón de pago de multicaja</h2>
 				      	  			
 				      	  		</div>				      	  		
 				      	  	  </div>
 				      	  	</div>
 				      	  	<div class="flecha_descubre flecha-pago-cuentas">
-						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg" alt="Abajo" class="flecha_abajo"></a>
+						       <a href="#inicio" class="flecha_ancla" ><img src="images/flecha_gris_arriba.svg"  data-fallback-image="images/flecha_gris_arriba.png" alt="Abajo" class="flecha_abajo"></a>
 							</div>
 
 				      	  </div>
@@ -365,6 +365,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!--Footerrrrrrrrrrrrr-->
 <!--Footerrrrrrrrrrrrr-->
 <jsp:include page="footer.jsp" />
+
+
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script>
+  if (!Modernizr.svg) {
+    $('img[src$=".svg"]').each(function() {
+      $(this).attr('src', $(this).data('fallbackImage'));
+    });
+  }
+</script>
+
+
 
 <script>
 $(document).ready(function() {

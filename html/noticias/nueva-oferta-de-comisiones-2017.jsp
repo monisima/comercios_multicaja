@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" type="text/css" href="../css/comercios-estilo.css">
 <link rel="stylesheet" href="../css/css/bootstrap.css">
 <link rel="stylesheet" href="css/noticias-estilo.css">
-<link rel="stylesheet" type="text/css" href="../css/css/bootstrap-select.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-select.min.css">
 
 <!--favicon-->
 <link rel="shortcut icon" href="https://www.multicaja.cl/personas/img/favicon.ico">
@@ -44,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-     <jsp:include page="../header.jsp" />
+     <jsp:include page="header.jsp" />
 
 	   <div class="container">
 	 		<div class="col-md-12 col-xs-12">
@@ -81,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								        <br>
 
 
-								        <p>Para conocer en detalle las nuevas comisiones, ingresa <a class="rojo" href="../documentos/comisiones-multicaja-2017.jsp" target="_blank">aquí.</a></p>
+								        <p>Para conocer en detalle las nuevas comisiones, ingresa <a class="rojo" href="../documentos/comisiones-multicaja-2017.pdf" target="_blank">aquí.</a></p>
 
 										<p>Si tienes dudas, consulta a tu ejecutivo Multicaja, llámanos al <strong>600 363 2020</strong> o escríbenos a <a class="rojo" href="https://www.multicaja.cl/comercios/contacto_multicaja.jsp" target="_blank">contacto@multicaja.cl.</a></p>
 				      			</div>
@@ -93,7 +93,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!--content-->
 <!--Footerrrrrrrrrrrrr-->
-<jsp:include page="../footer.jsp" />
+<jsp:include page="footer.jsp" />
 
      
 
